@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #999;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    line-height: 1.4em;
+    background: #665f5f url(../images/body.jpg) repeat;
+}
+
+a, a:link, a:visited { color: #0299aa; font-weight: normal; text-decoration: none }
+a:hover { text-decoration: underline; }
+
+a.addtocart{ display: inline-block; width: 80px; height: 21px; line-height: 21px; text-align: center; font-size: 10px; font-weight: bold; color: #333; background: url(../images/addToCart.png) }
+a.detail{ display: inline-block; width: 64px; height: 20px; line-height: 20px; text-align: center; font-size: 10px; font-weight: bold; color: #333; background: url(../images/detail.png) }
+
+p { margin: 0 0 10px 0; padding: 0; }
+img { border: none; }
+blockquote { border: 1px solid #039fb1; border-left: 5px solid #000; padding: 19px; margin: 20px 0 0 0}
+cite a, cite a:link, cite a:visited  { font-size: 12px; text-decoration: none; font-style: normal }
+cite span { font-weight: 400; color: #333; }
+
+.factList { margin: 10px 0 10px 15px; padding: 0; list-style: none }
+.factList li { color:#999; margin: 0 0 5px 0; padding: 0 0 0 15px; background: url(../images/list.png) no-repeat scroll 0 5px  }
+.factList li a { color: #999; font-weight: normal }
+.factList li a:hover { color: #333 }
+
+
+h1, h2, h3, h4, h5, h6 { color: #333; font-weight: normal; }
+h1 { font-size: 30px; margin: 0 0 30px; padding: 5px 0 }
+h2 { font-size: 26px; margin: 0 0 25px; padding: 5px 0 }
+h3 { font-size: 20px; margin: 0 0 20px; padding: 0; }
+h4 { font-size: 16px; margin: 0 0 15px; padding: 0; }
+h5 { font-size: 14px; margin: 0 0 10px; padding: 0;  }
+h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
+
+.cleaner { clear: both }
+
+.floatLeft { float: left }
+.floatRight { float: right }
+
+#bodyWrapper {
+    width: 100%;
+    background: url(../images/bodyTop.jpg) repeat-x top
+}
+
+#innerWrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+
+#header {
+    width: 960px;
+    height: 70px;
+    padding: 30px 10px;
+    background: url(../images/headerBg.png) no-repeat bottom;
+}
+
+#menuBar {
+    width: 980px;
+    height: 60px;
+    background: url(../images/menubar.png) no-repeat;
+}
+
+#main {
+    width: 940px;
+    padding: 10px 20px;
+    background: url(../images/mainBg.png) repeat-y
+}
+
+#content { width: 690px }
+#sidebar { width: 220px }
+
+#footer {
+    width: 960px;
+    padding: 30px 10px;
+    text-align: center;
+    background: url(../images/footer.png) no-repeat top
+}
+
+#siteTitle { float: left; margin-top: 30px; }
+#siteTitle h1 { margin: 0; padding: 0 }
+#siteTitle h1 a { display: block; width: 300px; height: 40px; padding-top: 30px; font-size: 12px; letter-spacing: 4px; color: #2f2f2f; text-align: left; background: url(../images/logo.png) no-repeat top left }
+
+#headerRight { float: right; margin: 35px 240px 0 0; color: #666; }
+#headerRight a { color: #fff }
+
+#search { float: right; margin: 10px 30px 0; width: 220px; height: 34px; background: url(../images/searchBg.png) }
+#search form {
+    margin: 0;
+    padding: 0;
+}
+
+#search .txtSearch {
+    float: left;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    width: 170px;
+    color: #999;
+    font-size: 12px;
+    padding: 5px;
+    font-variant: normal;
+    border: none;
+    background: none;
+}
+
+#search .subBtn {
+    float: right;
+    display: block;
+    color: #fff;
+    height: 33px;
+    width: 40px;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 26px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.sidebar_box {
+    position: relative;
+    background: #f0f0f0;
+    margin-bottom: 36px;
+    border: 1px solid #dbdbdb
+}
+.sidebar_box h3 { font-size: 14px; font-weight: 700; padding: 0 10px 0 35px;
+    width: 185px; height: 33px; line-height: 33px;
+    margin: 0;
+    background: url(../images/sidebarHeader.png)  no-repeat; color: #2f2f2f }
+
+#sidebar .sidebar_box .content {
+    padding: 10px 10px 0;
+}
+
+#sidebar .sidebarList { margin: 0; padding: 0 0 10px; list-style: none; }
+#sidebar .sidebarList li { display: block; margin: 0; padding: 5px 0; border-top: 1px solid #fff; border-bottom: 1px solid #d3d3d3 }
+#sidebar .sidebarList li.first { border-top: none }
+#sidebar .sidebarList li.last { border-bottom: none }
+#sidebar .sidebarList li a { color: #666;   }
+#sidebar .sidebarList li a:hover { color: #000; text-decoration: none }
+
+.productBox {
+    float: left;
+    width: 220px;
+    text-align: center;
+    margin: 0 10px 30px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #ccc
+}
+
+.productBox img {
+    margin-bottom: 5px;
+}
+.productBox h3 {
+    font-size: 11px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.productBox .productPrice {
+    color: #11bdd1;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.productBox .addtocart {
+    float: left;
+    display: block;
+}
+.productBox .detail {
+    float: right;
+    display: block;
+}
+
+.faqs p { margin-bottom: 20px }
+.faqs h5 { margin-bottom: 5px }
+
+#footer {
+    color: #999
+}
+#footer a {
+    color: #fff;
+}
+
+/*============================*/
+/*=== Custom Slider Styles ===*/
+/*============================*/
+#sliderWrapper {
+    float: left;
+    width: 680px;
+    height: 300px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+}
+
+#slider {
+    position:relative;
+    width: 620px;
+    height: 300px;
+    background:url(../images/loading.gif) no-repeat 50% 50%;
+}
+#slider img {
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+}
+#slider a {
+    border:0;
+    display:block;
+}
+
+.nivo-controlNav {
+    position:absolute;
+    right: 10px;
+    bottom: -30px;
+}
+.nivo-controlNav a {
+    display:block;
+    width:14px;
+    height:18px;
+    background:url(../images/bullets.png) no-repeat;
+    text-indent:-9999px;
+    border:0;
+    margin-right:3px;
+    float:left;
+}
+.nivo-controlNav a.active {
+    background-position:0 -18px;
+}
+
+.nivo-directionNav a {
+    display:block;
+    width:30px;
+    height:30px;
+    background:url(../images/arrows.png) no-repeat;
+    text-indent:-9999px;
+    border:0;
+}
+a.nivo-nextNav {
+    background-position:-30px 0;
+    right:15px;
+}
+a.nivo-prevNav {
+    left:15px;
+}
+
+.nivo-caption {
+    text-shadow:none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-caption a {
+    color:#efe9d1;
+    text-decoration:underline;
+}
+
+.txtMessage
+{
+    width: 300px;
+    height: 250px;
+    padding-left: 0;
+    padding-top: 0;
+}
+
