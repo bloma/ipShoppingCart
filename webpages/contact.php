@@ -110,6 +110,12 @@
                                 <p><input type="submit" name="submit" value="Submit"/></p>
                             </form>
                             <?php
+                            $file = fopen("../textDocs/contactUs.txt","r") or die("Failed to read contact us");
+                            while (!feof($file))
+                            {
+                                echo fgets($file);
+                            }
+                            fclose($file);
                         }
                         else
                         {
@@ -119,6 +125,7 @@
                             echo "<p>Thank you for your message click <a href='../index.php'>here</a> to return to the home page</p>";
                         }
                         ?>
+
                     </div> <!-- END content -->
                     <div class="cleaner"></div>
                 </div> <!-- END main -->

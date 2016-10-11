@@ -1,27 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="860cb467-7e49-4aae-83a0-caf861d63aa7" name="Default" comment="Updated topNav Menu">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textDocs/contactUs.txt" />
+    <list default="true" id="860cb467-7e49-4aae-83a0-caf861d63aa7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textDocs/about.txt" afterPath="$PROJECT_DIR$/textDocs/about.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textDocs/exchangePolicy.txt" afterPath="$PROJECT_DIR$/textDocs/exchangePolicy.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textDocs/faqs.txt" afterPath="$PROJECT_DIR$/textDocs/faqs.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textDocs/shippingPolicy.txt" afterPath="$PROJECT_DIR$/textDocs/shippingPolicy.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/about.php" afterPath="$PROJECT_DIR$/webpages/about.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/checkout.php" afterPath="$PROJECT_DIR$/webpages/checkout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textDocs/contactUs.txt" afterPath="$PROJECT_DIR$/textDocs/contactUs.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/contact.php" afterPath="$PROJECT_DIR$/webpages/contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/customers/MyProfile.php" afterPath="$PROJECT_DIR$/webpages/customers/MyProfile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/exchangepolicy.php" afterPath="$PROJECT_DIR$/webpages/exchangepolicy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/faqs.php" afterPath="$PROJECT_DIR$/webpages/faqs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/login.php" afterPath="$PROJECT_DIR$/webpages/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/privacypolicy.php" afterPath="$PROJECT_DIR$/webpages/privacypolicy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/products.php" afterPath="$PROJECT_DIR$/webpages/products.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/register.php" afterPath="$PROJECT_DIR$/webpages/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/searchresults.php" afterPath="$PROJECT_DIR$/webpages/searchresults.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/shippingpolicy.php" afterPath="$PROJECT_DIR$/webpages/shippingpolicy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/shoppingcart.php" afterPath="$PROJECT_DIR$/webpages/shoppingcart.php" />
     </list>
     <ignored path="ShoeStore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,17 +30,27 @@
         <entry file="file://$PROJECT_DIR$/textDocs/about.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contactUs.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contactUs.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/textDocs/contactUs.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webpages/contact.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="126" column="26" selection-start-line="126" selection-start-column="26" selection-end-line="126" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -119,7 +113,6 @@
         <option value="$PROJECT_DIR$/configuration/Session.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/webpages/contact.php" />
         <option value="$PROJECT_DIR$/webpages/checkout.php" />
         <option value="$PROJECT_DIR$/webpages/faqs.php" />
         <option value="$PROJECT_DIR$/webpages/login.php" />
@@ -137,6 +130,8 @@
         <option value="$PROJECT_DIR$/textDocs/exchangePolicy.txt" />
         <option value="$PROJECT_DIR$/textDocs/privacyPolicy.txt" />
         <option value="$PROJECT_DIR$/textDocs/about.txt" />
+        <option value="$PROJECT_DIR$/textDocs/contactUs.txt" />
+        <option value="$PROJECT_DIR$/webpages/contact.php" />
       </list>
     </option>
   </component>
@@ -199,6 +194,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ShoeStore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShoeStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShoeStore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webpages" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -313,18 +322,26 @@
       <workItem from="1476106825420" duration="2520000" />
       <workItem from="1476114499349" duration="188000" />
       <workItem from="1476117925328" duration="2460000" />
-      <workItem from="1476168842846" duration="6903000" />
+      <workItem from="1476168842846" duration="7849000" />
     </task>
+    <task id="LOCAL-00001" summary="Updated some more stuff">
+      <created>1476190662608</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1476190662608</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20345000" />
+    <option name="totallyTimeSpent" value="21291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18802084" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18802084" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -358,7 +375,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated topNav Menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated topNav Menu" />
+    <MESSAGE value="Updated some more stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated some more stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -576,14 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-841">
-          <caret line="37" column="54" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpages/checkout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -620,14 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="84" column="26" selection-start-line="77" selection-start-column="23" selection-end-line="84" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="84" column="26" selection-start-line="77" selection-start-column="24" selection-end-line="84" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -680,15 +682,31 @@
     <entry file="file://$PROJECT_DIR$/textDocs/about.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/textDocs/contactUs.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="84" column="26" selection-start-line="77" selection-start-column="24" selection-end-line="84" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="126" column="26" selection-start-line="126" selection-start-column="26" selection-end-line="126" selection-end-column="26" />
           <folding />
         </state>
       </provider>
