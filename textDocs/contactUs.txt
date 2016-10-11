@@ -16,4 +16,4 @@
 <p>Monday to Friday</p>
 <p>9am - 6pm </p>
 <p>Saturdays</p>
-<p>10am - 4pm</a>
+<p>10am - 4pm</p>
