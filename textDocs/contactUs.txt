@@ -1,7 +1,6 @@
 <h1>Address</h1>
 <h3>Cape Town Store</h3>
-<p>Street Number Street Name</p>
-<p>Suburb</p>
+<p>15 Kloof Street</p>
 <p>Cape Town</p>
 <p>8001</p>
 

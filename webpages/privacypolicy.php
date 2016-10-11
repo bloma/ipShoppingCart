@@ -75,7 +75,14 @@
                     </div> <!-- END sidebar -->
 
                     <div id="content" class="floatRight">
-                        <p>Main Content Here</p>
+                        <?php
+                            $file = fopen("../textDocs/privacyPolicy.txt","r") or die("Failed to read Privacy Policy");
+                            while (!feof($file))
+                            {
+                                echo fgets($file);
+                            }
+                            fclose($file);
+                        ?>
                     </div> <!-- END content -->
                     <div class="cleaner"></div>
                 </div> <!-- END main -->
