@@ -1,0 +1,13 @@
+<h1>About Us</h1>
+<h2>Company Background</h2>
+<p>Group Members</p>
+<ul class="factList">
+        	<li>Ijaaz Lagardien</li>
+            <li>Aphiwe Blom</li>
+            <li>Xolela Masebeni</li>
+</ul>
+
+<p>Hi</p>
+
+<p>We’re axisneakers.co.za, and we’ve built our business on the simple principle that our customers come first.</P>
+<p>We have pr

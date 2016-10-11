@@ -1,0 +1,8 @@
+<h1>Shipping policy</h1>
+
+<p>We offer free shipping anywhere in South Africa!</p>
+<p>We also offer shipping to foreign countries at a charge</p>
+<h2>pricing</h2>
+<p>Shipping to bordering countries such as Namibia or Botswana is charged at R200.00</p>
+<p>Shipping to Lesotho is charged at R175.00</p>
+<p>Shipping world wide (not to countries mentioned above) will be upon request and prices may vary</p>

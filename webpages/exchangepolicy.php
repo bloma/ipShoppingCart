@@ -32,9 +32,9 @@
                         <ul>
                             <li><a href="../index.php">Home</a></li>
                             <li><a href="products.php">Products</a></li>
-                            <li><a href="checkout.php" class="selected"> Checkout</a></li>
+                            <li><a href="checkout.php">Checkout</a></li>
+                            <li><a href="customers/MyProfile.php">My Profile</a></li>
                             <li><a href="about.php">About</a></li>
-                            <li><a href="faqs.php">FAQs</a></li>
                             <li><a href="contact.php">Contact Us</a></li>
                         </ul>
                         <br style="clear: left" />
@@ -54,11 +54,10 @@
                             <h3>Categories</h3>
                             <div class="content">
                                 <ul class="sidebarList">
-                                    <li class="first"><a href="#">My Profile</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Returns Policy</a></li>
-                                    <li><a href="#">I</a></li>
-                                    <li><a href="#">don't</a></li>
+                                    <li class="first"><a href="customers/MyProfile.php">My Profile</a></li>
+                                    <li><a href="privacypolicy.php">Privacy Policy</a></li>
+                                    <li><a href="exchangepolicy.php">Returns Policy</a></li>
+                                    <li><a href="shippingpolicy.php">Exchange policy</a></li>
                                     <li><a href="#">Know</a></li>
                                     <li><a href="#">What</a></li>
                                     <li><a href="#">else</a></li>
@@ -75,7 +74,14 @@
                     </div> <!-- END sidebar -->
 
                     <div id="content" class="floatRight">
-                        <p>Main Content Here</p>
+                        <?php
+                        $file = fopen("../textDocs/exchangepolicy.txt","r") or die("Failed to read exchange policy");
+                        while (!feof($file))
+                        {
+                            echo fgets($file);
+                        }
+                        fclose($file);
+                        ?>
                     </div> <!-- END content -->
                     <div class="cleaner"></div>
                 </div> <!-- END main -->

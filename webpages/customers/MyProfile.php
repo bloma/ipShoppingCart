@@ -31,11 +31,11 @@
                     <div id="topNav" class="smoothMenu">
                         <ul>
                             <li><a href="../../index.php">Home</a></li>
-                            <li><a href="../../webpages/products.php">Products</a></li>
-                            <li><a href="../../webpages/checkout.php"> Checkout</a></li>
-                            <li><a href="../../webpages/about.php">About</a></li>
-                            <li><a href="../../webpages/faqs.php">FAQs</a></li>
-                            <li><a href="../../webpages/contact.php">Contact Us</a></li>
+                            <li><a href="../products.php">Products</a></li>
+                            <li><a href="../checkout.php">Checkout</a></li>
+                            <li><a href="../customers/MyProfile.php" class="selected">My Profile</a></li>
+                            <li><a href="../about.php">About</a></li>
+                            <li><a href="../contact.php">Contact Us</a></li>
                         </ul>
                         <br style="clear: left" />
                     </div> <!-- end of topNav-->

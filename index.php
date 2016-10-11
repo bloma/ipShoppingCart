@@ -33,8 +33,8 @@
                             <li><a href="index.php" class="selected">Home</a></li>
                             <li><a href="webpages/products.php">Products</a></li>
                             <li><a href="webpages/checkout.php">Checkout</a></li>
+                            <li><a href="webpages/customers/MyProfile.php">My Profile</a></li>
                             <li><a href="webpages/about.php">About</a></li>
-                            <li><a href="webpages/faqs.php">FAQs</a></li>
                             <li><a href="webpages/contact.php">Contact Us</a></li>
                         </ul>
                         <br style="clear: left" />
@@ -54,7 +54,7 @@
                             <h3>Categories</h3>
                             <div class="content">
                                 <ul class="sidebarList">
-                                    <li class="first"><a href="#">My Profile</a></li>
+                                    <li class='first'><a href='#'>My Profile</a></li>
                                     <li><a href="#">Privacy Policy</a></li>
                                     <li><a href="#">Returns Policy</a></li>
                                     <li><a href="#">I</a></li>

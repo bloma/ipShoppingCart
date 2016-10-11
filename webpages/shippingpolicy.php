@@ -30,11 +30,11 @@
                 <div id="menuBar">
                     <div id="topNav" class="smoothMenu">
                         <ul>
-                            <li><a href="../index.php">Home</a></li>
+                            <li><a href="../index.php" class="selected">Home</a></li>
                             <li><a href="products.php">Products</a></li>
-                            <li><a href="checkout.php" class="selected"> Checkout</a></li>
+                            <li><a href="checkout.php">Checkout</a></li>
+                            <li><a href="customers/MyProfile.php">My Profile</a></li>
                             <li><a href="about.php">About</a></li>
-                            <li><a href="faqs.php">FAQs</a></li>
                             <li><a href="contact.php">Contact Us</a></li>
                         </ul>
                         <br style="clear: left" />
@@ -75,7 +75,14 @@
                     </div> <!-- END sidebar -->
 
                     <div id="content" class="floatRight">
-                        <p>Main Content Here</p>
+                        <?php
+                        $file = fopen("../textDocs/shippingpolicy.txt","r") or die("Failed to read about");
+                        while (!feof($file))
+                        {
+                            echo fgets($file);
+                        }
+                        fclose($file);
+                        ?>
                     </div> <!-- END content -->
                     <div class="cleaner"></div>
                 </div> <!-- END main -->

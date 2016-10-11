@@ -1,0 +1,18 @@
+<h1>Exchange Policy</h1>
+<p>We want you to be happy with your purchase. If you are not completely satisfied, you can return the product to us and we’ll either exchange or replace it, or credit your account.</P>
+<p>This Policy applies to products bought from AXI Sneakers itself</p>
+<h2>Preparing your products for a return</h2>
+<p>To ensure your request is processed as quickly as possible you are responsible for the following when returning your products</p>
+<ul class="factList">
+        	<li>package your products safely and securely for protection during transit</li>
+            <li>clearly mark your return reference number on the outside of the parcel</li>
+            <li>include all accessories and parts that were sold with the product.</li>
+</ul>
+<p>Failure to adhere to any of these requirements could delay the processing of your request or result in its decline altogether.</p>
+
+<p>You can return an unwanted product to us at no charge, provided:</p>
+<ul class="factList">
+        	<li>it is undamaged and unused, with the original labels and stickers still attached</li>
+            <li>it is not missing any accessories or parts</li>
+            <li>you log a return on the Website within 30 days of delivery to you or collection by you of the unwanted product. After 30 days, you can only return a product if it is defective</li>
+</ul>

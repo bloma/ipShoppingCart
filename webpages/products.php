@@ -32,9 +32,9 @@
                         <ul>
                             <li><a href="../index.php">Home</a></li>
                             <li><a href="products.php" class="selected">Products</a></li>
-                            <li><a href="checkout.php"> Checkout</a></li>
+                            <li><a href="checkout.php">Checkout</a></li>
+                            <li><a href="customers/MyProfile.php">My Profile</a></li>
                             <li><a href="about.php">About</a></li>
-                            <li><a href="faqs.php">FAQs</a></li>
                             <li><a href="contact.php">Contact Us</a></li>
                         </ul>
                         <br style="clear: left" />
