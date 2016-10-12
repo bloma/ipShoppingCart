@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include "../configuration/config.php";
     include "../classes/Customer.php";
     include "../classes/User.php";
@@ -90,7 +91,20 @@
                 <div id="header">
                     <div id="siteTitle"><h1><a href="#">Online Shoes Store</a></h1></div>
                     <div id="headerRight">
-                        <p><a href="shoppingcart.php">My Cart</a> | <a href="checkout.php">Checkout</a> | <a href="login.php">Log In</a> | <a href="register.php">Register</a> </p>
+                        <?php
+                            if(isset($_Session["customerLogin"]))
+                            {
+                                echo "<p><a href='shoppingcart.php'>My Cart</a> | <a href='checkout.php'>Checkout</a> | Hi, $customerSession | <a href='webpages/logout.php'>Logout</a></p>";
+                            }
+                            else if(isset($_Session["adminLogin"]))
+                            {
+                                echo "<p><a href='shoppingcart.php'>My Cart</a> | <a href='checkout.php'>Checkout</a> | Hi, $adminSession | <a href='logout.php'>Logout</a></p>";
+                            }
+                            else if(!isset($_Session["customerLogin"]) && !isset($_Session["adminLogin"]))
+                            {
+                                echo "<p><a href='login.php'>Log in</a> | <a href='register.php'>Register</a></p>";
+                            }
+                        ?>
                     </div>
                     <div class="cleaner"></div>
                 </div> <!-- END Header -->
