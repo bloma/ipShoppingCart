@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="860cb467-7e49-4aae-83a0-caf861d63aa7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/adminSession.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/configuration/customerSession.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpages/logout.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/configuration/Session.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/about.php" afterPath="$PROJECT_DIR$/webpages/about.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/checkout.php" afterPath="$PROJECT_DIR$/webpages/checkout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/contact.php" afterPath="$PROJECT_DIR$/webpages/contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/customers/MyProfile.php" afterPath="$PROJECT_DIR$/webpages/customers/MyProfile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/exchangepolicy.php" afterPath="$PROJECT_DIR$/webpages/exchangepolicy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/faqs.php" afterPath="$PROJECT_DIR$/webpages/faqs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/login.php" afterPath="$PROJECT_DIR$/webpages/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/privacypolicy.php" afterPath="$PROJECT_DIR$/webpages/privacypolicy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/products.php" afterPath="$PROJECT_DIR$/webpages/products.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/register.php" afterPath="$PROJECT_DIR$/webpages/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/searchresults.php" afterPath="$PROJECT_DIR$/webpages/searchresults.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/shippingpolicy.php" afterPath="$PROJECT_DIR$/webpages/shippingpolicy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/shoppingcart.php" afterPath="$PROJECT_DIR$/webpages/shoppingcart.php" />
     </list>
     <ignored path="ShoeStore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -319,7 +301,7 @@
       <workItem from="1476208581865" duration="2207000" />
       <workItem from="1476212290112" duration="647000" />
       <workItem from="1476251781349" duration="5485000" />
-      <workItem from="1476277025892" duration="2335000" />
+      <workItem from="1476277025892" duration="2409000" />
     </task>
     <task id="LOCAL-00001" summary="Updated some more stuff">
       <created>1476190662608</created>
@@ -405,11 +387,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476275871983</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="some UI tweaks, need to finish Login and adjust top nav based on session">
+      <created>1476279448592</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1476279448592</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33294000" />
+    <option name="totallyTimeSpent" value="33368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -458,7 +447,8 @@
     <MESSAGE value="updated table scripts (AGAIN) - happy with results" />
     <MESSAGE value="updated table scripts (AGAIN) - happy with results&#10;Finished classes for prods and cart" />
     <MESSAGE value="Finished customer registration, need to finish login and setting up sessions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished customer registration, need to finish login and setting up sessions" />
+    <MESSAGE value="some UI tweaks, need to finish Login and adjust top nav based on session" />
+    <option name="LAST_COMMIT_MESSAGE" value="some UI tweaks, need to finish Login and adjust top nav based on session" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
