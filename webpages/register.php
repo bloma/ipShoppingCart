@@ -141,7 +141,6 @@
                             </div>
                         </div>
                     </div> <!-- END sidebar -->
-
                     <div id="content" class="floatRight">
                         <form name="registerForm" action="<?php $_SERVER["PHP_SELF"] ?>" method="post">
                             <p>Enter your Name: <input type="text" name="fName" value="<?php if (isset($_POST["fName"])) echo $_POST["fName"]; ?>"/></p>
@@ -159,7 +158,6 @@
                     <p><a href="../index.php">Home</a> | <a href="about.php">About</a> | <a href="faqs.php">FAQs</a> | <a href="contact.php">Contact Us</a></p>
                     Copyright © 2016 <a href="#">Shoe Store</a>
                 </div> <!-- END of footer -->
-
             </div> <!-- END innerWrapper -->
         </div> <!-- END bodyWrapper -->
     </body>
