@@ -1,3 +1,71 @@
+<?php
+    include "../configuration/config.php";
+    include "../classes/Customer.php";
+    include "../classes/User.php";
+    $firstName = "";
+    $surname = "";
+    $contactNumber = "";
+    $emailAddress = "";
+    $password = "";
+    if(isset($_POST["submit"]))
+    {
+        $firstName = $_POST["fName"];
+        $surname = $_POST["lName"];
+        $contactNumber = $_POST["contactNumber"];
+        $emailAddress = $_POST["email"];
+        $password = $_POST["password"];
+        if(empty($firstName) || empty($surname) || empty($contactNumber) || empty($emailAddress) || empty($password))
+        {
+            echo "<p>All fields are required</p>";
+        }
+        else if((strlen($password) < 8))
+        {
+            echo "<p>Password must be at least 8 characters</p>";
+        }
+        else if((!filter_var($emailAddress, FILTER_VALIDATE_EMAIL)))
+        {
+            echo "<p>Email Address is not valid</p>";
+        }
+        else
+        {
+            if((class_exists("Customer")) && (class_exists("User")))
+            {
+                $customerObject = new Customer();
+                $userObject = new User();
+            }
+            $hashedPassword = md5($password);
+            $customerObject->setCustomerName($firstName);
+            $customerObject->setCustomerSurname($surname);
+            $customerObject->setContactNumber($contactNumber);
+            $userObject->setUserName($emailAddress);
+            $userObject->setPassword($hashedPassword);
+            $userObject->setAccountType("Customer");
+            $accType = $userObject->getAccountType();
+            $userID;
+            //SQL statements
+            $sqlUserInsert = "insert into users (username, password,accountType) values ('$emailAddress','$hashedPassword','$accType')";
+            $sqlUserSelect = "select userID from users where username = '$emailAddress'";
+            mysqli_query($conn,$sqlUserInsert);
+            $userIDResult = mysqli_query($conn,$sqlUserSelect);
+            if (mysqli_num_rows($userIDResult) > 0)
+            {
+                $row = mysqli_fetch_assoc($userIDResult);
+                $userID = $row['userID'];
+            }
+            else{
+                echo "SQL error ".mysqli_errno($conn);
+            }
+            $sqlCustomer = "insert into customers (userID, customerName,customerSurname,customerTelephone) values ($userID,'$firstName','$surname','$contactNumber')";
+            if((mysqli_query($conn,$sqlUserInsert)) && (mysqli_query($conn,$sqlCustomer)))
+            {
+                header("location: ../index.php");
+            }
+            else{
+                echo "SQL error ".mysqli_error($conn);
+            }
+        }
+    }
+?>
 <html>
     <head>
         <title>Shoe Store</title>
@@ -75,82 +143,14 @@
                     </div> <!-- END sidebar -->
 
                     <div id="content" class="floatRight">
-                        <?php
-                            include "../configuration/config.php";
-                            include "../classes/Customer.php";
-                            include "../classes/User.php";
-                            $displayForm = TRUE;
-                            $firstName = "";
-                            $surname = "";
-                            $contactNumber = "";
-                            $emailAddress = "";
-                            $password = "";
-                            if(isset($_POST["submit"]))
-                            {
-                                $firstName = $_POST["fName"];
-                                $surname = $_POST["lName"];
-                                $contactNumber = $_POST["contactNumber"];
-                                $emailAddress = $_POST["email"];
-                                $password = $_POST["password"];
-                                if(empty($firstName) || empty($surname) || empty($contactNumber) || empty($emailAddress) || empty($password))
-                                {
-                                    echo "<p>All fields are required</p>";
-                                }
-                                else if((strlen($password) < 8))
-                                {
-                                    $displayForm = TRUE;
-                                    echo "<p>Password must be at least 8 characters</p>";
-                                }
-                                else if((!filter_var($emailAddress, FILTER_VALIDATE_EMAIL)))
-                                {
-                                    $displayForm = TRUE;
-                                    echo "<p>Email Address is not valid</p>";
-                                }
-                                else
-                                {
-                                    $displayForm = FALSE;
-                                }
-                            }
-                            if($displayForm) {
-                                ?>
-                                <form name="registerForm" action="<?php $_SERVER["PHP_SELF"] ?>" method="post">
-                                    <p>Enter your Name: <input type="text" name="fName" value="<?php if (isset($_POST["fName"])) echo $_POST["fName"]; ?>"/></p>
-                                    <p>Enter your Surname: <input type="text" name="lName" value="<?php if (isset($_POST["lName"])) echo $_POST["lName"]; ?>"/></p>
-                                    <p>Enter your contact Number: <input type="text" name="contactNumber" value="<?php if (isset($_POST["contactNumber"])) echo $_POST["contactNumber"]; ?>"/></p>
-                                    <p>Enter your email address:<input type="text" name="email" value="<?php if (isset($_POST["email"])) echo $_POST["email"]; ?>"/></p>
-                                    <p>Enter your password:<input type="text" name="password" value="<?php if (isset($_POST["password"])) echo $_POST["password"]; ?>"/></p>
-                                    <p><input type="submit" name="submit" value="Submit"/></p>
-                                </form>
-                                <?php
-                            }
-                            else
-                            {
-                                if((class_exists("Customer")) && (class_exists("User")))
-                                {
-                                    $customerObject = new Customer();
-                                    $userObject = new User();
-                                }
-                                $hashedPassword = md5($password);
-                                $customerObject->setCustomerName($firstName);
-                                $customerObject->setCustomerSurname($surname);
-                                $customerObject->setContactNumber($contactNumber);
-
-                                $userObject->setUserName($emailAddress);
-                                $userObject->setPassword($hashedPassword);
-                                $userObject->setAccountType("Customer");
-                                /**$sqlStatement = "insert into users (name,surname,email,password) values ('$firstName','$surname','$emailAddress','$hashedPassword') ";
-                                if(mysqli_query($conn, $sqlStatement))
-                                {
-                                header("location: index.php");
-                                }
-                                else{
-                                echo "SQl Error". mysqli_error($conn);
-                                }*/
-                                /**
-                                 * Code to insert into the database here one statement for users and one for customers
-                                 */
-                            }
-                        ?>
+                        <form name="registerForm" action="<?php $_SERVER["PHP_SELF"] ?>" method="post">
+                            <p>Enter your Name: <input type="text" name="fName" value="<?php if (isset($_POST["fName"])) echo $_POST["fName"]; ?>"/></p>
+                            <p>Enter your Surname: <input type="text" name="lName" value="<?php if (isset($_POST["lName"])) echo $_POST["lName"]; ?>"/></p>
+                            <p>Enter your contact Number: <input type="text" name="contactNumber" value="<?php if (isset($_POST["contactNumber"])) echo $_POST["contactNumber"]; ?>"/></p>
+                            <p>Enter your email address:<input type="text" name="email" value="<?php if (isset($_POST["email"])) echo $_POST["email"]; ?>"/></p>
+                            <p>Enter your password:<input type="text" name="password" value="<?php if (isset($_POST["password"])) echo $_POST["password"]; ?>"/></p>
+                            <p><input type="submit" name="submit" value="Submit"/></p>
+                        </form>
                     </div> <!-- END content -->
                     <div class="cleaner"></div>
                 </div> <!-- END main -->
