@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 12, 2016 at 08:06 AM
+-- Generation Time: Oct 12, 2016 at 09:11 AM
 -- Server version: 5.7.11
 -- PHP Version: 5.6.18
 
@@ -137,7 +137,8 @@ CREATE TABLE `products` (
   `quantity` int(11) NOT NULL,
   `price` double NOT NULL,
   `instock` tinyint(1) NOT NULL,
-  `image` longblob NOT NULL
+  `image` longblob NOT NULL,
+  `name` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
