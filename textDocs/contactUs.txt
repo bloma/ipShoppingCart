@@ -13,6 +13,6 @@
 
 <h1>Trading Hours</h1>
 <p>Monday to Friday</p>
-<p>9am - 6pm </p>
+<p>9am - 5pm </p>
 <p>Saturdays</p>
 <p>10am - 4pm</p>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 12, 2016 at 09:11 AM
+-- Generation Time: Oct 13, 2016 at 06:46 AM
 -- Server version: 5.7.11
 -- PHP Version: 5.6.18
 
@@ -46,6 +46,13 @@ CREATE TABLE `customers` (
   `customerSurname` varchar(25) NOT NULL,
   `customerTelephone` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `customers`
+--
+
+INSERT INTO `customers` (`customerID`, `userID`, `customerName`, `customerSurname`, `customerTelephone`) VALUES
+  (4, 13, 'Ijaaz', 'Lagardien', '0218622742');
 
 -- --------------------------------------------------------
 
@@ -109,6 +116,24 @@ CREATE TABLE `employees` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `newproducts`
+--
+
+CREATE TABLE `newproducts` (
+  `newproductID` int(11) NOT NULL,
+  `brandID` int(11) NOT NULL,
+  `supplierID` int(11) NOT NULL,
+  `brand` varchar(25) NOT NULL,
+  `supplier` varchar(25) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `price` double NOT NULL,
+  `image` longblob NOT NULL,
+  `description` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `orderhistory`
 --
 
@@ -138,7 +163,8 @@ CREATE TABLE `products` (
   `price` double NOT NULL,
   `instock` tinyint(1) NOT NULL,
   `image` longblob NOT NULL,
-  `name` varchar(25) NOT NULL
+  `name` varchar(25) NOT NULL,
+  `description` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -178,9 +204,17 @@ CREATE TABLE `suppliers` (
 CREATE TABLE `users` (
   `UserID` int(11) NOT NULL,
   `userName` varchar(25) NOT NULL,
-  `password` varchar(25) NOT NULL,
+  `password` text NOT NULL,
   `accountType` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`UserID`, `userName`, `password`, `accountType`) VALUES
+  (13, 'ijaazlagardien@gmail.com', '577a7067410efb20a0aedef4d8674718', 'Customer'),
+  (14, 'ijaazlagardien@gmail.com', '577a7067410efb20a0aedef4d8674718', 'Customer');
 
 --
 -- Indexes for dumped tables
@@ -215,6 +249,12 @@ ALTER TABLE `departmenrts`
 --
 ALTER TABLE `employees`
   ADD PRIMARY KEY (`employeeID`);
+
+--
+-- Indexes for table `newproducts`
+--
+ALTER TABLE `newproducts`
+  ADD PRIMARY KEY (`newproductID`);
 
 --
 -- Indexes for table `orderhistory`
@@ -259,7 +299,7 @@ ALTER TABLE `brands`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `customerID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `customerID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `deliveries`
 --
@@ -275,6 +315,11 @@ ALTER TABLE `departmenrts`
 --
 ALTER TABLE `employees`
   MODIFY `employeeID` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `newproducts`
+--
+ALTER TABLE `newproducts`
+  MODIFY `newproductID` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `orderhistory`
 --
@@ -299,7 +344,7 @@ ALTER TABLE `suppliers`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
