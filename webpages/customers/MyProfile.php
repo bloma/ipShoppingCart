@@ -23,7 +23,7 @@
         <div id="bodyWrapper">
             <div id="innerWrapper">
                 <div id="header">
-                    <div id="siteTitle"><h1><a href="#">Online Shoes Store</a></h1></div>
+                    <div id="siteTitle"><h1><a href="../../index.php">AXI's sneakers</a></h1></div>
                     <div id="headerRight">
                         <?php
                             if(isset($_Session["customerLogin"]))

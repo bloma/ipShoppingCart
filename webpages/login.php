@@ -23,7 +23,7 @@
         <div id="bodyWrapper">
             <div id="innerWrapper">
                 <div id="header">
-                    <div id="siteTitle"><h1><a href="#">Online Shoes Store</a></h1></div>
+                    <div id="siteTitle"><h1><a href="../index.php">AXI's sneakers</a></h1></div>
                     <div id="headerRight">
                         <?php
                             if(isset($_Session["customerLogin"]))
@@ -93,7 +93,7 @@
                     <div id="content" class="floatRight">
                         <form action="" method = "post">
                             <p>Please enter your email address: <input type ="text" name="username"/></p>
-                            <p>Please enter your Password: <input type = "text" name ="password"/></p>
+                            <p>Please enter your Password: <input type = "password" name ="password"/></p>
                             <input type="submit" value = "login"/>
                         </form>
                     </div> <!-- END content -->

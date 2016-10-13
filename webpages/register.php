@@ -89,7 +89,7 @@
         <div id="bodyWrapper">
             <div id="innerWrapper">
                 <div id="header">
-                    <div id="siteTitle"><h1><a href="#">Online Shoes Store</a></h1></div>
+                    <div id="siteTitle"><h1><a href="../index.php">AXI's sneakers</a></h1></div>
                     <div id="headerRight">
                         <?php
                             if(isset($_Session["customerLogin"]))
@@ -161,7 +161,7 @@
                             <p>Enter your Surname: <input type="text" name="lName" value="<?php if (isset($_POST["lName"])) echo $_POST["lName"]; ?>"/></p>
                             <p>Enter your contact Number: <input type="text" name="contactNumber" value="<?php if (isset($_POST["contactNumber"])) echo $_POST["contactNumber"]; ?>"/></p>
                             <p>Enter your email address:<input type="text" name="email" value="<?php if (isset($_POST["email"])) echo $_POST["email"]; ?>"/></p>
-                            <p>Enter your password:<input type="text" name="password" value="<?php if (isset($_POST["password"])) echo $_POST["password"]; ?>"/></p>
+                            <p>Enter your password:<input type="password" name="password" value="<?php if (isset($_POST["password"])) echo $_POST["password"]; ?>"/></p>
                             <p><input type="submit" name="submit" value="Submit"/></p>
                         </form>
                     </div> <!-- END content -->
