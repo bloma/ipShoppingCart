@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 13, 2016 at 06:46 AM
+-- Generation Time: Oct 13, 2016 at 01:48 PM
 -- Server version: 5.7.11
 -- PHP Version: 5.6.18
 
@@ -33,6 +33,32 @@ CREATE TABLE `brands` (
   `supplierName` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `brands`
+--
+
+INSERT INTO `brands` (`brandID`, `supplierID`, `brandName`, `supplierName`) VALUES
+  (1, 1, 'Adidas', 'Adidas AG'),
+  (2, 2, 'Nike ', 'Nike, Inc'),
+  (3, 3, 'Reebok', 'Reebok'),
+  (4, 4, 'Reebok', 'Reebok International Ltd.'),
+  (5, 5, 'Timberland', 'Timberland LLC'),
+  (6, 6, 'Converse', 'Converse'),
+  (7, 2, 'Air Jordan', 'Nike, Inc'),
+  (8, 8, 'New Balance', 'New Balance Athletic Shoe'),
+  (9, 9, 'Vans', 'Vans'),
+  (10, 10, 'DC Shoes USA', 'DC Shoes'),
+  (11, 11, 'Lacoste', 'Lacoste'),
+  (12, 12, 'K-Swiss', 'K - Swiss, Inc'),
+  (13, 13, 'Under Armour', 'Under Amour, Inc'),
+  (14, 14, 'Saucony', 'Saucony'),
+  (15, 15, 'Superga', 'Superga'),
+  (16, 16, 'Le Coq Sportif', 'Le Coq Sportif'),
+  (17, 17, 'Asics', 'Asics'),
+  (18, 18, 'Polo', 'Ralph Lauren Corporation'),
+  (19, 19, 'Soviet', 'Soviet Denim'),
+  (20, 1, 'Yeezy', 'Adidas AG');
+
 -- --------------------------------------------------------
 
 --
@@ -46,13 +72,6 @@ CREATE TABLE `customers` (
   `customerSurname` varchar(25) NOT NULL,
   `customerTelephone` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `customers`
---
-
-INSERT INTO `customers` (`customerID`, `userID`, `customerName`, `customerSurname`, `customerTelephone`) VALUES
-  (4, 13, 'Ijaaz', 'Lagardien', '0218622742');
 
 -- --------------------------------------------------------
 
@@ -213,8 +232,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`UserID`, `userName`, `password`, `accountType`) VALUES
-  (13, 'ijaazlagardien@gmail.com', '577a7067410efb20a0aedef4d8674718', 'Customer'),
-  (14, 'ijaazlagardien@gmail.com', '577a7067410efb20a0aedef4d8674718', 'Customer');
+  (22, 'ijaazlagardien@gmail.com', '0d7b63b6d3c991f0399f59694a2563c1', 'Customer');
 
 --
 -- Indexes for dumped tables
@@ -294,12 +312,12 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `brands`
 --
 ALTER TABLE `brands`
-  MODIFY `brandID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `brandID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 --
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `customerID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `customerID` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `deliveries`
 --
@@ -344,7 +362,7 @@ ALTER TABLE `suppliers`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

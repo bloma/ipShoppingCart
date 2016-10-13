@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="860cb467-7e49-4aae-83a0-caf861d63aa7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/brands.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/customers.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/deliveries.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/departments.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/distributors.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/employees.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/newproducts.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/orderhistory.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/products.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/suppliers.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/users.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sqlScripts/createTables.sql" afterPath="$PROJECT_DIR$/sqlScripts/createTables.sql" />
     </list>
     <ignored path="ShoeStore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,56 +42,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="createTables.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sqlScripts/createTables.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2086">
-              <caret line="128" column="45" selection-start-line="128" selection-start-column="45" selection-end-line="128" selection-end-column="45" />
+            <state relative-caret-position="868">
+              <caret line="368" column="0" selection-start-line="368" selection-start-column="0" selection-end-line="368" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shoppingcart.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpages/shoppingcart.php">
+      <file leaf-file-name="deliveries.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sqlScripts/csv files/deliveries.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webpages/register.php">
+      <file leaf-file-name="departments.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sqlScripts/csv files/departments.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
-              <folding>
-                <marker date="1476346926268" expanded="true" signature="1689:1793" ph="insert into users... " />
-                <marker date="1476346926268" expanded="true" signature="1895:1952" ph="select userI... users" />
-                <marker date="1476346926268" expanded="true" signature="2364:2500" ph="insert into customers... " />
-                <marker date="1476346926268" expanded="true" signature="2995:3048" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpages/contact.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2363">
-              <caret line="139" column="50" selection-start-line="139" selection-start-column="50" selection-end-line="139" selection-end-column="50" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="products.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpages/products.php">
+      <file leaf-file-name="distributors.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sqlScripts/csv files/distributors.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="100" column="47" selection-start-line="100" selection-start-column="47" selection-end-line="100" selection-end-column="47" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="employees.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sqlScripts/csv files/employees.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newproducts.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sqlScripts/csv files/newproducts.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="orderhistory.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sqlScripts/csv files/orderhistory.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="products.csv" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sqlScripts/csv files/products.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -102,7 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/ddsmoothmenu.js" />
         <option value="$PROJECT_DIR$/css/slider.css" />
         <option value="$PROJECT_DIR$/css/slimBox.css" />
         <option value="$PROJECT_DIR$/checkout.php" />
@@ -150,9 +184,10 @@
         <option value="$PROJECT_DIR$/webpages/register.php" />
         <option value="$PROJECT_DIR$/webpages/contact.php" />
         <option value="$PROJECT_DIR$/webpages/products.php" />
-        <option value="$PROJECT_DIR$/sqlScripts/createTables.sql" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/sqlScripts/csv files/brands.csv" />
+        <option value="$PROJECT_DIR$/sqlScripts/csv files/suppliers.csv" />
+        <option value="$PROJECT_DIR$/sqlScripts/createTables.sql" />
       </list>
     </option>
   </component>
@@ -367,7 +402,7 @@
       <workItem from="1476251781349" duration="5485000" />
       <workItem from="1476277025892" duration="2409000" />
       <workItem from="1476340005651" duration="6984000" />
-      <workItem from="1476360944512" duration="797000" />
+      <workItem from="1476360944512" duration="1368000" />
     </task>
     <task id="LOCAL-00001" summary="Updated some more stuff">
       <created>1476190662608</created>
@@ -481,19 +516,26 @@
       <option name="project" value="LOCAL" />
       <updated>1476361092699</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added folder for CSV files and added brands CSV">
+      <created>1476366186545</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1476366186545</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41149000" />
+    <option name="totallyTimeSpent" value="41720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19270833" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19270833" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32629356" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3260188" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -538,63 +580,14 @@
     <MESSAGE value="minor changes to layout added store name need a new logo" />
     <MESSAGE value="added new table to database, edited contactUs txt file" />
     <MESSAGE value="updated contact page, displaying products with PHP, Hard coded,fixed register bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated contact page, displaying products with PHP, Hard coded,fixed register bug" />
+    <MESSAGE value="Added folder for CSV files and added brands CSV" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added folder for CSV files and added brands CSV" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/smoothMenu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/remove_x.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/prevlabel.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/detail.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/templatemo_image_01.jpg" />
-    <entry file="file://$PROJECT_DIR$/images/list.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/mainBg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/sidebarHeader.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/slimBox.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
@@ -830,26 +823,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/DatabaseFunctions.php" />
-    <entry file="file://$PROJECT_DIR$/sqlScripts/createTables.sql">
+    <entry file="file://$PROJECT_DIR$/webpages/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="350" column="0" selection-start-line="350" selection-start-column="0" selection-end-line="350" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1037">
+          <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+          <folding>
+            <marker date="1476346926268" expanded="true" signature="1689:1793" ph="insert into users... " />
+            <marker date="1476346926268" expanded="true" signature="1895:1952" ph="select userI... users" />
+            <marker date="1476346926268" expanded="true" signature="2364:2500" ph="insert into customers... " />
+            <marker date="1476346926268" expanded="true" signature="2995:3048" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/products.php">
+    <entry file="file://$PROJECT_DIR$/webpages/shoppingcart.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="100" column="47" selection-start-line="100" selection-start-column="47" selection-end-line="100" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2363">
-          <caret line="139" column="50" selection-start-line="139" selection-start-column="50" selection-end-line="139" selection-end-column="50" />
+        <state relative-caret-position="629">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -862,10 +852,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/shoppingcart.php">
+    <entry file="file://$PROJECT_DIR$/webpages/contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+        <state relative-caret-position="2363">
+          <caret line="139" column="50" selection-start-line="139" selection-start-column="50" selection-end-line="139" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="100" column="47" selection-start-line="100" selection-start-column="47" selection-end-line="100" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -878,16 +876,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/register.php">
+    <entry file="file://$PROJECT_DIR$/sqlScripts/csv files/suppliers.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
-          <folding>
-            <marker date="1476346926268" expanded="true" signature="1689:1793" ph="insert into users... " />
-            <marker date="1476346926268" expanded="true" signature="1895:1952" ph="select userI... users" />
-            <marker date="1476346926268" expanded="true" signature="2364:2500" ph="insert into customers... " />
-            <marker date="1476346926268" expanded="true" signature="2995:3048" ph="..." />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlScripts/csv files/users.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlScripts/csv files/customers.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlScripts/createTables.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="868">
+          <caret line="368" column="0" selection-start-line="368" selection-start-column="0" selection-end-line="368" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlScripts/csv files/deliveries.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlScripts/csv files/departments.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlScripts/csv files/distributors.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlScripts/csv files/employees.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlScripts/csv files/newproducts.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlScripts/csv files/orderhistory.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sqlScripts/csv files/products.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
