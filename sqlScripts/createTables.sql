@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.4.1
+-- version 4.5.2
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Oct 13, 2016 at 01:48 PM
--- Server version: 5.7.11
--- PHP Version: 5.6.18
+-- Host: 127.0.0.1
+-- Generation Time: Oct 13, 2016 at 07:46 PM
+-- Server version: 5.7.9
+-- PHP Version: 5.6.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -26,38 +26,14 @@ SET time_zone = "+00:00";
 -- Table structure for table `brands`
 --
 
-CREATE TABLE `brands` (
-  `brandID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `brands`;
+CREATE TABLE IF NOT EXISTS `brands` (
+  `brandID` int(11) NOT NULL AUTO_INCREMENT,
   `supplierID` int(11) NOT NULL,
   `brandName` varchar(25) NOT NULL,
-  `supplierName` varchar(25) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `brands`
---
-
-INSERT INTO `brands` (`brandID`, `supplierID`, `brandName`, `supplierName`) VALUES
-  (1, 1, 'Adidas', 'Adidas AG'),
-  (2, 2, 'Nike ', 'Nike, Inc'),
-  (3, 3, 'Reebok', 'Reebok'),
-  (4, 4, 'Reebok', 'Reebok International Ltd.'),
-  (5, 5, 'Timberland', 'Timberland LLC'),
-  (6, 6, 'Converse', 'Converse'),
-  (7, 2, 'Air Jordan', 'Nike, Inc'),
-  (8, 8, 'New Balance', 'New Balance Athletic Shoe'),
-  (9, 9, 'Vans', 'Vans'),
-  (10, 10, 'DC Shoes USA', 'DC Shoes'),
-  (11, 11, 'Lacoste', 'Lacoste'),
-  (12, 12, 'K-Swiss', 'K - Swiss, Inc'),
-  (13, 13, 'Under Armour', 'Under Amour, Inc'),
-  (14, 14, 'Saucony', 'Saucony'),
-  (15, 15, 'Superga', 'Superga'),
-  (16, 16, 'Le Coq Sportif', 'Le Coq Sportif'),
-  (17, 17, 'Asics', 'Asics'),
-  (18, 18, 'Polo', 'Ralph Lauren Corporation'),
-  (19, 19, 'Soviet', 'Soviet Denim'),
-  (20, 1, 'Yeezy', 'Adidas AG');
+  `supplierName` varchar(25) NOT NULL,
+  PRIMARY KEY (`brandID`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -65,12 +41,14 @@ INSERT INTO `brands` (`brandID`, `supplierID`, `brandName`, `supplierName`) VALU
 -- Table structure for table `customers`
 --
 
-CREATE TABLE `customers` (
-  `customerID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `customers`;
+CREATE TABLE IF NOT EXISTS `customers` (
+  `customerID` int(11) NOT NULL AUTO_INCREMENT,
   `userID` int(11) NOT NULL,
   `customerName` varchar(25) NOT NULL,
   `customerSurname` varchar(25) NOT NULL,
-  `customerTelephone` varchar(25) NOT NULL
+  `customerTelephone` varchar(25) NOT NULL,
+  PRIMARY KEY (`customerID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -79,8 +57,9 @@ CREATE TABLE `customers` (
 -- Table structure for table `deliveries`
 --
 
-CREATE TABLE `deliveries` (
-  `deliveryID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `deliveries`;
+CREATE TABLE IF NOT EXISTS `deliveries` (
+  `deliveryID` int(11) NOT NULL AUTO_INCREMENT,
   `distributorID` int(11) NOT NULL,
   `courierName` varchar(25) NOT NULL,
   `customerID` int(11) NOT NULL,
@@ -88,7 +67,8 @@ CREATE TABLE `deliveries` (
   `delieveryAddress` text NOT NULL,
   `dateDespatched` date NOT NULL,
   `dateDelivered` date NOT NULL,
-  `totalItems` int(11) NOT NULL
+  `totalItems` int(11) NOT NULL,
+  PRIMARY KEY (`deliveryID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -97,10 +77,12 @@ CREATE TABLE `deliveries` (
 -- Table structure for table `departmenrts`
 --
 
-CREATE TABLE `departmenrts` (
-  `departmentID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `departmenrts`;
+CREATE TABLE IF NOT EXISTS `departmenrts` (
+  `departmentID` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(25) NOT NULL,
-  `totalEmplpyees` int(11) NOT NULL
+  `totalEmplpyees` int(11) NOT NULL,
+  PRIMARY KEY (`departmentID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -109,7 +91,8 @@ CREATE TABLE `departmenrts` (
 -- Table structure for table `distributors`
 --
 
-CREATE TABLE `distributors` (
+DROP TABLE IF EXISTS `distributors`;
+CREATE TABLE IF NOT EXISTS `distributors` (
   `distributorID` int(11) NOT NULL,
   `companyName` varchar(25) NOT NULL,
   `contactNumber` varchar(25) NOT NULL,
@@ -123,13 +106,15 @@ CREATE TABLE `distributors` (
 -- Table structure for table `employees`
 --
 
-CREATE TABLE `employees` (
-  `employeeID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `employees`;
+CREATE TABLE IF NOT EXISTS `employees` (
+  `employeeID` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(25) NOT NULL,
   `surname` varchar(25) NOT NULL,
   `role` varchar(25) NOT NULL,
   `departmentID` int(11) NOT NULL,
-  `department` varchar(25) NOT NULL
+  `department` varchar(25) NOT NULL,
+  PRIMARY KEY (`employeeID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -138,8 +123,9 @@ CREATE TABLE `employees` (
 -- Table structure for table `newproducts`
 --
 
-CREATE TABLE `newproducts` (
-  `newproductID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `newproducts`;
+CREATE TABLE IF NOT EXISTS `newproducts` (
+  `newproductID` int(11) NOT NULL AUTO_INCREMENT,
   `brandID` int(11) NOT NULL,
   `supplierID` int(11) NOT NULL,
   `brand` varchar(25) NOT NULL,
@@ -147,7 +133,8 @@ CREATE TABLE `newproducts` (
   `quantity` int(11) NOT NULL,
   `price` double NOT NULL,
   `image` longblob NOT NULL,
-  `description` text NOT NULL
+  `description` text NOT NULL,
+  PRIMARY KEY (`newproductID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -156,14 +143,16 @@ CREATE TABLE `newproducts` (
 -- Table structure for table `orderhistory`
 --
 
-CREATE TABLE `orderhistory` (
-  `orderID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `orderhistory`;
+CREATE TABLE IF NOT EXISTS `orderhistory` (
+  `orderID` int(11) NOT NULL AUTO_INCREMENT,
   `customerID` int(11) NOT NULL,
   `productID` int(11) NOT NULL,
   `customerName` varchar(25) NOT NULL,
   `quantity` int(11) NOT NULL,
   `date` date NOT NULL,
-  `totalcost` double NOT NULL
+  `totalcost` double NOT NULL,
+  PRIMARY KEY (`orderID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -172,8 +161,9 @@ CREATE TABLE `orderhistory` (
 -- Table structure for table `products`
 --
 
-CREATE TABLE `products` (
-  `productID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `products`;
+CREATE TABLE IF NOT EXISTS `products` (
+  `productID` int(11) NOT NULL AUTO_INCREMENT,
   `brandID` int(11) NOT NULL,
   `supplierID` int(11) NOT NULL,
   `brand` varchar(25) NOT NULL,
@@ -183,7 +173,8 @@ CREATE TABLE `products` (
   `instock` tinyint(1) NOT NULL,
   `image` longblob NOT NULL,
   `name` varchar(25) NOT NULL,
-  `description` text NOT NULL
+  `description` text NOT NULL,
+  PRIMARY KEY (`productID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -192,12 +183,14 @@ CREATE TABLE `products` (
 -- Table structure for table `shoppingcart`
 --
 
-CREATE TABLE `shoppingcart` (
-  `itemID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `shoppingcart`;
+CREATE TABLE IF NOT EXISTS `shoppingcart` (
+  `itemID` int(11) NOT NULL AUTO_INCREMENT,
   `productID` int(11) NOT NULL,
   `productName` varchar(25) NOT NULL,
   `price` double NOT NULL,
-  `quantity` int(11) NOT NULL
+  `quantity` int(11) NOT NULL,
+  PRIMARY KEY (`itemID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -206,12 +199,14 @@ CREATE TABLE `shoppingcart` (
 -- Table structure for table `suppliers`
 --
 
-CREATE TABLE `suppliers` (
-  `supplierID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `suppliers`;
+CREATE TABLE IF NOT EXISTS `suppliers` (
+  `supplierID` int(11) NOT NULL AUTO_INCREMENT,
   `supplierName` varchar(25) NOT NULL,
   `contactNumber` varchar(25) NOT NULL,
   `emailAddress` varchar(25) NOT NULL,
-  `physicalAddress` text NOT NULL
+  `physicalAddress` text NOT NULL,
+  PRIMARY KEY (`supplierID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -220,149 +215,15 @@ CREATE TABLE `suppliers` (
 -- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
-  `UserID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
+  `UserID` int(11) NOT NULL AUTO_INCREMENT,
   `userName` varchar(25) NOT NULL,
   `password` text NOT NULL,
-  `accountType` varchar(25) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `accountType` varchar(25) NOT NULL,
+  PRIMARY KEY (`UserID`)
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`UserID`, `userName`, `password`, `accountType`) VALUES
-  (22, 'ijaazlagardien@gmail.com', '0d7b63b6d3c991f0399f59694a2563c1', 'Customer');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `brands`
---
-ALTER TABLE `brands`
-  ADD PRIMARY KEY (`brandID`);
-
---
--- Indexes for table `customers`
---
-ALTER TABLE `customers`
-  ADD PRIMARY KEY (`customerID`);
-
---
--- Indexes for table `deliveries`
---
-ALTER TABLE `deliveries`
-  ADD PRIMARY KEY (`deliveryID`);
-
---
--- Indexes for table `departmenrts`
---
-ALTER TABLE `departmenrts`
-  ADD PRIMARY KEY (`departmentID`);
-
---
--- Indexes for table `employees`
---
-ALTER TABLE `employees`
-  ADD PRIMARY KEY (`employeeID`);
-
---
--- Indexes for table `newproducts`
---
-ALTER TABLE `newproducts`
-  ADD PRIMARY KEY (`newproductID`);
-
---
--- Indexes for table `orderhistory`
---
-ALTER TABLE `orderhistory`
-  ADD PRIMARY KEY (`orderID`);
-
---
--- Indexes for table `products`
---
-ALTER TABLE `products`
-  ADD PRIMARY KEY (`productID`);
-
---
--- Indexes for table `shoppingcart`
---
-ALTER TABLE `shoppingcart`
-  ADD PRIMARY KEY (`itemID`);
-
---
--- Indexes for table `suppliers`
---
-ALTER TABLE `suppliers`
-  ADD PRIMARY KEY (`supplierID`);
-
---
--- Indexes for table `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`UserID`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `brands`
---
-ALTER TABLE `brands`
-  MODIFY `brandID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
---
--- AUTO_INCREMENT for table `customers`
---
-ALTER TABLE `customers`
-  MODIFY `customerID` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `deliveries`
---
-ALTER TABLE `deliveries`
-  MODIFY `deliveryID` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `departmenrts`
---
-ALTER TABLE `departmenrts`
-  MODIFY `departmentID` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `employees`
---
-ALTER TABLE `employees`
-  MODIFY `employeeID` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `newproducts`
---
-ALTER TABLE `newproducts`
-  MODIFY `newproductID` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `orderhistory`
---
-ALTER TABLE `orderhistory`
-  MODIFY `orderID` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `products`
---
-ALTER TABLE `products`
-  MODIFY `productID` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `shoppingcart`
---
-ALTER TABLE `shoppingcart`
-  MODIFY `itemID` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `suppliers`
---
-ALTER TABLE `suppliers`
-  MODIFY `supplierID` int(11) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `users`
---
-ALTER TABLE `users`
-  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
