@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="860cb467-7e49-4aae-83a0-caf861d63aa7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/customers.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/deliveries.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/departments.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/distributors.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/employees.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/newproducts.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/orderhistory.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/products.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/suppliers.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScripts/csv files/users.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sqlScripts/createTables.sql" afterPath="$PROJECT_DIR$/sqlScripts/createTables.sql" />
     </list>
     <ignored path="ShoeStore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -402,7 +391,7 @@
       <workItem from="1476251781349" duration="5485000" />
       <workItem from="1476277025892" duration="2409000" />
       <workItem from="1476340005651" duration="6984000" />
-      <workItem from="1476360944512" duration="1368000" />
+      <workItem from="1476360944512" duration="1448000" />
     </task>
     <task id="LOCAL-00001" summary="Updated some more stuff">
       <created>1476190662608</created>
@@ -523,11 +512,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476366186545</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added folder for CSV files and added brands CSV structure, and updated sql table(again)">
+      <created>1476366805332</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1476366805332</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41720000" />
+    <option name="totallyTimeSpent" value="41800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -581,7 +577,8 @@
     <MESSAGE value="added new table to database, edited contactUs txt file" />
     <MESSAGE value="updated contact page, displaying products with PHP, Hard coded,fixed register bug" />
     <MESSAGE value="Added folder for CSV files and added brands CSV" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added folder for CSV files and added brands CSV" />
+    <MESSAGE value="Added folder for CSV files and added brands CSV structure, and updated sql table(again)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added folder for CSV files and added brands CSV structure, and updated sql table(again)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
