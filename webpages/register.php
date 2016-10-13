@@ -43,27 +43,32 @@
             $userObject->setAccountType("Customer");
             $accType = $userObject->getAccountType();
             $userID;
+
             //SQL statements
             $sqlUserInsert = "insert into users (username, password,accountType) values ('$emailAddress','$hashedPassword','$accType')";
-            $sqlUserSelect = "select userID from users where username = '$emailAddress'";
-            mysqli_query($conn,$sqlUserInsert);
-            $userIDResult = mysqli_query($conn,$sqlUserSelect);
-            if (mysqli_num_rows($userIDResult) > 0)
+            if(mysqli_query($conn,$sqlUserInsert))
             {
-                $row = mysqli_fetch_assoc($userIDResult);
-                $userID = $row['userID'];
-            }
-            else{
-                echo "SQL error ".mysqli_errno($conn);
+                $sqlUserSelect = "select userID from users where username = '$emailAddress'";
+                $userIDResult = mysqli_query($conn,$sqlUserSelect);
+                if (mysqli_num_rows($userIDResult) > 0)
+                {
+                    $row = mysqli_fetch_assoc($userIDResult);
+                    $userID = $row['userID'];
+                }
+                else{
+                    echo "SQL error ".mysqli_error($conn);
+                }
             }
             $sqlCustomer = "insert into customers (userID, customerName,customerSurname,customerTelephone) values ($userID,'$firstName','$surname','$contactNumber')";
-            if((mysqli_query($conn,$sqlUserInsert)) && (mysqli_query($conn,$sqlCustomer)))
+            if(mysqli_query($conn,$sqlCustomer))
             {
+                mail($emailAddress,"Registration on AXI's Sneakers","Hi $firstName $surname\n Welcome to AXI's sneakers you have successfully registered on our service\nRegards AXI team","From: noreply@axi.co.za");
                 header("location: ../index.php");
             }
             else{
                 echo "SQL error ".mysqli_error($conn);
             }
+            $conn->close();
         }
     }
 ?>
@@ -89,7 +94,7 @@
         <div id="bodyWrapper">
             <div id="innerWrapper">
                 <div id="header">
-                    <div id="siteTitle"><h1><a href="../index.php">AXI's sneakers</a></h1></div>
+                    <div id="siteTitle"><h1><a href="#">Online Shoes Store</a></h1></div>
                     <div id="headerRight">
                         <?php
                             if(isset($_Session["customerLogin"]))

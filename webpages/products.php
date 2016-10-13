@@ -92,7 +92,19 @@
                     </div> <!-- END sidebar -->
 
                     <div id="content" class="floatRight">
-                        <p>Main Content Here</p>
+                        <?php
+                        echo "<h1>New Arrivals</h1>";
+                        for($i = 1; $i <= 12; ++$i)
+                        {
+                            echo "<div class='productBox noMarginRight'>";
+                            echo "<h3>Ut eu feugiat</h3>";
+                            echo "<img src='../images/product/01.jpg' alt='Shoes 1' />";
+                            echo "<p>Nulla rutrum neque vitae erat condimentum eget malesuada.</p>";
+                            echo "<p class='productPrice'>R150</p>";
+                            echo "</div>";
+
+                        }
+                        ?>
                     </div> <!-- END content -->
                     <div class="cleaner"></div>
                 </div> <!-- END main -->

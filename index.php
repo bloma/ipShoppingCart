@@ -106,45 +106,19 @@
                                 $('#slider').nivoSlider();
                             });
                         </script>
-                        <h1>New arrivals</h1>
-                        <div class="productBox">
-                            <h3>Ut eu feugiat</h3>
-                            <img src="images/product/01.jpg" alt="Shoes 1" />
-                            <p>Nulla rutrum neque vitae erat condimentum eget malesuada.</p>
-                            <p class="productPrice">$ 100</p>
-                        </div>
-                        <div class="productBox">
-                            <h3>Curabitur et turpis</h3>
-                            <img src="images/product/02.jpg" alt="Shoes 2" />
-                            <p>Sed congue, erat id congue vehicula.</p>
-                            <p class="productPrice">$ 80</p>
-                        </div>
-                        <div class="productBox noMarginRight">
-                            <h3>Mauris consectetur</h3>
-                            <img src="images/product/03.jpg" alt="Shoes 3" />
-                            <p>Morbi non risus vitae est vestibulum tincidunt ac eget metus.</p>
-                            <p class="productPrice">$ 60</p>
-                        </div>
-                        <div class="cleaner"></div>
+                        <?php
+                            echo "<h1>New Arrivals</h1>";
+                            for($i = 1; $i <= 12; ++$i)
+                            {
+                                echo "<div class='productBox noMarginRight'>";
+                                echo "<h3>Ut eu feugiat</h3>";
+                                echo "<img src='images/product/01.jpg' alt='Shoes 1' />";
+                                echo "<p>Nulla rutrum neque vitae erat condimentum eget malesuada.</p>";
+                                echo "<p class='productPrice'>R150</p>";
+                                echo "</div>";
 
-                        <div class="productBox">
-                            <h3>Proin volutpat</h3>
-                            <img src="images/product/04.jpg" alt="Shoes 4" />
-                            <p>Sed semper euismod dolor sit amet interdum. Phasellus in mi eros.</p>
-                            <p class="productPrice">$ 220</p>
-                        </div>
-                        <div class="productBox">
-                            <h3>Aenean tempus</h3>
-                            <img src="images/product/05.jpg" alt="Shoes 5" />
-                            <p>Maecenas porttitor erat quis leo pellentesque molestie.</p>
-                            <p class="productPrice">$ 180</p>
-                        </div>
-                        <div class="productBox noMarginRight">
-                            <h3>Nulla luctus urna</h3>
-                            <img src="images/product/06.jpg" alt="Shoes 6" />
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <p class="productPrice">$ 160</p>
-                        </div>
+                            }
+                        ?>
                     </div> <!-- END content -->
                     <div class="cleaner"></div>
                 </div> <!-- END main -->
@@ -153,7 +127,6 @@
                     <p><a href="index.php">Home</a> | <a href="webpages/about.php">About</a> | <a href="webpages/faqs.php">FAQs</a> | <a href="webpages/contact.php">Contact Us</a></p>
                     Copyright © 2016 <a href="#">Shoe Store</a>
                 </div> <!-- END of footer -->
-
             </div> <!-- END innerWrapper -->
         </div> <!-- END bodyWrapper -->
     </body>
