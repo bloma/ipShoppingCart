@@ -1,8 +1,9 @@
-<h1>Address</h1>
+<h1>Stores</h1>
 <h3>Cape Town Store</h3>
 <p>15 Kloof Street</p>
 <p>Cape Town</p>
 <p>8001</p>
+<p>Tel: 021 862 2742</p>
 
 <h3>Johannesburg Store</h3>
 <p>Shop No. LM113</p>
@@ -10,6 +11,7 @@
 <p>Hendrik Potgieter Rd</p>
 <p>Johannesburg</p>
 <p>2000</p>
+<p>011 872 6546</p>
 
 <h1>Trading Hours</h1>
 <p>Monday to Friday</p>

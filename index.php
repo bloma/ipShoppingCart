@@ -32,7 +32,7 @@
                             }
                             else if(isset($_Session["adminLogin"]))
                             {
-                                echo "<p><a href='webpages/shoppingcart.php'>My Cart</a> | <a href='webpages/checkout.php'>Checkout</a> | Hi, $adminSession | <a href='webpages/logout.php'>Logout</a></p>";
+                                echo "<p>Hi, $adminSession | <a href='webpages/logout.php'>Logout</a></p>";
                             }
                             else if(!isset($_Session["customerLogin"]) && !isset($_Session["adminLogin"]))
                             {
@@ -75,21 +75,41 @@
                             <h3>Categories</h3>
                             <div class="content">
                                 <ul class="sidebarList">
-                                    <li class='first'><a href='#'>My Profile</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Returns Policy</a></li>
-                                    <li><a href="#">I</a></li>
-                                    <li><a href="#">don't</a></li>
-                                    <li><a href="#">Know</a></li>
-                                    <li><a href="#">What</a></li>
-                                    <li><a href="#">else</a></li>
-                                    <li><a href="#">to</a></li>
-                                    <li><a href="#">Put</a></li>
-                                    <li><a href="#">Here</a></li>
-                                    <li><a href="#">Please</a></li>
-                                    <li><a href="#">Try</a></li>
-                                    <li><a href="#">to</a></li>
-                                    <li class="last"><a href="#">Add more</a></li>
+                                    <?php
+                                        if(isset($_SESSION['customerLogin']))
+                                        {
+                                            echo "<li class='first'><a href='webpages/customers/MyProfile.php'>My Profile</a></li>";
+                                            echo "<li><a href='webpages/about.php'>About us</a></li>";
+                                            echo "<li><a href='webpages/faqs.php'>FAQs</a></li>";
+                                            echo "<li><a href='webpages/contact.php'>Contact US</a></li>";
+                                            echo "<li><a href='webpages/exchangepolicy.php'>Exchange Policy</a></li>";
+                                            echo "<li><a href='webpages/privacypolicy.php'>Privacy Policy</a></li>";
+                                            echo "<li class='last'><a href='webpages/shippingpolicy.php'>Shipping Policy</a></li>";
+                                        }
+                                        else if(isset($_SESSION['adminLogin']))
+                                        {
+                                            echo "<li class='first'><a href='webpages/admin/reports/brandreport.php'>View Brands</a></li>";
+                                            echo "<li><a href='webpages/admin/reports/customerreport.php'>View Customers</a></li>";
+                                            echo "<li><a href='webpages/admin/reports/deliveriesreport.php'>View Deliveries</a></li>";
+                                            echo "<li><a href='webpages/admin/reports/departmentsreport.php'>View Departments</a></li>";
+                                            echo "<li><a href='webpages/admin/reports/distriburtorreport.php'>View Distributors</a></li>";
+                                            echo "<li><a href='webpages/admin/reports/orderhistory.php'>View Orders</a></li>";
+                                            echo "<li><a href='webpages/admin/reports/productreport.php'>View Products</a></li>";
+                                            echo "<li><a href='webpages/admin/reports/staffreport.php'>View Staff</a></li>";
+                                            echo "<li><a href='webpages/admin/reports/stockreport.php'>View Stock</a></li>";
+                                            echo "<li><a href='webpages/admin/reports/suppliersreport.php'>View Suppliers</a></li>";
+                                            echo "<li class='last'><a href='webpages/admin/reports/usersreport.php'>view Users</a></li>";
+                                        }
+                                        else
+                                        {
+                                            echo "<li class='first'><a href='webpages/about.php'>About us</a></li>";
+                                            echo "<li><a href='webpages/faqs.php'>FAQs</a></li>";
+                                            echo "<li><a href='webpages/contact.php'>Contact US</a></li>";
+                                            echo "<li><a href='webpages/exchangepolicy.php'>Exchange Policy</a></li>";
+                                            echo "<li><a href='webpages/privacypolicy.php'>Privacy Policy</a></li>";
+                                            echo "<li class='last'><a href='webpages/shippingpolicy.php'>Shipping Policy</a></li>";
+                                        }
+                                    ?>
                                 </ul>
                             </div>
                         </div>
