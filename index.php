@@ -99,10 +99,10 @@
                         <div id="sliderWrapper">
                             <div id="slider" class="shoeSlider">
                                 <?php
-                                    echo "<img src=\"images/slider/01.jpg\" alt=\"\" />";
-                                    echo "<img src=\"images/slider/02.jpg\" alt=\"\" />";
-                                    echo "<img src=\"images/slider/03.jpg\" alt=\"\" />";
-                                    echo "<img src=\"images/slider/04.jpg\" alt=\"\" />";
+                                    echo "<img src='images/slider/01.jpg' alt='' />";
+                                    echo "<img src='images/slider/02.jpg' alt='' />";
+                                    echo "<img src='images/slider/03.jpg' alt='' />";
+                                    echo "<img src='images/slider/04.jpg' alt='' />";
                                 ?>
                             </div>
                         </div>

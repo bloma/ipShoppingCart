@@ -8,6 +8,9 @@
     $contactNumber = "";
     $emailAddress = "";
     $password = "";
+    $passwordError = false;
+    $emptyFieldsError = false;
+    $invalidEmailFormat = false;
     if(isset($_POST["submit"]))
     {
         $firstName = $_POST["fName"];
@@ -17,15 +20,15 @@
         $password = $_POST["password"];
         if(empty($firstName) || empty($surname) || empty($contactNumber) || empty($emailAddress) || empty($password))
         {
-            echo "<p>All fields are required</p>";
+            $emptyFieldsError = true;
         }
-        else if((strlen($password) < 8))
+        else if(!preg_match("/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[$@$!%*?&])[A-Za-z\\d$@$!%*?&]{8,}$/i",$password))
         {
-            echo "<p>Password must be at least 8 characters</p>";
+            $passwordError = true;
         }
         else if((!filter_var($emailAddress, FILTER_VALIDATE_EMAIL)))
         {
-            echo "<p>Email Address is not valid</p>";
+            $invalidEmailFormat = true;
         }
         else
         {
@@ -62,7 +65,7 @@
             $sqlCustomer = "insert into customers (userID, customerName,customerSurname,customerTelephone) values ($userID,'$firstName','$surname','$contactNumber')";
             if(mysqli_query($conn,$sqlCustomer))
             {
-                mail($emailAddress,"Registration on AXI's Sneakers","Hi $firstName $surname\n Welcome to AXI's sneakers you have successfully registered on our service\nRegards AXI team","From: noreply@axi.co.za");
+                mail($emailAddress,"Registration on AXI's Sneakers","Hi $firstName $surname\nWelcome to AXI's sneakers you have successfully registered on our service\nRegards AXI team","From: noreply@axi.co.za");
                 header("location: ../index.php");
             }
             else{
@@ -78,7 +81,6 @@
         <link rel="stylesheet" type="text/css" href="../css/style.css">
         <link rel="stylesheet" type="text/css" href="../css/slider.css">
         <link rel="stylesheet" type="text/css" href="../css/smoothMenu.css">
-
         <script type="text/javascript" src="../js/jquery.min.js"></script>
         <script type="text/javascript" src="../js/ddsmoothmenu.js"></script>
         <script type="text/javascript">
@@ -162,13 +164,27 @@
                     </div> <!-- END sidebar -->
                     <div id="content" class="floatRight">
                         <form name="registerForm" action="<?php $_SERVER["PHP_SELF"] ?>" method="post">
-                            <p>Enter your Name: <input type="text" name="fName" value="<?php if (isset($_POST["fName"])) echo $_POST["fName"]; ?>"/></p>
-                            <p>Enter your Surname: <input type="text" name="lName" value="<?php if (isset($_POST["lName"])) echo $_POST["lName"]; ?>"/></p>
-                            <p>Enter your contact Number: <input type="text" name="contactNumber" value="<?php if (isset($_POST["contactNumber"])) echo $_POST["contactNumber"]; ?>"/></p>
-                            <p>Enter your email address:<input type="text" name="email" value="<?php if (isset($_POST["email"])) echo $_POST["email"]; ?>"/></p>
-                            <p>Enter your password:<input type="password" name="password" value="<?php if (isset($_POST["password"])) echo $_POST["password"]; ?>"/></p>
+                            <p>Enter your Name: <input type="text" name="fName" value=""/></p>
+                            <p>Enter your Surname: <input type="text" name="lName" value=""/></p>
+                            <p>Enter your contact Number: <input type="text" name="contactNumber" value=""/></p>
+                            <p>Enter your email address:<input type="text" name="email" value=""/></p>
+                            <p>Enter your password:<input type="password" name="password" value=""/></p>
                             <p><input type="submit" name="submit" value="Submit"/></p>
                         </form>
+                        <?php
+                            if($invalidEmailFormat)
+                            {
+                                echo "<p id='errors'>Email Address is not valid</p>";
+                            }
+                            else if($emptyFieldsError)
+                            {
+                                echo "<p id='errors'>All fields are required</p>";
+                            }
+                            else if($passwordError)
+                            {
+                                echo "<p id='errors'>Password must be at least 8 characters, contain one number and one special character</p>";
+                            }
+                        ?>
                     </div> <!-- END content -->
                     <div class="cleaner"></div>
                 </div> <!-- END main -->

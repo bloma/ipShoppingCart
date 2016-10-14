@@ -1,5 +1,57 @@
 <?php
     session_start();
+    include "../configuration/config.php";
+    $passwordReset = false;
+    $emailFormatError  = false;
+    $noEmailError = false;
+    function createTempPassword()
+    {
+        $alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        $numbers = "0123456789";
+        $characters = "!@#$%^&*()_+?/><";
+        $validCharacters = $alphabet . $numbers . $characters;
+        $charLength = strlen($validCharacters) - 1;
+        $password = array();
+        for($i = 0; $i< 8; $i++)
+        {
+            $n = rand(0,$charLength);
+            $password[] = $validCharacters[$n];
+        }
+        return implode($password);
+    }
+    if(isset($_POST['forgot']))
+    {
+        $email = $_POST['username'];
+        $emailFrom = "noreply@axi.co.za";
+
+        if(empty($email))
+        {
+            $noEmailError = true;
+        }
+        else if(!filter_var($email,FILTER_VALIDATE_EMAIL))
+        {
+            $emailFormatError = true;
+        }
+        else
+        {
+            $newPassword = "";
+            while (!preg_match("/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[$@$!%*?&])[A-Za-z\\d$@$!%*?&]{8,}$/i",$newPassword))
+            {
+                $newPassword = createTempPassword();
+                if(preg_match("/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[$@$!%*?&])[A-Za-z\\d$@$!%*?&]{8,}$/i",$newPassword))
+                {
+                    break;
+                }
+            }
+            mail($email,"Password reset","Hi\nYour password has been reset to ".$newPassword."\nWe suggest you login and change it immediately\nKind regards AXI Team","From: ".$emailFrom);
+            $passwordReset = true;
+        }
+
+    }
+    else if(isset($_POST['login']))
+    {
+
+    }
 ?>
 <html>
     <head>
@@ -92,10 +144,27 @@
 
                     <div id="content" class="floatRight">
                         <form action="" method = "post">
-                            <p>Please enter your email address: <input type ="text" name="username"/></p>
-                            <p>Please enter your Password: <input type = "password" name ="password"/></p>
-                            <input type="submit" value = "login"/>
+                            <div style="text-align: center;">
+                                <p>Please enter your email address</p> <input type ="text" name="username"/>
+                                <p>Please enter your Password</p><input type = "password" name ="password"/><br/>
+                                <input type="submit" value = "login" name="login"/><br/>
+                                <label>Forgot password? Click here: </label><input type="submit" value = "Forgot Password" name="forgot"/><br/>
+                            </div>
                         </form>
+                        <?php
+                            if($passwordReset)
+                            {
+                                echo "<p>An email has been sent to $email containing your new <strong>temporary</strong> password</p>";
+                            }
+                            if($emailFormatError)
+                            {
+                                echo "<p id='errors'>Email address is invalid</p>";
+                            }
+                            else if($noEmailError)
+                            {
+                                echo "<p id='errors'>Email address is required</p>";
+                            }
+                        ?>
                     </div> <!-- END content -->
                     <div class="cleaner"></div>
                 </div> <!-- END main -->
