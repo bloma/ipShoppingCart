@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    include "configuration/session.php";
 ?>
 <html>
     <head>
@@ -28,11 +28,11 @@
                         <?php
                             if(isset($_Session["customerLogin"]))
                             {
-                                echo "<p><a href='webpages/shoppingcart.php'>My Cart</a> | <a href='webpages/checkout.php'>Checkout</a> | Hi, $customerSession | <a href='webpages/logout.php'>Logout</a></p>";
+                                echo "<p>Hi, $customerSession | <a href='webpages/shoppingcart.php'>My Cart</a> | <a href='webpages/checkout.php'>Checkout</a> | <a href='webpages/logout.php'>Logout</a></p>";
                             }
                             else if(isset($_Session["adminLogin"]))
                             {
-                                echo "<p>Hi, $adminSession | <a href='webpages/logout.php'>Logout</a></p>";
+                                echo "<p>Hi, $adminName  | <a href='webpages/logout.php'>Logout</a></p>";
                             }
                             else if(!isset($_Session["customerLogin"]) && !isset($_Session["adminLogin"]))
                             {

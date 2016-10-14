@@ -1,10 +1,19 @@
 <?php
-    session_start();
     include "../configuration/config.php";
-    include "../classes/SqlFunctions.php";
+    session_start();
+
     $passwordReset = false;
     $emailFormatError  = false;
     $noEmailError = false;
+    $invalidLogin = false;
+    $email ="";
+    $myPassword = "";
+
+    if(class_exists("SqlFunctions"))
+    {
+        $sqlFunctions = new SqlFunctions();
+    }
+
     function createTempPassword()
     {
         $alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -44,10 +53,7 @@
                     break;
                 }
             }
-            if(class_exists("SqlFunctions"))
-            {
-                $sqlFunctions = new SqlFunctions();
-            }
+
             $hashed = md5($newPassword);
             $sqlFunctions->resetPassword($conn,$hashed,$email);
             mail($email,"Password reset","Hi\nYour password has been reset to ".$newPassword."\nWe suggest you login and change it immediately\nKind regards AXI Team","From: ".$emailFrom);
@@ -57,6 +63,18 @@
     }
     else if(isset($_POST['login']))
     {
+        $loginType = "";
+        $email = mysqli_real_escape_string($conn,$_POST['username']);
+        $myPassword = mysqli_real_escape_string($conn,$_POST['password']);
+        $hashed = md5($myPassword);
+        $sql = "select userid from users where userName = '$email' and password = '$hashed'";
+        $result = mysqli_query($conn,$sql);
+        $count =  mysqli_num_rows($result);
+        if($count == 1)
+        {
+            $_SESSION["loggedIn"] = $email;
+            header("Location: ../index.php");
+        }
 
     }
 ?>
@@ -190,6 +208,10 @@
                             else if($noEmailError)
                             {
                                 echo "<p id='errors'>Email address is required</p>";
+                            }
+                            else if($invalidLogin)
+                            {
+                                echo "<p id='errors'>Username or password is incorrect</p>";
                             }
                         ?>
                     </div> <!-- END content -->

@@ -42,6 +42,13 @@ class SqlFunctions
             $e->getMessage();
         }
     }
+
+    public function loginUser($conn,$email, $password)
+    {
+        $sqlLogin = "select * from users where UserName = '$email' AND  Password = '$password'";
+        $result = mysqli_query($conn,$sqlLogin);;
+        return $result;
+    }
 }
 
 ?>
