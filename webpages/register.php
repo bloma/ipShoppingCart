@@ -3,6 +3,7 @@
     include "../configuration/config.php";
     include "../classes/Customer.php";
     include "../classes/User.php";
+    include "../classes/SqlFunctions.php";
     $firstName = "";
     $surname = "";
     $contactNumber = "";
@@ -32,10 +33,11 @@
         }
         else
         {
-            if((class_exists("Customer")) && (class_exists("User")))
+            if((class_exists("Customer")) && (class_exists("User")) && class_exists("SqlFunctions"))
             {
                 $customerObject = new Customer();
                 $userObject = new User();
+                $sqlFunctions = new SqlFunctions();
             }
             $hashedPassword = md5($password);
             $customerObject->setCustomerName($firstName);
@@ -46,32 +48,13 @@
             $userObject->setAccountType("Customer");
             $accType = $userObject->getAccountType();
             $userID;
+            try{
+                $sqlFunctions->registerUser($conn,$emailAddress,$hashedPassword,$accType,$userID,$firstName,$surname,$contactNumber);
+            }catch (Exception $e)
+            {
+                $e->getMessage();
+            }
 
-            //SQL statements
-            $sqlUserInsert = "insert into users (username, password,accountType) values ('$emailAddress','$hashedPassword','$accType')";
-            if(mysqli_query($conn,$sqlUserInsert))
-            {
-                $sqlUserSelect = "select userID from users where username = '$emailAddress'";
-                $userIDResult = mysqli_query($conn,$sqlUserSelect);
-                if (mysqli_num_rows($userIDResult) > 0)
-                {
-                    $row = mysqli_fetch_assoc($userIDResult);
-                    $userID = $row['userID'];
-                }
-                else{
-                    echo "SQL error ".mysqli_error($conn);
-                }
-            }
-            $sqlCustomer = "insert into customers (userID, customerName,customerSurname,customerTelephone) values ($userID,'$firstName','$surname','$contactNumber')";
-            if(mysqli_query($conn,$sqlCustomer))
-            {
-                mail($emailAddress,"Registration on AXI's Sneakers","Hi $firstName $surname\nWelcome to AXI's sneakers you have successfully registered on our service\nRegards AXI team","From: noreply@axi.co.za");
-                header("location: ../index.php");
-            }
-            else{
-                echo "SQL error ".mysqli_error($conn);
-            }
-            $conn->close();
         }
     }
 ?>
@@ -163,14 +146,14 @@
                         </div>
                     </div> <!-- END sidebar -->
                     <div id="content" class="floatRight">
-                        <form name="registerForm" action="<?php $_SERVER["PHP_SELF"] ?>" method="post">
-                            <p>Enter your Name: <input type="text" name="fName" value=""/></p>
-                            <p>Enter your Surname: <input type="text" name="lName" value=""/></p>
-                            <p>Enter your contact Number: <input type="text" name="contactNumber" value=""/></p>
-                            <p>Enter your email address:<input type="text" name="email" value=""/></p>
-                            <p>Enter your password:<input type="password" name="password" value=""/></p>
-                            <p><input type="submit" name="submit" value="Submit"/></p>
-                        </form>
+                            <form name="registerForm" action="<?php $_SERVER["PHP_SELF"] ?>" method="post">
+                                <p>Enter your Name:<input type="text" name="fName" value=""/></p>
+                                <p>Enter your Surname:<input type="text" name="lName" value=""/></p>
+                                <p>Enter your contact Number:<input type="text" name="contactNumber" value=""/></p>
+                                <p>Enter your email address: <input type="text" name="email" value=""/></p>
+                                <p>Enter your password:<input type="password" name="password" value=""/></p>
+                                <p><input type="submit" name="submit" value="Submit"/></p>
+                            </form>
                         <?php
                             if($invalidEmailFormat)
                             {

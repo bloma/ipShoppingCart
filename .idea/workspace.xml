@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="860cb467-7e49-4aae-83a0-caf861d63aa7" name="Default" comment="added forgot password feature, added validation to register user">
+    <list default="true" id="860cb467-7e49-4aae-83a0-caf861d63aa7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/SqlFunctions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/login.php" afterPath="$PROJECT_DIR$/webpages/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sqlScripts/createTables.sql" afterPath="$PROJECT_DIR$/sqlScripts/createTables.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/register.php" afterPath="$PROJECT_DIR$/webpages/register.php" />
     </list>
     <ignored path="ShoeStore.iws" />
@@ -45,16 +45,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-113">
-              <caret line="105" column="34" selection-start-line="105" selection-start-column="34" selection-end-line="105" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webpages/login.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,28 +80,39 @@
       <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webpages/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+            <state relative-caret-position="731">
+              <caret line="51" column="133" selection-start-line="51" selection-start-column="133" selection-end-line="51" selection-end-column="133" />
               <folding>
-                <marker date="1476457369835" expanded="true" signature="1800:1904" ph="insert into users... " />
-                <marker date="1476457369835" expanded="true" signature="2006:2063" ph="select userI... users" />
-                <marker date="1476457369835" expanded="true" signature="2475:2611" ph="insert into customers... " />
-                <marker date="1476457369835" expanded="true" signature="3094:3158" ph="..." />
-                <marker date="1476457369835" expanded="true" signature="3105:3158" ph="..." />
-                <marker date="1476457369835" expanded="true" signature="5384:5425" ph="..." />
-                <marker date="1476457369835" expanded="true" signature="8093:9566" ph="..." />
-                <marker date="1476457369835" expanded="true" signature="9711:9778" ph="..." />
+                <marker date="1476458849975" expanded="true" signature="2139:2203" ph="..." />
+                <marker date="1476458849975" expanded="true" signature="2150:2203" ph="..." />
+                <marker date="1476458849975" expanded="true" signature="4429:4470" ph="..." />
+                <marker date="1476458849975" expanded="true" signature="7138:8641" ph="..." />
+                <marker date="1476458849975" expanded="true" signature="8786:8853" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
+      <file leaf-file-name="createTables.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sqlScripts/createTables.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="274" column="7" selection-start-line="274" selection-start-column="7" selection-end-line="274" selection-end-column="7" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SqlFunctions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/SqlFunctions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+              <folding>
+                <marker date="1476458502956" expanded="true" signature="223:327" ph="insert into users... " />
+                <marker date="1476458502956" expanded="true" signature="417:474" ph="select userI... users" />
+                <marker date="1476458502956" expanded="true" signature="876:1012" ph="insert into customers... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,7 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/faqs.php" />
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/register.php" />
         <option value="$PROJECT_DIR$/classes/Customer.php" />
@@ -158,7 +158,6 @@
         <option value="$PROJECT_DIR$/classes/DatabaseFunctions.php" />
         <option value="$PROJECT_DIR$/sqlScripts/csv files/brands.csv" />
         <option value="$PROJECT_DIR$/sqlScripts/csv files/suppliers.csv" />
-        <option value="$PROJECT_DIR$/sqlScripts/createTables.sql" />
         <option value="$PROJECT_DIR$/configuration/config.php" />
         <option value="$PROJECT_DIR$/webpages/shoppingcart.php" />
         <option value="$PROJECT_DIR$/webpages/shippingpolicy.php" />
@@ -181,7 +180,9 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/webpages/login.php" />
+        <option value="$PROJECT_DIR$/classes/SqlFunctions.php" />
         <option value="$PROJECT_DIR$/webpages/register.php" />
+        <option value="$PROJECT_DIR$/sqlScripts/createTables.sql" />
       </list>
     </option>
   </component>
@@ -257,24 +258,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sqlScripts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ShoeStore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ShoeStore" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sqlScripts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="csv files" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -385,7 +368,7 @@
       <workItem from="1476340005651" duration="6984000" />
       <workItem from="1476360944512" duration="1448000" />
       <workItem from="1476431601437" duration="2025000" />
-      <workItem from="1476450958557" duration="6590000" />
+      <workItem from="1476450958557" duration="8819000" />
     </task>
     <task id="LOCAL-00001" summary="Updated some more stuff">
       <created>1476190662608</created>
@@ -520,11 +503,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476433642817</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="added forgot password feature, added validation to register user, added error message display in css, set login UI to center of page">
+      <created>1476457614207</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1476457614207</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50415000" />
+    <option name="totallyTimeSpent" value="52644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -580,20 +570,14 @@
     <MESSAGE value="Added folder for CSV files and added brands CSV" />
     <MESSAGE value="Added folder for CSV files and added brands CSV structure, and updated sql table(again)" />
     <MESSAGE value="Updated UI, added data source made a few code tweaks and added comments to template CSS and JScript files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated UI, added data source made a few code tweaks and added comments to template CSS and JScript files" />
+    <MESSAGE value="added forgot password feature, added validation to register user, added error message display in css, set login UI to center of page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added forgot password feature, added validation to register user, added error message display in css, set login UI to center of page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/configuration/customerSession.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpages/admin/customerreports.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -847,7 +831,7 @@
         <state relative-caret-position="170">
           <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -898,26 +882,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configuration/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/slider.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="274" column="7" selection-start-line="274" selection-start-column="7" selection-end-line="274" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -934,6 +902,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configuration/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="274" column="7" selection-start-line="274" selection-start-column="7" selection-end-line="274" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -978,25 +962,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sqlScripts/createTables.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/SqlFunctions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+          <folding>
+            <marker date="1476458502956" expanded="true" signature="223:327" ph="insert into users... " />
+            <marker date="1476458502956" expanded="true" signature="417:474" ph="select userI... users" />
+            <marker date="1476458502956" expanded="true" signature="876:1012" ph="insert into customers... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpages/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+        <state relative-caret-position="731">
+          <caret line="51" column="133" selection-start-line="51" selection-start-column="133" selection-end-line="51" selection-end-column="133" />
           <folding>
-            <marker date="1476457369835" expanded="true" signature="1800:1904" ph="insert into users... " />
-            <marker date="1476457369835" expanded="true" signature="2006:2063" ph="select userI... users" />
-            <marker date="1476457369835" expanded="true" signature="2475:2611" ph="insert into customers... " />
-            <marker date="1476457369835" expanded="true" signature="3094:3158" ph="..." />
-            <marker date="1476457369835" expanded="true" signature="3105:3158" ph="..." />
-            <marker date="1476457369835" expanded="true" signature="5384:5425" ph="..." />
-            <marker date="1476457369835" expanded="true" signature="8093:9566" ph="..." />
-            <marker date="1476457369835" expanded="true" signature="9711:9778" ph="..." />
+            <marker date="1476458849975" expanded="true" signature="2139:2203" ph="..." />
+            <marker date="1476458849975" expanded="true" signature="2150:2203" ph="..." />
+            <marker date="1476458849975" expanded="true" signature="4429:4470" ph="..." />
+            <marker date="1476458849975" expanded="true" signature="7138:8641" ph="..." />
+            <marker date="1476458849975" expanded="true" signature="8786:8853" ph="..." />
           </folding>
         </state>
       </provider>
