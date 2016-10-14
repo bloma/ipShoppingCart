@@ -47,14 +47,13 @@
             $userObject->setPassword($hashedPassword);
             $userObject->setAccountType("Customer");
             $accType = $userObject->getAccountType();
-            $userID;
-            try{
+            $userID = 0;
+           try{
                 $sqlFunctions->registerUser($conn,$emailAddress,$hashedPassword,$accType,$userID,$firstName,$surname,$contactNumber);
             }catch (Exception $e)
             {
                 $e->getMessage();
             }
-
         }
     }
 ?>

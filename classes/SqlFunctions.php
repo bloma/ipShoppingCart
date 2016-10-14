@@ -31,6 +31,17 @@ class SqlFunctions
                 $conn->close();
         }
     }
+
+    public function resetPassword($conn,$newPassword, $email)
+    {
+        $sqlQueryUpdate = "UPDATE USERS set Password = '$newPassword' WHERE UserName = '$email'";
+        try{
+            mysqli_query($conn,$sqlQueryUpdate);
+        }catch (Exception $e)
+        {
+            $e->getMessage();
+        }
+    }
 }
 
 ?>

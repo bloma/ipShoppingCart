@@ -1,6 +1,7 @@
 <?php
     session_start();
     include "../configuration/config.php";
+    include "../classes/SqlFunctions.php";
     $passwordReset = false;
     $emailFormatError  = false;
     $noEmailError = false;
@@ -43,6 +44,12 @@
                     break;
                 }
             }
+            if(class_exists("SqlFunctions"))
+            {
+                $sqlFunctions = new SqlFunctions();
+            }
+            $hashed = md5($newPassword);
+            $sqlFunctions->resetPassword($conn,$hashed,$email);
             mail($email,"Password reset","Hi\nYour password has been reset to ".$newPassword."\nWe suggest you login and change it immediately\nKind regards AXI Team","From: ".$emailFrom);
             $passwordReset = true;
         }
@@ -154,7 +161,7 @@
                         <?php
                             if($passwordReset)
                             {
-                                echo "<p>An email has been sent to $email containing your new <strong>temporary</strong> password</p>";
+                                echo "<p>An email has been sent to $email containing your new temporary password</p>";
                             }
                             if($emailFormatError)
                             {
