@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="860cb467-7e49-4aae-83a0-caf861d63aa7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration/config.php" afterPath="$PROJECT_DIR$/configuration/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/slider.css" afterPath="$PROJECT_DIR$/css/slider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/slimBox.css" afterPath="$PROJECT_DIR$/css/slimBox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/smoothMenu.css" afterPath="$PROJECT_DIR$/css/smoothMenu.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ddsmoothmenu.js" afterPath="$PROJECT_DIR$/js/ddsmoothmenu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery-1.4.3.min.js" afterPath="$PROJECT_DIR$/js/jquery-1.4.3.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.min.js" afterPath="$PROJECT_DIR$/js/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.nivo.slider.pack.js" afterPath="$PROJECT_DIR$/js/jquery.nivo.slider.pack.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/slimbox2.js" afterPath="$PROJECT_DIR$/js/slimbox2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/about.php" afterPath="$PROJECT_DIR$/webpages/about.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/checkout.php" afterPath="$PROJECT_DIR$/webpages/checkout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/contact.php" afterPath="$PROJECT_DIR$/webpages/contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/exchangepolicy.php" afterPath="$PROJECT_DIR$/webpages/exchangepolicy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/faqs.php" afterPath="$PROJECT_DIR$/webpages/faqs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/login.php" afterPath="$PROJECT_DIR$/webpages/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/privacypolicy.php" afterPath="$PROJECT_DIR$/webpages/privacypolicy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/products.php" afterPath="$PROJECT_DIR$/webpages/products.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/register.php" afterPath="$PROJECT_DIR$/webpages/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/searchresults.php" afterPath="$PROJECT_DIR$/webpages/searchresults.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/shippingpolicy.php" afterPath="$PROJECT_DIR$/webpages/shippingpolicy.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/shoppingcart.php" afterPath="$PROJECT_DIR$/webpages/shoppingcart.php" />
     </list>
     <ignored path="ShoeStore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -365,7 +341,7 @@
       <workItem from="1476277025892" duration="2409000" />
       <workItem from="1476340005651" duration="6984000" />
       <workItem from="1476360944512" duration="1448000" />
-      <workItem from="1476431601437" duration="1937000" />
+      <workItem from="1476431601437" duration="2025000" />
     </task>
     <task id="LOCAL-00001" summary="Updated some more stuff">
       <created>1476190662608</created>
@@ -493,11 +469,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476366805332</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Updated UI, added data source made a few code tweaks and added comments to template CSS and JScript files">
+      <created>1476433642817</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1476433642817</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43737000" />
+    <option name="totallyTimeSpent" value="43825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -552,7 +535,8 @@
     <MESSAGE value="updated contact page, displaying products with PHP, Hard coded,fixed register bug" />
     <MESSAGE value="Added folder for CSV files and added brands CSV" />
     <MESSAGE value="Added folder for CSV files and added brands CSV structure, and updated sql table(again)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added folder for CSV files and added brands CSV structure, and updated sql table(again)" />
+    <MESSAGE value="Updated UI, added data source made a few code tweaks and added comments to template CSS and JScript files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated UI, added data source made a few code tweaks and added comments to template CSS and JScript files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
