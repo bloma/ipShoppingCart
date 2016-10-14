@@ -49,7 +49,12 @@
                             <li><a href="index.php" class="selected">Home</a></li>
                             <li><a href="webpages/products.php">Products</a></li>
                             <li><a href="webpages/checkout.php">Checkout</a></li>
-                            <li><a href="webpages/customers/MyProfile.php">My Profile</a></li>
+                            <?php
+                                if(isset($_SESSION["customerLogin"]))
+                                {
+                                    echo "<li><a href='webpages/customers/MyProfile.php'>My profile</a></li>";
+                                }
+                            ?>
                             <li><a href="webpages/about.php">About</a></li>
                             <li><a href="webpages/contact.php">Contact Us</a></li>
                         </ul>
@@ -58,7 +63,7 @@
                     <!-- We could use this to search for products -->
                     <div id="search">
                         <form action="webpages/searchresults.php" method="post">
-                            <input type="text" value=" " name="keyword" id="keyword" title="keyword"  class="txtSearch" />
+                            <input type="text" value="" name="keyword" id="keyword" title="keyword"  class="txtSearch" />
                             <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="subBtn"  />
                         </form>
                     </div> <!-- END Search -->
@@ -93,10 +98,12 @@
                     <div id="content" class="floatRight">
                         <div id="sliderWrapper">
                             <div id="slider" class="shoeSlider">
-                                <img src="images/slider/02.jpg" alt="" />
-                                <a href="#"><img src="images/slider/01.jpg" alt=""/></a>
-                                <img src="images/slider/03.jpg" alt="" />
-                                <img src="images/slider/04.jpg" alt=""/>
+                                <?php
+                                    echo "<img src=\"images/slider/01.jpg\" alt=\"\" />";
+                                    echo "<img src=\"images/slider/02.jpg\" alt=\"\" />";
+                                    echo "<img src=\"images/slider/03.jpg\" alt=\"\" />";
+                                    echo "<img src=\"images/slider/04.jpg\" alt=\"\" />";
+                                ?>
                             </div>
                         </div>
                         <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
@@ -116,16 +123,16 @@
                                 echo "<p>Nulla rutrum neque vitae erat condimentum eget malesuada.</p>";
                                 echo "<p class='productPrice'>R150</p>";
                                 echo "</div>";
-
                             }
                         ?>
                     </div> <!-- END content -->
                     <div class="cleaner"></div>
                 </div> <!-- END main -->
-
                 <div id="footer">
-                    <p><a href="index.php">Home</a> | <a href="webpages/about.php">About</a> | <a href="webpages/faqs.php">FAQs</a> | <a href="webpages/contact.php">Contact Us</a></p>
-                    Copyright © 2016 <a href="#">Shoe Store</a>
+                    <?php
+                        echo"<p><a href='index.php'>Home</a> | <a href='webpages/about.php'>About</a> | <a href='webpages/faqs.php'>FAQS</a> | <a href='webpages/contact.php'>Contact Us</a></p>";
+                        echo "<p>Copyright © 2016 <a href='index.php'>AXI's Sneakers</a></p>";
+                    ?>
                 </div> <!-- END of footer -->
             </div> <!-- END innerWrapper -->
         </div> <!-- END bodyWrapper -->

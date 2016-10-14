@@ -1,3 +1,9 @@
+
+/**
+ * The code contained within this file was not written by the Ijaaz, Aphiwe or Xolela
+ * It was provided with a template
+ */
+
 body {
     margin: 0;
     padding: 0;
@@ -206,6 +212,8 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
     top:0;
     left:0;
     display:none;
+    width: 680px;
+    height: 300px;
 }
 #slider a {
     border:0;

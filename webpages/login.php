@@ -101,8 +101,10 @@
                 </div> <!-- END main -->
 
                 <div id="footer">
-                    <p><a href="../index.php">Home</a> | <a href="about.php">About</a> | <a href="faqs.php">FAQs</a> | <a href="contact.php">Contact Us</a></p>
-                    Copyright © 2016 <a href="#">Shoe Store</a>
+                     <?php
+                        echo"<p><a href='../index.php'>Home</a> | <a href='about.php'>About</a> | <a href='faqs.php'>FAQS</a> | <a href='contact.php'>Contact Us</a></p>";
+                        echo "<p>Copyright © 2016 <a href='../index.php'>AXI's Sneakers</a></p>";
+                    ?>
                 </div> <!-- END of footer -->
 
             </div> <!-- END innerWrapper -->
