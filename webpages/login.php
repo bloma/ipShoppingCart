@@ -1,5 +1,6 @@
 <?php
     include "../configuration/config.php";
+    include "../classes/SqlFunctions.php";
     session_start();
 
     $passwordReset = false;
@@ -64,18 +65,27 @@
     else if(isset($_POST['login']))
     {
         $loginType = "";
-        $email = mysqli_real_escape_string($conn,$_POST['username']);
-        $myPassword = mysqli_real_escape_string($conn,$_POST['password']);
+        $email = $_POST['username'];
+        $myPassword = $_POST['password'];
         $hashed = md5($myPassword);
-        $sql = "select userid from users where userName = '$email' and password = '$hashed'";
+        $sql = "select AccountType from users where userName = '$email' and password = '$hashed'";
         $result = mysqli_query($conn,$sql);
-        $count =  mysqli_num_rows($result);
-        if($count == 1)
+        $accType = "";
+        if(mysqli_num_rows($result) >0)
         {
-            $_SESSION["loggedIn"] = $email;
+            while ($row = mysqli_fetch_assoc($result))
+            {
+                $accType = $row["AccountType"];
+            }
+        }
+        else{
+            echo mysqli_error($conn);
+        }
+        if($accType = "Admin")
+        {
+            $_SESSION["adminLogin"] = "Admin";
             header("Location: ../index.php");
         }
-
     }
 ?>
 <html>

@@ -1,5 +1,5 @@
 <?php
-    include "configuration/session.php";
+    session_start();
 ?>
 <html>
     <head>
@@ -26,13 +26,14 @@
                     <div id="siteTitle"><h1><a href="index.php">AXI's sneakers</a></h1></div>
                     <div id="headerRight">
                         <?php
+
                             if(isset($_Session["customerLogin"]))
                             {
                                 echo "<p>Hi, $customerSession | <a href='webpages/shoppingcart.php'>My Cart</a> | <a href='webpages/checkout.php'>Checkout</a> | <a href='webpages/logout.php'>Logout</a></p>";
                             }
                             else if(isset($_Session["adminLogin"]))
                             {
-                                echo "<p>Hi, $adminName  | <a href='webpages/logout.php'>Logout</a></p>";
+                                echo "<p>Hi, | <a href='webpages/logout.php'>Logout</a></p>";
                             }
                             else if(!isset($_Session["customerLogin"]) && !isset($_Session["adminLogin"]))
                             {
