@@ -133,7 +133,7 @@ CREATE TABLE IF NOT EXISTS `newproducts` (
   `ProductDescription` text NOT NULL,
   `ProductPrice` double NOT NULL,
   `Brand` varchar(25) NOT NULL,
-  `Supplier` int(11) NOT NULL,
+  `Supplier` varchar(25) NOT NULL,
   `Quantity` int(11) NOT NULL,
   `Image` longblob NOT NULL,
   PRIMARY KEY (`NewProductD`)
