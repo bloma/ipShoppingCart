@@ -83,13 +83,12 @@
                                         }
                                         else if(isset($_SESSION['adminLogin']))
                                         {
-                                            echo "<li class='first'><a href='admin/reports/brandreport.php'>View Brands</a></li>";
+                                            echo "<li class='first'><a href='../admin/reports/brandreport.php'>View Brands</a></li>";
                                             echo "<li><a href='../admin/reports/customerreport.php'>View Customers</a></li>";
                                             echo "<li><a href='../admin/reports/deliveriesreport.php'>View Deliveries</a></li>";
                                             echo "<li><a href='../admin/reports/departmentsreport.php'>View Departments</a></li>";
                                             echo "<li><a href='../admin/reports/distriburtorreport.php'>View Distributors</a></li>";
                                             echo "<li><a href='../admin/reports/orderhistory.php'>View Orders</a></li>";
-                                            echo "<li><a href='../admin/reports/productreport.php'>View Products</a></li>";
                                             echo "<li><a href='../admin/reports/staffreport.php'>View Staff</a></li>";
                                             echo "<li><a href='../admin/reports/stockreport.php'>View Stock</a></li>";
                                             echo "<li><a href='../admin/reports/suppliersreport.php'>View Suppliers</a></li>";

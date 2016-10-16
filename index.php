@@ -95,7 +95,6 @@
                                             echo "<li><a href='webpages/admin/reports/departmentsreport.php'>View Departments</a></li>";
                                             echo "<li><a href='webpages/admin/reports/distriburtorreport.php'>View Distributors</a></li>";
                                             echo "<li><a href='webpages/admin/reports/orderhistory.php'>View Orders</a></li>";
-                                            echo "<li><a href='webpages/admin/reports/productreport.php'>View Products</a></li>";
                                             echo "<li><a href='webpages/admin/reports/staffreport.php'>View Staff</a></li>";
                                             echo "<li><a href='webpages/admin/reports/stockreport.php'>View Stock</a></li>";
                                             echo "<li><a href='webpages/admin/reports/suppliersreport.php'>View Suppliers</a></li>";

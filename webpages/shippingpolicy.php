@@ -89,7 +89,6 @@ session_start();
                                             echo "<li><a href='admin/reports/departmentsreport.php'>View Departments</a></li>";
                                             echo "<li><a href='admin/reports/distriburtorreport.php'>View Distributors</a></li>";
                                             echo "<li><a href='admin/reports/orderhistory.php'>View Orders</a></li>";
-                                            echo "<li><a href='admin/reports/productreport.php'>View Products</a></li>";
                                             echo "<li><a href='admin/reports/staffreport.php'>View Staff</a></li>";
                                             echo "<li><a href='admin/reports/stockreport.php'>View Stock</a></li>";
                                             echo "<li><a href='admin/reports/suppliersreport.php'>View Suppliers</a></li>";
