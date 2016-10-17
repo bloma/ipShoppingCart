@@ -139,7 +139,7 @@
                             {
                                 echo "<div class='productBox noMarginRight'>";
                                 echo "<h3>Ut eu feugiat</h3>";
-                                echo "<img src='images/product/02.jpg' alt='Shoes 1' />";
+                                echo "<img src='images/product/01.jpg' alt='Shoes 1' />";
                                 echo "<p>Nulla rutrum neque vitae erat condimentum eget malesuada.</p>";
                                 echo "<p class='productPrice'>R150</p>";
                                 echo "</div>";

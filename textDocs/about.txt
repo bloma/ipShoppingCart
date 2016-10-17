@@ -2,16 +2,18 @@
 <h2>Company Background</h2>
 <p>Group Members</p>
 <ul class="factList">
-        	<li>Ijaaz Lagardien</li>
-            <li>Aphiwe Blom</li>
-            <li>Xolela Masebeni</li>
+    <li>Ijaaz Lagardien</li>
+    <li>Aphiwe Blom</li>
+    <li>Xolela Masebeni</li>
 </ul>
 
 <p>Hi</p>
 
-<p>We’re AXI's Sneakers, and we’ve built our business on the simple principle that our customers come first.</P>
-<p>With two stores in South Africa we are a brand with growing potential a brand that has grown from strength to strength thanks to our loyal clientele</p>
-<p>We have always done the most to get you those brands you love and at very affordable prices</p>
-<p>and we will continue to bring you those brands for a very long time</p>
+<p>
+At AXI's Sneakers it has always been our mission to deliver the best to our clients, by importing the best brands direct from all over the world
+We have always put our clientele first and we will continue to do so for a long timing coming</p>
+
+<p>With two stores in South Africa's biggest cities the AXI brand has established itself and it will continue to grow from strength to strength in the years to come
+</p>
 <p>Thank you</p>
 <p>AXI Sneakers staff</p>
