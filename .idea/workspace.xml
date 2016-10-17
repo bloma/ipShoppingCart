@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="860cb467-7e49-4aae-83a0-caf861d63aa7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/SqlFunctions.php" afterPath="$PROJECT_DIR$/classes/SqlFunctions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sqlScripts/createTables.sql" afterPath="$PROJECT_DIR$/sqlScripts/createTables.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/brandreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/brandreport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/customerreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/customerreport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/deliveriesreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/deliveriesreport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/departmentsreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/departmentsreport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/distriburtorreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/distriburtorreport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/orderhistory.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/orderhistory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/staffreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/staffreport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/stockreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/stockreport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/suppliersreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/suppliersreport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/usersreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/usersreport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/customers/MyProfile.php" afterPath="$PROJECT_DIR$/webpages/customers/MyProfile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/login.php" afterPath="$PROJECT_DIR$/webpages/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/register.php" afterPath="$PROJECT_DIR$/webpages/register.php" />
-    </list>
+    <list default="true" id="860cb467-7e49-4aae-83a0-caf861d63aa7" name="Default" comment="" />
     <ignored path="ShoeStore.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -77,74 +58,7 @@
     <favorites_list name="ShoeStore" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="SqlFunctions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/SqlFunctions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-317">
-              <caret line="131" column="56" selection-start-line="131" selection-start-column="56" selection-end-line="131" selection-end-column="56" />
-              <folding>
-                <marker date="1476730562757" expanded="true" signature="553:657" ph="insert into users... " />
-                <marker date="1476730562757" expanded="true" signature="747:804" ph="select userI... users" />
-                <marker date="1476730562757" expanded="true" signature="1166:1302" ph="insert into customers... " />
-                <marker date="1476730562757" expanded="true" signature="1985:2053" ph="UPDATE USERS... " />
-                <marker date="1476730562757" expanded="true" signature="2441:2509" ph="UPDATE USERS... " />
-                <marker date="1476730562757" expanded="true" signature="3525:3548" ph="Select * fro... customers" />
-                <marker date="1476730562757" expanded="true" signature="3525:3577" ph="Select * fro... customers" />
-                <marker date="1476730562757" expanded="true" signature="4309:4329" ph="Select * fro... Brands" />
-                <marker date="1476730562757" expanded="true" signature="5093:5116" ph="Select * fro... customers" />
-                <marker date="1476730562757" expanded="true" signature="5939:5964" ph="Select * fro... delieveries" />
-                <marker date="1476730562757" expanded="true" signature="7019:7033" ph="Select * fro... delieveries" />
-                <marker date="1476730562757" expanded="true" signature="7019:7044" ph="Select * fro... departments" />
-                <marker date="1476730562757" expanded="true" signature="7776:7790" ph="Select * fro... delieveries" />
-                <marker date="1476730562757" expanded="true" signature="7776:7802" ph="Select * fro... distributors" />
-                <marker date="1476730562757" expanded="true" signature="8637:8660" ph="Select * fro... employees" />
-                <marker date="1476730562757" expanded="true" signature="9525:9539" ph="Select * fro... delieveries" />
-                <marker date="1476730562757" expanded="true" signature="9525:9551" ph="Select * fro... orderhistory" />
-                <marker date="1476730562757" expanded="true" signature="10523:10537" ph="Select * fro... delieveries" />
-                <marker date="1476730562757" expanded="true" signature="10523:10542" ph="Select * fro... users" />
-                <marker date="1476730562757" expanded="true" signature="11248:11271" ph="Select * fro... suppliers" />
-                <marker date="1476730562757" expanded="true" signature="12099:12121" ph="Select * fro... products" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2134">
-              <caret line="135" column="29" selection-start-line="135" selection-start-column="29" selection-end-line="135" selection-end-column="29" />
-              <folding>
-                <marker date="1476729436248" expanded="true" signature="2258:2299" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyProfile.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpages/customers/MyProfile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="138" column="59" selection-start-line="138" selection-start-column="59" selection-end-line="138" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webpages/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-              <folding>
-                <marker date="1476732278890" expanded="true" signature="1725:1813" ph="select UserI... users" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -274,34 +188,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ShoeStore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ShoeStore" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="textDocs" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ShoeStore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ShoeStore" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sqlScripts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -417,7 +303,7 @@
       <workItem from="1476686316403" duration="5904000" />
       <workItem from="1476705607702" duration="3115000" />
       <workItem from="1476708901906" duration="2433000" />
-      <workItem from="1476721887977" duration="10024000" />
+      <workItem from="1476721887977" duration="10331000" />
     </task>
     <task id="LOCAL-00001" summary="Updated some more stuff">
       <created>1476190662608</created>
@@ -643,11 +529,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476711335419</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Finished all admin reports started on profile page">
+      <created>1476732555862</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1476732555862</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89721000" />
+    <option name="totallyTimeSpent" value="90028000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -686,7 +579,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finished privacy policy" />
     <MESSAGE value="Added files for admin, must still complete UI" />
     <MESSAGE value="Added Scripts for tables, fixed a few errors" />
     <MESSAGE value="updated table scripts" />
@@ -711,7 +603,8 @@
     <MESSAGE value="fixed the login, still some bugs such as logout not displaying" />
     <MESSAGE value="new slider pics&#10;" />
     <MESSAGE value="completed UI for reports, need to code functions&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed UI for reports, need to code functions&#10;" />
+    <MESSAGE value="Finished all admin reports started on profile page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished all admin reports started on profile page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1003,6 +896,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3281">
+          <caret line="193" column="22" selection-start-line="193" selection-start-column="22" selection-end-line="193" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding>
+            <marker date="1476732278890" expanded="true" signature="1725:1813" ph="select UserI... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/customers/MyProfile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="138" column="59" selection-start-line="138" selection-start-column="59" selection-end-line="138" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2134">
@@ -1039,32 +958,6 @@
             <marker date="1476730562757" expanded="true" signature="10523:10542" ph="Select * fro... users" />
             <marker date="1476730562757" expanded="true" signature="11248:11271" ph="Select * fro... suppliers" />
             <marker date="1476730562757" expanded="true" signature="12099:12121" ph="Select * fro... products" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3281">
-          <caret line="193" column="22" selection-start-line="193" selection-start-column="22" selection-end-line="193" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/customers/MyProfile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="138" column="59" selection-start-line="138" selection-start-column="59" selection-end-line="138" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <marker date="1476732278890" expanded="true" signature="1725:1813" ph="select UserI... users" />
           </folding>
         </state>
       </provider>
