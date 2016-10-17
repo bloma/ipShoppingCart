@@ -118,11 +118,11 @@
                         <div id="sliderWrapper">
                             <div id="slider" class="shoeSlider">
                                 <?php
-                                    echo "<img src='images/slider/01.jpg' alt='' />";
-                                    echo "<img src='images/slider/02.jpg' alt='' />";
-                                    echo "<img src='images/slider/03.jpg' alt='' />";
-                                    echo "<img src='images/slider/05.jpg' alt='' />";
-                                    echo "<img src='images/slider/06.jpg' alt='' />";
+                                    echo "<img src='images/slider/af1.jpg' alt='' />";
+                                    echo "<img src='images/slider/stan.jpg' alt='' />";
+                                    echo "<img src='images/slider/stanSmith.jpg' alt='' />";
+                                    echo "<img src='images/slider/yeezy.jpg' alt='' />";
+                                    echo "<img src='images/slider/superstar.jpg' alt='' />";
                                 ?>
                             </div>
                         </div>

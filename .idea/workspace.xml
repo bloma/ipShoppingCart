@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="860cb467-7e49-4aae-83a0-caf861d63aa7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/product/01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/slider/04.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/slider/01.jpg" afterPath="$PROJECT_DIR$/images/slider/01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/slider/02.jpg" afterPath="$PROJECT_DIR$/images/slider/02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/slider/03.jpg" afterPath="$PROJECT_DIR$/images/slider/03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/slider/stan.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/slider/superstar.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/slider/yeezy.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/product/stan.jpg" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/slider/02.jpg" afterPath="$PROJECT_DIR$/images/slider/af1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/slider/03.jpg" afterPath="$PROJECT_DIR$/images/slider/stanSmith.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/products.php" afterPath="$PROJECT_DIR$/webpages/products.php" />
     </list>
     <ignored path="ShoeStore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,36 +38,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="124" column="85" selection-start-line="124" selection-start-column="85" selection-end-line="124" selection-end-column="85" />
+            <state relative-caret-position="247">
+              <caret line="122" column="79" selection-start-line="122" selection-start-column="79" selection-end-line="122" selection-end-column="79" />
               <folding>
-                <marker date="1476708817748" expanded="true" signature="2258:2299" ph="..." />
+                <marker date="1476709164037" expanded="true" signature="2258:2299" ph="..." />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="03.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/slider/03.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="02.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/slider/02.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="01.jpg" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/images/slider/01.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -383,7 +360,7 @@
       <workItem from="1476631357786" duration="1537000" />
       <workItem from="1476686316403" duration="5904000" />
       <workItem from="1476705607702" duration="3115000" />
-      <workItem from="1476708901906" duration="63000" />
+      <workItem from="1476708901906" duration="347000" />
     </task>
     <task id="LOCAL-00001" summary="Updated some more stuff">
       <created>1476190662608</created>
@@ -581,11 +558,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476691966978</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="new slider pics&#10;">
+      <created>1476708990601</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1476708990601</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77327000" />
+    <option name="totallyTimeSpent" value="77611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -624,7 +608,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated some more stuff" />
     <MESSAGE value="Finished Contact us page (finally)" />
     <MESSAGE value="Finished privacy policy" />
     <MESSAGE value="Added files for admin, must still complete UI" />
@@ -649,7 +632,8 @@
     <MESSAGE value="Tried to do a login ,but failed see index and login files&#10;" />
     <MESSAGE value="removed product report, it was redundant and added more functions to SqlFunctions.php" />
     <MESSAGE value="fixed the login, still some bugs such as logout not displaying" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed the login, still some bugs such as logout not displaying" />
+    <MESSAGE value="new slider pics&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="new slider pics&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -658,13 +642,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/classes/ShoppingCart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/Product.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -951,34 +928,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/slider/05.jpg">
+    <entry file="file://$PROJECT_DIR$/images/slider/yeezy.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/slider/superstar.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/slider/af1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/slider/stan.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/slider/stanSmith.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="124" column="85" selection-start-line="124" selection-start-column="85" selection-end-line="124" selection-end-column="85" />
+        <state relative-caret-position="247">
+          <caret line="122" column="79" selection-start-line="122" selection-start-column="79" selection-end-line="122" selection-end-column="79" />
           <folding>
-            <marker date="1476708817748" expanded="true" signature="2258:2299" ph="..." />
+            <marker date="1476709164037" expanded="true" signature="2258:2299" ph="..." />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/slider/03.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/slider/02.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/slider/01.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
   </component>
