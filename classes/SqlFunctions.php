@@ -83,6 +83,22 @@ class SqlFunctions
         }
     }
 
+    public function createTempPassword()
+    {
+        $alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        $numbers = "0123456789";
+        $characters = "!@#$%^&*()_+?/><";
+        $validCharacters = $alphabet . $numbers . $characters;
+        $charLength = strlen($validCharacters) - 1;
+        $password = array();
+        for($i = 0; $i< 8; $i++)
+        {
+            $n = rand(0,$charLength);
+            $password[] = $validCharacters[$n];
+        }
+        return implode($password);
+    }
+
     //////////////////////////////////////////////////
 
     /**

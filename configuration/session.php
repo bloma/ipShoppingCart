@@ -1,20 +1,26 @@
 <?php
     session_start();
     include "config.php";
-    $checkUser = $_SESSION["loggedIn"];
-    $sessionSql = mysqli_query($conn,"Select UserID from users where UserName = '$checkUser'");
 
-    $row = mysqli_fetch_array($sessionSql,MYSQLI_ASSOC);
-    $id = $row["UserID"];
-    if($id == 1)
+    $checkAccount = $_SESSION["loggedIn"];
+
+    $sessionSQL = mysqli_query($conn,"select UserID, AccountType from users where UserName = '$checkAccount'");
+    $row = mysqli_fetch_array($sessionSQL,MYSQLI_ASSOC);
+    $accType = $row["AccountType"];
+    $userID = $row["UserID"];
+    $name = "";
+    $surname = "";
+    echo $accType . " ". $userID;
+    if($accType == "Customer")
     {
-        $_SESSION["adminLogin"] = "admin";
-        header("Location: ../index.php");
+        $customerSQL = mysqli_query($conn,"Select CustomerName,CustomerSurname from customers WHERE UserID = '$userID'");
+        $rowCustomers = mysqli_fetch_array($customerSQL,MYSQLI_ASSOC);
+        $name = $rowCustomers["CustomerName"];
+        $surname = $rowCustomers["CustomerSurname"];
     }
-    else{
-        $sql = mysqli_query($conn,"Select customerName,customerSurname from customers WHERE UserID = '$id'");
-        $row = mysqli_fetch_array($sql,MYSQLI_ASSOC);
-        $username = $row["customerName"];
-        $userSurname = $row["customerSurname"];
-        $count =  mysqli_num_rows($result);
+    else if($accType == "Admin")
+    {
+        $name = "Admin";
     }
+    echo $name . " ". $surname;
+?>

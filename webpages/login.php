@@ -1,38 +1,20 @@
 <?php
     include "../configuration/config.php";
     include "../classes/SqlFunctions.php";
-    session_start();
+    @include "../configuration/session.php";
 
     $passwordReset = false;
     $emailFormatError  = false;
     $noEmailError = false;
     $invalidLogin = false;
-    $email ="";
-    $myPassword = "";
 
     if(class_exists("SqlFunctions"))
     {
         $sqlFunctions = new SqlFunctions();
     }
-
-    function createTempPassword()
+    if(isset($_POST["forgot"]))
     {
-        $alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        $numbers = "0123456789";
-        $characters = "!@#$%^&*()_+?/><";
-        $validCharacters = $alphabet . $numbers . $characters;
-        $charLength = strlen($validCharacters) - 1;
-        $password = array();
-        for($i = 0; $i< 8; $i++)
-        {
-            $n = rand(0,$charLength);
-            $password[] = $validCharacters[$n];
-        }
-        return implode($password);
-    }
-    if(isset($_POST['forgot']))
-    {
-        $email = $_POST['username'];
+        $email = $_POST["username"];
         $emailFrom = "noreply@axi.co.za";
 
         if(empty($email))
@@ -48,7 +30,7 @@
             $newPassword = "";
             while (!preg_match("/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[$@$!%*?&])[A-Za-z\\d$@$!%*?&]{8,}$/i",$newPassword))
             {
-                $newPassword = createTempPassword();
+                $newPassword = $sqlFunctions->createTempPassword();
                 if(preg_match("/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[$@$!%*?&])[A-Za-z\\d$@$!%*?&]{8,}$/i",$newPassword))
                 {
                     break;
@@ -64,28 +46,21 @@
     }
     else if(isset($_POST['login']))
     {
-        $loginType = "";
-        $email = $_POST['username'];
-        $myPassword = $_POST['password'];
-        $hashed = md5($myPassword);
-        $sql = "select AccountType from users where userName = '$email' and password = '$hashed'";
+        $myUsername = mysqli_real_escape_string($conn,$_POST["username"]);
+        $myPassword = mysqli_real_escape_string($conn,$_POST["password"]);
+        $hashedPassword = md5($myPassword);
+
+        $sql = "select UserID from users where UserName = '$myUsername' and Password = '$hashedPassword'";
         $result = mysqli_query($conn,$sql);
-        $accType = "";
-        if(mysqli_num_rows($result) >0)
-        {
-            while ($row = mysqli_fetch_assoc($result))
-            {
-                $accType = $row["AccountType"];
-            }
+        $count =  mysqli_num_rows($result);
+        if($count == 1){
+            $_SESSION["loggedIn"] = $myUsername;
+            header("location: ../index.php");
         }
         else{
-            echo mysqli_error($conn);
+            $invalidLogin = true;
         }
-        if($accType = "Admin")
-        {
-            $_SESSION["adminLogin"] = "Admin";
-            header("Location: ../index.php");
-        }
+
     }
 ?>
 <html>
@@ -113,15 +88,15 @@
                     <div id="siteTitle"><h1><a href="../index.php">AXI's sneakers</a></h1></div>
                     <div id="headerRight">
                         <?php
-                            if(isset($_Session["customerLogin"]))
+                            if(isset($_Session["loggedIn"]) && $accType == "Customer")
                             {
-                                echo "<p><a href='shoppingcart.php'>My Cart</a> | <a href='checkout.php'>Checkout</a> | Hi, $customerSession | <a href='logout.php'>Logout</a></p>";
+                                echo "<p>Hi, $name . ' '.$surname | <a href='shoppingcart.php'>My Cart</a> | <a href='checkout.php'>Checkout</a> | <a href='logout.php'>Logout</a></p>";
                             }
-                            else if(isset($_Session["adminLogin"]))
+                            else if(isset($_Session["loggedIn"]) && $accType == "Admin")
                             {
-                                echo "<p>Hi, $adminSession | <a href='logout.php'>Logout</a></p>";
+                                echo "<p>Hi, $name| <a href='logout.php'>Logout</a></p>";
                             }
-                            else if(!isset($_Session["customerLogin"]) && !isset($_Session["adminLogin"]))
+                            else
                             {
                                 echo "<p><a href='login.php'>Log in</a> | <a href='register.php'>Register</a></p>";
                             }
@@ -136,8 +111,12 @@
                             <li><a href="../index.php" >Home</a></li>
                             <li><a href="products.php">Products</a></li>
                             <li><a href="checkout.php">Checkout</a></li>
-                            <li><a href="customers/MyProfile.php">My Profile</a></li>
-                            <li><a href="about.php">About</a></li>
+                            <?php
+                                if(isset($_SESSION["loggedIn"]) && $accType == "Customer")
+                                {
+                                    echo "<li><a href='customers/MyProfile.php'>My profile</a></li>";
+                                }
+                            ?>                            <li><a href="about.php">About</a></li>
                             <li><a href="contact.php">Contact Us</a></li>
                         </ul>
                         <br style="clear: left" />
@@ -158,7 +137,7 @@
                             <div class="content">
                                 <ul class="sidebarList">
                                      <?php
-                                        if(isset($_SESSION['customerLogin']))
+                                                                                if(isset($_SESSION["loggedIn"]) & $accType == "Customer")
                                         {
                                             echo "<li class='first'><a href='customers/MyProfile.php'>My Profile</a></li>";
                                             echo "<li><a href='about.php'>About us</a></li>";
@@ -168,7 +147,7 @@
                                             echo "<li><a href='privacypolicy.php'>Privacy Policy</a></li>";
                                             echo "<li class='last'><a href='shippingpolicy.php'>Shipping Policy</a></li>";
                                         }
-                                        else if(isset($_SESSION['adminLogin']))
+                                        else if(isset($_SESSION["loggedIn"]) && $accType == "Admin")
                                         {
                                             echo "<li class='first'><a href='admin/reports/brandreport.php'>View Brands</a></li>";
                                             echo "<li><a href='admin/reports/customerreport.php'>View Customers</a></li>";
@@ -181,7 +160,7 @@
                                             echo "<li><a href='admin/reports/suppliersreport.php'>View Suppliers</a></li>";
                                             echo "<li class='last'><a href='admin/reports/usersreport.php'>view Users</a></li>";
                                         }
-                                        else
+                                        else if(!isset($_SESSION["loggedIn"]))
                                         {
                                             echo "<li class='first'><a href='about.php'>About us</a></li>";
                                             echo "<li><a href='faqs.php'>FAQs</a></li>";

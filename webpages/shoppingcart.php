@@ -1,5 +1,5 @@
 <?php
-session_start();
+    @include "../configuration/session.php";
 ?>
 <html>
     <head>
@@ -26,15 +26,15 @@ session_start();
                     <div id="siteTitle"><h1><a href="../index.php">AXI's sneakers</a></h1></div>
                     <div id="headerRight">
                         <?php
-                            if(isset($_Session["customerLogin"]))
+                            if(isset($_Session["loggedIn"]))
                             {
                                 echo "<p><a href='shoppingcart.php'>My Cart</a> | <a href='checkout.php'>Checkout</a> | Hi, $customerSession | <a href='logout.php'>Logout</a></p>";
                             }
-                            else if(isset($_Session["adminLogin"]))
+                            else if(isset($_Session["loggedIn"]))
                             {
                                 echo "<p>Hi, $adminSession | <a href='logout.php'>Logout</a></p>";
                             }
-                            else if(!isset($_Session["customerLogin"]) && !isset($_Session["adminLogin"]))
+                            else if(!isset($_Session["loggedIn"]))
                             {
                                 echo "<p><a href='login.php'>Log in</a> | <a href='register.php'>Register</a></p>";
                             }
@@ -49,7 +49,12 @@ session_start();
                             <li><a href="../index.php">Home</a></li>
                             <li><a href="products.php">Products</a></li>
                             <li><a href="checkout.php">Checkout</a></li>
-                            <li><a href="customers/MyProfile.php">My Profile</a></li>
+                            <?php
+                                if(isset($_SESSION["loggedIn"]) && $accType == "Customer")
+                                {
+                                    echo "<li><a href='customers/MyProfile.php'>My profile</a></li>";
+                                }
+                            ?>
                             <li><a href="about.php">About</a></li>
                             <li><a href="contact.php">Contact Us</a></li>
                         </ul>
@@ -71,7 +76,7 @@ session_start();
                             <div class="content">
                                 <ul class="sidebarList">
                                     <?php
-                                        if(isset($_SESSION['customerLogin']))
+                                                                                if(isset($_SESSION["loggedIn"]) & $accType == "Customer")
                                         {
                                             echo "<li class='first'><a href='customers/MyProfile.php'>My Profile</a></li>";
                                             echo "<li><a href='about.php'>About us</a></li>";
@@ -81,7 +86,7 @@ session_start();
                                             echo "<li><a href='privacypolicy.php'>Privacy Policy</a></li>";
                                             echo "<li class='last'><a href='shippingpolicy.php'>Shipping Policy</a></li>";
                                         }
-                                        else if(isset($_SESSION['adminLogin']))
+                                        else if(isset($_SESSION["loggedIn"]) && $accType == "Admin")
                                         {
                                             echo "<li class='first'><a href='admin/reports/brandreport.php'>View Brands</a></li>";
                                             echo "<li><a href='admin/reports/customerreport.php'>View Customers</a></li>";
@@ -94,7 +99,7 @@ session_start();
                                             echo "<li><a href='admin/reports/suppliersreport.php'>View Suppliers</a></li>";
                                             echo "<li class='last'><a href='admin/reports/usersreport.php'>view Users</a></li>";
                                         }
-                                        else
+                                        else if(!isset($_SESSION["loggedIn"]))
                                         {
                                             echo "<li class='first'><a href='about.php'>About us</a></li>";
                                             echo "<li><a href='faqs.php'>FAQs</a></li>";

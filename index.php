@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    @include "configuration/session.php";
 ?>
 <html>
     <head>
@@ -26,16 +26,15 @@
                     <div id="siteTitle"><h1><a href="index.php">AXI's sneakers</a></h1></div>
                     <div id="headerRight">
                         <?php
-
-                            if(isset($_Session["customerLogin"]))
+                            if(isset($_Session["loggedIn"]) && $accType == "Customer")
                             {
-                                echo "<p>Hi, $customerSession | <a href='webpages/shoppingcart.php'>My Cart</a> | <a href='webpages/checkout.php'>Checkout</a> | <a href='webpages/logout.php'>Logout</a></p>";
+                                echo "<p>Hi, $name . ' '.$surname | <a href='webpages/shoppingcart.php'>My Cart</a> | <a href='webpages/checkout.php'>Checkout</a> | <a href='webpages/logout.php'>Logout</a></p>";
                             }
-                            else if(isset($_Session["adminLogin"]))
+                            else if(isset($_Session["loggedIn"]) && $accType == "Admin")
                             {
-                                echo "<p>Hi, | <a href='webpages/logout.php'>Logout</a></p>";
+                                echo "<p>Hi, $name| <a href='webpages/logout.php'>Logout</a></p>";
                             }
-                            else if(!isset($_Session["customerLogin"]) && !isset($_Session["adminLogin"]))
+                            else
                             {
                                 echo "<p><a href='webpages/login.php'>Log in</a> | <a href='webpages/register.php'>Register</a></p>";
                             }
@@ -51,7 +50,7 @@
                             <li><a href="webpages/products.php">Products</a></li>
                             <li><a href="webpages/checkout.php">Checkout</a></li>
                             <?php
-                                if(isset($_SESSION["customerLogin"]))
+                                if(isset($_SESSION["loggedIn"]) && $accType == "Customer")
                                 {
                                     echo "<li><a href='webpages/customers/MyProfile.php'>My profile</a></li>";
                                 }
@@ -77,7 +76,7 @@
                             <div class="content">
                                 <ul class="sidebarList">
                                     <?php
-                                        if(isset($_SESSION['customerLogin']))
+                                        if(isset($_SESSION["loggedIn"]) & $accType == "Customer")
                                         {
                                             echo "<li class='first'><a href='webpages/customers/MyProfile.php'>My Profile</a></li>";
                                             echo "<li><a href='webpages/about.php'>About us</a></li>";
@@ -87,7 +86,7 @@
                                             echo "<li><a href='webpages/privacypolicy.php'>Privacy Policy</a></li>";
                                             echo "<li class='last'><a href='webpages/shippingpolicy.php'>Shipping Policy</a></li>";
                                         }
-                                        else if(isset($_SESSION['adminLogin']))
+                                        else if(isset($_SESSION["loggedIn"]) && $accType == "Admin")
                                         {
                                             echo "<li class='first'><a href='webpages/admin/reports/brandreport.php'>View Brands</a></li>";
                                             echo "<li><a href='webpages/admin/reports/customerreport.php'>View Customers</a></li>";
@@ -100,7 +99,7 @@
                                             echo "<li><a href='webpages/admin/reports/suppliersreport.php'>View Suppliers</a></li>";
                                             echo "<li class='last'><a href='webpages/admin/reports/usersreport.php'>view Users</a></li>";
                                         }
-                                        else
+                                        else if(!isset($_SESSION["loggedIn"]))
                                         {
                                             echo "<li class='first'><a href='webpages/about.php'>About us</a></li>";
                                             echo "<li><a href='webpages/faqs.php'>FAQs</a></li>";
