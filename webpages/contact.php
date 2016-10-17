@@ -120,8 +120,8 @@
                         $firstName = "";
                         $emailAddress = "";
                         $message = "";
-                        $subject = "New Message from website";
-                        $toEmail = "noreply@axi.co.za";
+                        $subject = "Contact Us Enquiry";
+                        $toEmail = "support@axi.co.za";
                         if(isset($_POST["submit"]))
                         {
                             $firstName = $_POST["fName"];
