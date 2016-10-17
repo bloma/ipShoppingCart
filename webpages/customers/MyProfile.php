@@ -1,11 +1,26 @@
 <?php
-    @include "../../configuration/session.php"
+    @include "../../configuration/session.php";
+    include_once "../../classes/Customer.php";
+    include_once "../../classes/User.php";
+    include_once "../../classes/SqlFunctions.php";
+    if(class_exists("User"))
+    {
+        $userObject = new User();
+    }
+    if(class_exists("Customer"))
+    {
+        $customerObject = new Customer();
+    }
+    if(class_exists("SqlFunctions"))
+    {
+        $sqlFunctions = new SqlFunctions();
+    }
 ?>
 <html>
     <head>
         <title>Shoe Store</title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css">
-        <link rel="stylesheet" type="text/css" href="../../css/slider.css">
+        <link rel="stylesheet" type="texut/css" href="../../css/slider.css">
         <link rel="stylesheet" type="text/css" href="../../css/smoothMenu.css">
 
         <script type="text/javascript" src="../../js/jquery.min.js"></script>
@@ -26,17 +41,17 @@
                     <div id="siteTitle"><h1><a href="../../index.php">AXI's sneakers</a></h1></div>
                     <div id="headerRight">
                         <?php
-                            if(isset($_Session["customerLogin"]))
+                            if(isset($_Session["loggedIn"]) && ($accType == "Customer"))
                             {
-                                echo "<p><a href='../shoppingcart.php'>My Cart</a> | <a href='../checkout.php'>Checkout</a> | Hi, $customerSession | <a href='../logout.php'>Logout</a></p>";
+                                echo "<p>Hi, $name . ' '.$surname | <a href='../../webpages/shoppingcart.php'>My Cart</a> | <a href='../../webpages/checkout.php'>Checkout</a> | <a href='../../webpages/logout.php'>Logout</a></p>";
                             }
-                            else if(isset($_Session["adminLogin"]))
+                            else if(isset($_Session["loggedIn"]) && ($accType == "Admin"))
                             {
-                                echo "<p>Hi, $adminSession | <a href='../logout.php'>Logout</a></p>";
+                                echo "<p>Hi, $name| <a href='../../webpages/logout.php'>Logout</a></p>";
                             }
-                            else if(!isset($_Session["customerLogin"]) && !isset($_Session["adminLogin"]))
+                            else
                             {
-                                echo "<p><a href='../login.php'>Log in</a> | <a href='../register.php'>Register</a></p>";
+                                echo "<p><a href='../../webpages/login.php'>Log in</a> | <a href='../../webpages/register.php'>Register</a></p>";
                             }
                         ?>
                     </div>
@@ -113,9 +128,16 @@
                             </div>
                         </div>
                     </div> <!-- END sidebar -->
-
                     <div id="content" class="floatRight">
-                        <p>Main Content Here</p>
+                        <?php
+                            echo "<h2>Personal Details</h2>";
+                            echo "<p>First Name: ".$customerObject->getCustomerName()."</p>";
+                            echo "<p>Surname: ".$customerObject->getCustomerSurname()."</p>";
+                            echo "<p>Contact Number:".$customerObject->getContactNumber()."</p>";
+                            echo "<h2>Login Details</h2>";
+                            echo "<p>Username/Email Address: ".$userObject->getUserName()."</p>";
+                            echo "<h2>Update Details</h2>";
+                        ?>
                     </div> <!-- END content -->
                     <div class="cleaner"></div>
                 </div> <!-- END main -->

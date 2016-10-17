@@ -1,6 +1,7 @@
 <?php
     @include "../../../configuration/session.php";
     include_once "../../../classes/SqlFunctions.php";
+    @include "../../../configuration/config.php";
     if(class_exists("SqlFunctions"))
     {
         $sqlFunctions = new SqlFunctions();
@@ -121,7 +122,7 @@
 
                     <div id="content" class="floatRight">
                         <?php
-
+                            $sqlFunctions->brandsReport($conn);
                         ?>
                     </div> <!-- END content -->
                     <div class="cleaner"></div>

@@ -135,6 +135,7 @@ CREATE TABLE IF NOT EXISTS `newproducts` (
   `Brand` varchar(25) NOT NULL,
   `Supplier` varchar(25) NOT NULL,
   `Quantity` int(11) NOT NULL,
+  `InStock` tinyint(1) NOT NULL,
   `Image` longblob NOT NULL,
   PRIMARY KEY (`NewProductD`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;

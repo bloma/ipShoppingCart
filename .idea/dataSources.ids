@@ -1,6 +1,395 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
   <data-source name="MySQL - test@localhost" uuid="578a61a8-61bd-4d17-be6e-86d87ba99f6a">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+    <database-info product="MySQL" version="5.7.9" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="test">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="information_schema"/>
+      <schema id="3" name="mysql"/>
+      <schema id="4" name="performance_schema"/>
+      <schema id="5" name="sys"/>
+      <table id="6" parent="1" name="brands"/>
+      <table id="7" parent="1" name="customers"/>
+      <table id="8" parent="1" name="delieveries"/>
+      <table id="9" parent="1" name="departments"/>
+      <table id="10" parent="1" name="distributors"/>
+      <table id="11" parent="1" name="employees"/>
+      <table id="12" parent="1" name="newproducts"/>
+      <table id="13" parent="1" name="orderhistory"/>
+      <table id="14" parent="1" name="products"/>
+      <table id="15" parent="1" name="shoppingcart"/>
+      <table id="16" parent="1" name="suppliers"/>
+      <table id="17" parent="1" name="users"/>
+      <column id="18" parent="6" name="BrandID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="19" parent="6" name="SupplierID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="20" parent="6" name="BrandName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="21" parent="6" name="SupplierName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <key id="22" parent="6" name="PRIMARY">
+        <columns>BrandID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="23" parent="7" name="CustomerID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="24" parent="7" name="UserID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="25" parent="7" name="CustomerName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="26" parent="7" name="CustomerSurname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="27" parent="7" name="CustomerTelephone">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <key id="28" parent="7" name="PRIMARY">
+        <columns>CustomerID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="29" parent="8" name="DeliveryID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="30" parent="8" name="DistributorID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="31" parent="8" name="CustomerID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="32" parent="8" name="CourierName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="33" parent="8" name="RecipientName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="34" parent="8" name="DeliveryAddress">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="35" parent="8" name="DateDespatched">
+        <mandatory>1</mandatory>
+        <data-type>date|0</data-type>
+      </column>
+      <column id="36" parent="8" name="DateDelivered">
+        <mandatory>1</mandatory>
+        <data-type>date|0</data-type>
+      </column>
+      <column id="37" parent="8" name="TotalItems">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="38" parent="8" name="PRIMARY">
+        <columns>DeliveryID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="39" parent="9" name="DepartmentID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="40" parent="9" name="DepartmentName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="41" parent="9" name="TotalEmployees">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="42" parent="9" name="PRIMARY">
+        <columns>DepartmentID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="43" parent="10" name="DistributorID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="44" parent="10" name="CompanyName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="45" parent="10" name="ContactNumber">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="46" parent="10" name="EmailAddress">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="47" parent="10" name="PhysicalAddress">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <key id="48" parent="10" name="PRIMARY">
+        <columns>DistributorID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="49" parent="11" name="EmployeeID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="50" parent="11" name="EmployeeName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="51" parent="11" name="EmployeeSurname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="52" parent="11" name="Role">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="53" parent="11" name="DepartmentID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="54" parent="11" name="DepartmentName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <key id="55" parent="11" name="PRIMARY">
+        <columns>EmployeeID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="56" parent="12" name="NewProductD">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="57" parent="12" name="BrandID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="58" parent="12" name="SupplierID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="59" parent="12" name="ProductName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="60" parent="12" name="ProductDescription">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="61" parent="12" name="ProductPrice">
+        <mandatory>1</mandatory>
+        <data-type>double|0</data-type>
+      </column>
+      <column id="62" parent="12" name="Brand">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="63" parent="12" name="Supplier">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="64" parent="12" name="Quantity">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="65" parent="12" name="InStock">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)|0</data-type>
+      </column>
+      <column id="66" parent="12" name="Image">
+        <mandatory>1</mandatory>
+        <data-type>longblob|0</data-type>
+      </column>
+      <key id="67" parent="12" name="PRIMARY">
+        <columns>NewProductD</columns>
+        <primary>1</primary>
+      </key>
+      <column id="68" parent="13" name="OrderID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="69" parent="13" name="CustomerID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="70" parent="13" name="ProductID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="71" parent="13" name="CustomerName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="72" parent="13" name="CustomerSurname">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="73" parent="13" name="Quantity">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="74" parent="13" name="OrderDate">
+        <mandatory>1</mandatory>
+        <data-type>date|0</data-type>
+      </column>
+      <column id="75" parent="13" name="TotalCost">
+        <mandatory>1</mandatory>
+        <data-type>double|0</data-type>
+      </column>
+      <key id="76" parent="13" name="PRIMARY">
+        <columns>OrderID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="77" parent="14" name="ProductID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="78" parent="14" name="BrandID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="79" parent="14" name="SuplierID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="80" parent="14" name="ProductName">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="81" parent="14" name="ProductDescription">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="82" parent="14" name="Brand">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="83" parent="14" name="Supplier">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="84" parent="14" name="Quantity">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="85" parent="14" name="Price">
+        <mandatory>1</mandatory>
+        <data-type>double|0</data-type>
+      </column>
+      <column id="86" parent="14" name="InStock">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)|0</data-type>
+      </column>
+      <column id="87" parent="14" name="Image">
+        <mandatory>1</mandatory>
+        <data-type>longblob|0</data-type>
+      </column>
+      <key id="88" parent="14" name="PRIMARY">
+        <columns>ProductID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="89" parent="15" name="ItemID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="90" parent="15" name="ProductID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="91" parent="15" name="ProductName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="92" parent="15" name="Price">
+        <mandatory>1</mandatory>
+        <data-type>double|0</data-type>
+      </column>
+      <column id="93" parent="15" name="Quantity">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <key id="94" parent="15" name="PRIMARY">
+        <columns>ItemID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="95" parent="16" name="SupplierID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="96" parent="16" name="SupplierName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="97" parent="16" name="ContactNumber">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="98" parent="16" name="EmailAddress">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="99" parent="16" name="PhysicalAddress">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <key id="100" parent="16" name="PRIMARY">
+        <columns>SupplierID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="101" parent="17" name="UserID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="102" parent="17" name="UserName">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <column id="103" parent="17" name="Password">
+        <mandatory>1</mandatory>
+        <data-type>text|0</data-type>
+      </column>
+      <column id="104" parent="17" name="AccountType">
+        <mandatory>1</mandatory>
+        <data-type>varchar(25)|0</data-type>
+      </column>
+      <key id="105" parent="17" name="PRIMARY">
+        <columns>UserID</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
   </data-source>
 </component>

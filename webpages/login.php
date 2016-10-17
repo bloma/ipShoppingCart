@@ -1,6 +1,6 @@
 <?php
     include "../configuration/config.php";
-    include "../classes/SqlFunctions.php";
+    include_once "../classes/SqlFunctions.php";
     @include "../configuration/session.php";
 
     $passwordReset = false;
@@ -36,7 +36,6 @@
                     break;
                 }
             }
-
             $hashed = md5($newPassword);
             $sqlFunctions->resetPassword($conn,$hashed,$email);
             mail($email,"Password reset","Hi\nYour password has been reset to ".$newPassword."\nWe suggest you login and change it immediately\nKind regards AXI Team","From: ".$emailFrom);

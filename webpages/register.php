@@ -1,9 +1,9 @@
 <?php
     @include "../configuration/session.php";
     @include "../configuration/config.php";
-    include "../classes/Customer.php";
-    include "../classes/User.php";
-    include "../classes/SqlFunctions.php";
+    include_once "../classes/Customer.php";
+    include_once "../classes/User.php";
+    include_once "../classes/SqlFunctions.php";
     $firstName = "";
     $surname = "";
     $contactNumber = "";

@@ -5,6 +5,7 @@
     {
         $sqlFunctions = new SqlFunctions();
     }
+    @include "../../../configuration/config.php";
 ?>
 <html>
     <head>
@@ -121,7 +122,7 @@
 
                     <div id="content" class="floatRight">
                         <?php
-
+                            $sqlFunctions->departmentsReport($conn);
                         ?>
                     </div> <!-- END content -->
                     <div class="cleaner"></div>

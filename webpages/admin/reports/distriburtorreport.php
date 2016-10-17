@@ -1,6 +1,11 @@
 <?php
     @include "../../../configuration/session.php";
     include_once "../../../classes/SqlFunctions.php";
+    if(class_exists("SqlFunctions"))
+    {
+        $sqlFunctions = new SqlFunctions();
+    }
+    @include "../../../configuration/config.php";
 ?>
 <html>
     <head>
@@ -117,7 +122,7 @@
 
                     <div id="content" class="floatRight">
                         <?php
-
+                            $sqlFunctions->distributorsReport($conn);
                         ?>
                     </div> <!-- END content -->
                     <div class="cleaner"></div>
