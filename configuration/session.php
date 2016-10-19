@@ -10,7 +10,6 @@
     $userID = $row["UserID"];
     $name = "";
     $surname = "";
-    echo $accType . " ". $userID;
     if($accType == "Customer")
     {
         $customerSQL = mysqli_query($conn,"Select CustomerName,CustomerSurname from customers WHERE UserID = '$userID'");
@@ -22,5 +21,4 @@
     {
         $name = "Admin";
     }
-    echo $name . " ". $surname;
 ?>

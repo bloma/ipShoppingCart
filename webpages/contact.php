@@ -25,12 +25,12 @@
                 <div id="header">
                     <div id="siteTitle"><h1><a href="../index.php">AXI's sneakers</a></h1></div>
                     <div id="headerRight">
-                       <?php
-                            if(isset($_Session["loggedIn"]) && $accType == "Customer")
+                        <?php
+                            if(isset($_SESSION["loggedIn"]) && $accType == "Customer")
                             {
                                 echo "<p>Hi, $name . ' '.$surname | <a href='shoppingcart.php'>My Cart</a> | <a href='checkout.php'>Checkout</a> | <a href='logout.php'>Logout</a></p>";
                             }
-                            else if(isset($_Session["loggedIn"]) && $accType == "Admin")
+                            else if(isset($_SESSION["loggedIn"]) && $accType == "Admin")
                             {
                                 echo "<p>Hi, $name| <a href='logout.php'>Logout</a></p>";
                             }

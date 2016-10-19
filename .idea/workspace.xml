@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="860cb467-7e49-4aae-83a0-caf861d63aa7" name="Default" comment="" />
+    <list default="true" id="860cb467-7e49-4aae-83a0-caf861d63aa7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration/config.php" afterPath="$PROJECT_DIR$/configuration/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration/session.php" afterPath="$PROJECT_DIR$/configuration/session.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/about.php" afterPath="$PROJECT_DIR$/webpages/about.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/brandreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/brandreport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/customerreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/customerreport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/deliveriesreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/deliveriesreport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/departmentsreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/departmentsreport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/distriburtorreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/distriburtorreport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/orderhistory.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/orderhistory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/staffreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/staffreport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/stockreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/stockreport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/suppliersreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/suppliersreport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/usersreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/usersreport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/checkout.php" afterPath="$PROJECT_DIR$/webpages/checkout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/contact.php" afterPath="$PROJECT_DIR$/webpages/contact.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/customers/MyProfile.php" afterPath="$PROJECT_DIR$/webpages/customers/MyProfile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/exchangepolicy.php" afterPath="$PROJECT_DIR$/webpages/exchangepolicy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/faqs.php" afterPath="$PROJECT_DIR$/webpages/faqs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/login.php" afterPath="$PROJECT_DIR$/webpages/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/privacypolicy.php" afterPath="$PROJECT_DIR$/webpages/privacypolicy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/products.php" afterPath="$PROJECT_DIR$/webpages/products.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/register.php" afterPath="$PROJECT_DIR$/webpages/register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/searchresults.php" afterPath="$PROJECT_DIR$/webpages/searchresults.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/shippingpolicy.php" afterPath="$PROJECT_DIR$/webpages/shippingpolicy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/shoppingcart.php" afterPath="$PROJECT_DIR$/webpages/shoppingcart.php" />
+    </list>
     <ignored path="ShoeStore.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -73,7 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.txt" />
         <option value="$PROJECT_DIR$/sqlScripts/csv files/customers.csv" />
         <option value="$PROJECT_DIR$/sqlScripts/csv files/users.csv" />
         <option value="$PROJECT_DIR$/textDocs/contactUs.txt" />
@@ -95,35 +123,36 @@
         <option value="$PROJECT_DIR$/configuration/adminSession.php" />
         <option value="$PROJECT_DIR$/webpages/logout.php" />
         <option value="$PROJECT_DIR$/webpages/admin/databasecontrol/insertnewProduct.php" />
-        <option value="$PROJECT_DIR$/configuration/session.php" />
-        <option value="$PROJECT_DIR$/webpages/checkout.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/textDocs/about.txt" />
+        <option value="$PROJECT_DIR$/sqlScripts/createTables.sql" />
+        <option value="$PROJECT_DIR$/classes/SqlFunctions.php" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/webpages/about.php" />
+        <option value="$PROJECT_DIR$/webpages/checkout.php" />
         <option value="$PROJECT_DIR$/webpages/contact.php" />
+        <option value="$PROJECT_DIR$/webpages/exchangepolicy.php" />
+        <option value="$PROJECT_DIR$/webpages/faqs.php" />
+        <option value="$PROJECT_DIR$/webpages/login.php" />
+        <option value="$PROJECT_DIR$/webpages/privacypolicy.php" />
+        <option value="$PROJECT_DIR$/webpages/products.php" />
+        <option value="$PROJECT_DIR$/webpages/register.php" />
+        <option value="$PROJECT_DIR$/webpages/searchresults.php" />
         <option value="$PROJECT_DIR$/webpages/shoppingcart.php" />
         <option value="$PROJECT_DIR$/webpages/shippingpolicy.php" />
-        <option value="$PROJECT_DIR$/webpages/searchresults.php" />
-        <option value="$PROJECT_DIR$/webpages/privacypolicy.php" />
-        <option value="$PROJECT_DIR$/webpages/faqs.php" />
-        <option value="$PROJECT_DIR$/webpages/exchangepolicy.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/webpages/products.php" />
-        <option value="$PROJECT_DIR$/textDocs/about.txt" />
-        <option value="$PROJECT_DIR$/webpages/admin/reports/brandreport.php" />
-        <option value="$PROJECT_DIR$/webpages/admin/reports/customerreport.php" />
-        <option value="$PROJECT_DIR$/webpages/admin/reports/deliveriesreport.php" />
-        <option value="$PROJECT_DIR$/webpages/admin/reports/usersreport.php" />
+        <option value="$PROJECT_DIR$/configuration/config.php" />
+        <option value="$PROJECT_DIR$/configuration/session.php" />
+        <option value="$PROJECT_DIR$/webpages/customers/MyProfile.php" />
         <option value="$PROJECT_DIR$/webpages/admin/reports/suppliersreport.php" />
+        <option value="$PROJECT_DIR$/webpages/admin/reports/usersreport.php" />
         <option value="$PROJECT_DIR$/webpages/admin/reports/stockreport.php" />
         <option value="$PROJECT_DIR$/webpages/admin/reports/staffreport.php" />
         <option value="$PROJECT_DIR$/webpages/admin/reports/orderhistory.php" />
         <option value="$PROJECT_DIR$/webpages/admin/reports/distriburtorreport.php" />
         <option value="$PROJECT_DIR$/webpages/admin/reports/departmentsreport.php" />
-        <option value="$PROJECT_DIR$/sqlScripts/createTables.sql" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/classes/SqlFunctions.php" />
-        <option value="$PROJECT_DIR$/webpages/register.php" />
-        <option value="$PROJECT_DIR$/webpages/customers/MyProfile.php" />
-        <option value="$PROJECT_DIR$/webpages/login.php" />
+        <option value="$PROJECT_DIR$/webpages/admin/reports/deliveriesreport.php" />
+        <option value="$PROJECT_DIR$/webpages/admin/reports/customerreport.php" />
+        <option value="$PROJECT_DIR$/webpages/admin/reports/brandreport.php" />
       </list>
     </option>
   </component>
@@ -142,8 +171,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -170,6 +199,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -188,10 +218,77 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShoeStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShoeStore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webpages" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShoeStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShoeStore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webpages" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reports" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShoeStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShoeStore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webpages" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShoeStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShoeStore" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="configuration" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,6 +401,7 @@
       <workItem from="1476705607702" duration="3115000" />
       <workItem from="1476708901906" duration="2433000" />
       <workItem from="1476721887977" duration="10331000" />
+      <workItem from="1476858249087" duration="1098000" />
     </task>
     <task id="LOCAL-00001" summary="Updated some more stuff">
       <created>1476190662608</created>
@@ -536,17 +634,24 @@
       <option name="project" value="LOCAL" />
       <updated>1476732555862</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="added warning suppression to mail functions">
+      <created>1476858429496</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1476858429496</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90028000" />
+    <option name="totallyTimeSpent" value="91126000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2193646" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21927084" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39774558" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -579,7 +684,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added files for admin, must still complete UI" />
     <MESSAGE value="Added Scripts for tables, fixed a few errors" />
     <MESSAGE value="updated table scripts" />
     <MESSAGE value="updated table scripts (AGAIN) - happy with results" />
@@ -604,7 +708,8 @@
     <MESSAGE value="new slider pics&#10;" />
     <MESSAGE value="completed UI for reports, need to code functions&#10;" />
     <MESSAGE value="Finished all admin reports started on profile page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished all admin reports started on profile page" />
+    <MESSAGE value="added warning suppression to mail functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="added warning suppression to mail functions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -613,39 +718,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/product/05.jpg" />
-    <entry file="file://$PROJECT_DIR$/images/product/03.jpg" />
-    <entry file="file://$PROJECT_DIR$/images/product/02.jpg" />
-    <entry file="file://$PROJECT_DIR$/images/slider/yeezy.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/slider/superstar.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/slider/af1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/slider/stan.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/slider/stanSmith.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/arrows.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/addToCart.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -742,14 +814,173 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/578a61a8-61bd-4d17-be6e-86d87ba99f6a/console.sql" />
+    <entry file="file://$PROJECT_DIR$/sqlScripts/createTables.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="179" column="5" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/5d519a45/578a61a8-61bd-4d17-be6e-86d87ba99f6a/test.departments" />
+    <entry file="file://$PROJECT_DIR$/classes/SqlFunctions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+          <folding>
+            <marker date="1476858398275" expanded="true" signature="553:657" ph="insert into users... " />
+            <marker date="1476858398275" expanded="true" signature="747:804" ph="select userI... users" />
+            <marker date="1476858398275" expanded="true" signature="1166:1302" ph="insert into customers... " />
+            <marker date="1476858398275" expanded="true" signature="1986:2054" ph="UPDATE USERS... " />
+            <marker date="1476858398275" expanded="true" signature="2442:2510" ph="UPDATE USERS... " />
+            <marker date="1476858398275" expanded="true" signature="3547:3599" ph="Select * fro... customers" />
+            <marker date="1476858398275" expanded="true" signature="3989:4009" ph="Select * fro... Brands" />
+            <marker date="1476858398275" expanded="true" signature="4773:4796" ph="Select * fro... customers" />
+            <marker date="1476858398275" expanded="true" signature="5619:5644" ph="Select * fro... delieveries" />
+            <marker date="1476858398275" expanded="true" signature="6699:6724" ph="Select * fro... departments" />
+            <marker date="1476858398275" expanded="true" signature="7456:7482" ph="Select * fro... distributors" />
+            <marker date="1476858398275" expanded="true" signature="8317:8340" ph="Select * fro... employees" />
+            <marker date="1476858398275" expanded="true" signature="9205:9231" ph="Select * fro... orderhistory" />
+            <marker date="1476858398275" expanded="true" signature="10203:10222" ph="Select * fro... users" />
+            <marker date="1476858398275" expanded="true" signature="10928:10951" ph="Select * fro... suppliers" />
+            <marker date="1476858398275" expanded="true" signature="11779:11801" ph="Select * fro... products" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpages/about.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1834">
-          <caret line="109" column="41" selection-start-line="0" selection-start-column="0" selection-end-line="139" selection-end-column="7" />
+        <state relative-caret-position="436">
+          <caret line="40" column="26" selection-start-line="27" selection-start-column="23" selection-end-line="40" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/exchangepolicy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/faqs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="101" column="26" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+          <folding>
+            <marker date="1476858875301" expanded="true" signature="1726:1814" ph="select UserI... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/privacypolicy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/searchresults.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/shoppingcart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/shippingpolicy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configuration/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="115" selection-start-line="5" selection-start-column="115" selection-end-line="5" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configuration/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <marker date="1476858968673" expanded="true" signature="136:206" ph="select UserI... users" />
+            <marker date="1476858968673" expanded="true" signature="448:523" ph="Select Custo... customers" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -757,208 +988,95 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/products.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="123" column="28" selection-start-line="123" selection-start-column="28" selection-end-line="123" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configuration/config.php">
+    <entry file="file://$PROJECT_DIR$/webpages/customers/MyProfile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configuration/session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1476689925326" expanded="true" signature="136:206" ph="select UserI... users" />
-            <marker date="1476689925326" expanded="true" signature="482:557" ph="Select Custo... customers" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/578a61a8-61bd-4d17-be6e-86d87ba99f6a/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="354">
+          <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpages/admin/reports/usersreport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="124" column="61" selection-start-line="124" selection-start-column="61" selection-end-line="124" selection-end-column="61" />
+        <state relative-caret-position="422">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpages/admin/reports/suppliersreport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="124" column="66" selection-start-line="124" selection-start-column="66" selection-end-line="124" selection-end-column="66" />
+        <state relative-caret-position="575">
+          <caret line="45" column="29" selection-start-line="34" selection-start-column="28" selection-end-line="45" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpages/admin/reports/stockreport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="124" column="62" selection-start-line="124" selection-start-column="62" selection-end-line="124" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/admin/reports/orderhistory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="124" column="69" selection-start-line="124" selection-start-column="69" selection-end-line="124" selection-end-column="69" />
+        <state relative-caret-position="422">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpages/admin/reports/staffreport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="124" column="62" selection-start-line="124" selection-start-column="62" selection-end-line="124" selection-end-column="62" />
+        <state relative-caret-position="677">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/admin/reports/brandreport.php">
+    <entry file="file://$PROJECT_DIR$/webpages/admin/reports/orderhistory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="124" column="63" selection-start-line="124" selection-start-column="63" selection-end-line="124" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/admin/reports/customerreport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="124" column="65" selection-start-line="124" selection-start-column="65" selection-end-line="124" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/admin/reports/deliveriesreport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="124" column="67" selection-start-line="124" selection-start-column="67" selection-end-line="124" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/admin/reports/departmentsreport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="124" column="68" selection-start-line="124" selection-start-column="68" selection-end-line="124" selection-end-column="68" />
+        <state relative-caret-position="578">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpages/admin/reports/distriburtorreport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="124" column="69" selection-start-line="124" selection-start-column="69" selection-end-line="124" selection-end-column="69" />
+        <state relative-caret-position="524">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sqlScripts/createTables.sql">
+    <entry file="file://$PROJECT_DIR$/webpages/admin/reports/departmentsreport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="179" column="5" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
+        <state relative-caret-position="422">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/5d519a45/578a61a8-61bd-4d17-be6e-86d87ba99f6a/test.departments">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/webpages/admin/reports/deliveriesreport.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/register.php">
+    <entry file="file://$PROJECT_DIR$/webpages/admin/reports/customerreport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3281">
-          <caret line="193" column="22" selection-start-line="193" selection-start-column="22" selection-end-line="193" selection-end-column="22" />
+        <state relative-caret-position="677">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/login.php">
+    <entry file="file://$PROJECT_DIR$/webpages/admin/reports/brandreport.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <marker date="1476732278890" expanded="true" signature="1725:1813" ph="select UserI... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/customers/MyProfile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="138" column="59" selection-start-line="138" selection-start-column="59" selection-end-line="138" selection-end-column="59" />
+        <state relative-caret-position="575">
+          <caret line="45" column="29" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2134">
-          <caret line="135" column="29" selection-start-line="135" selection-start-column="29" selection-end-line="135" selection-end-column="29" />
-          <folding>
-            <marker date="1476729436248" expanded="true" signature="2258:2299" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/SqlFunctions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-317">
-          <caret line="131" column="56" selection-start-line="131" selection-start-column="56" selection-end-line="131" selection-end-column="56" />
-          <folding>
-            <marker date="1476730562757" expanded="true" signature="553:657" ph="insert into users... " />
-            <marker date="1476730562757" expanded="true" signature="747:804" ph="select userI... users" />
-            <marker date="1476730562757" expanded="true" signature="1166:1302" ph="insert into customers... " />
-            <marker date="1476730562757" expanded="true" signature="1985:2053" ph="UPDATE USERS... " />
-            <marker date="1476730562757" expanded="true" signature="2441:2509" ph="UPDATE USERS... " />
-            <marker date="1476730562757" expanded="true" signature="3525:3548" ph="Select * fro... customers" />
-            <marker date="1476730562757" expanded="true" signature="3525:3577" ph="Select * fro... customers" />
-            <marker date="1476730562757" expanded="true" signature="4309:4329" ph="Select * fro... Brands" />
-            <marker date="1476730562757" expanded="true" signature="5093:5116" ph="Select * fro... customers" />
-            <marker date="1476730562757" expanded="true" signature="5939:5964" ph="Select * fro... delieveries" />
-            <marker date="1476730562757" expanded="true" signature="7019:7033" ph="Select * fro... delieveries" />
-            <marker date="1476730562757" expanded="true" signature="7019:7044" ph="Select * fro... departments" />
-            <marker date="1476730562757" expanded="true" signature="7776:7790" ph="Select * fro... delieveries" />
-            <marker date="1476730562757" expanded="true" signature="7776:7802" ph="Select * fro... distributors" />
-            <marker date="1476730562757" expanded="true" signature="8637:8660" ph="Select * fro... employees" />
-            <marker date="1476730562757" expanded="true" signature="9525:9539" ph="Select * fro... delieveries" />
-            <marker date="1476730562757" expanded="true" signature="9525:9551" ph="Select * fro... orderhistory" />
-            <marker date="1476730562757" expanded="true" signature="10523:10537" ph="Select * fro... delieveries" />
-            <marker date="1476730562757" expanded="true" signature="10523:10542" ph="Select * fro... users" />
-            <marker date="1476730562757" expanded="true" signature="11248:11271" ph="Select * fro... suppliers" />
-            <marker date="1476730562757" expanded="true" signature="12099:12121" ph="Select * fro... products" />
-          </folding>
         </state>
       </provider>
     </entry>
