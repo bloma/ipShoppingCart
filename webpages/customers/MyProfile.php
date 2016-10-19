@@ -17,10 +17,10 @@
     }
     if(isset($_POST["submit"]))
     {
-
-        if(!empty($customerObject->getCustomerName()) && (!empty($customerObject->getCustomerSurname())) && (!empty($customerObject->getContactNumber())) &&(!empty($userObject->getUserName())) && (!empty($userObject->getPassword())))
+        $userObject->setPassword($_POST["password"]);
+        if(!empty($userObject->getPassword()))
         {
-
+            $sqlFunctions->updatePassword($conn,$name,$userObject->getPassword());
         }
     }
 ?>
@@ -142,11 +142,7 @@
                             echo "<h2>Update Details</h2>";
                         ?>
                         <form name="updateDetails" action="<?php $_SERVER["PHP_SELF"] ?>" method="post">
-                            <p>Enter your Name:<input type="text" name="fName" value=""/></p>
-                            <p>Enter your Surname:<input type="text" name="lName" value=""/></p>
-                            <p>Enter your contact Number:<input type="text" name="contactNumber" value=""/></p>
-                            <p>Enter your email address: <input type="text" name="email" value=""/></p>
-                            <p>Enter your password:<input type="password" name="password" value=""/></p>
+                            <p>Enter new password:<input type="password" name="password" value=""/></p>
                             <p><input type="submit" name="submit" value="Submit"/></p>
                         </form>
                     </div> <!-- END content -->

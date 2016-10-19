@@ -2,7 +2,9 @@
 
 class SqlFunctions
 {
-    public function __construct(){}
+    public function __construct()
+    {
+    }
 
     /**
      * User and customer functions
@@ -20,29 +22,24 @@ class SqlFunctions
      * This function is used to register new users on the system
      */
 
-    public function registerUser($conn,$emailAddress,$hashedPassword,$accType,$userID,$firstName,$surname,$contactNumber)
+    public function registerUser($conn, $emailAddress, $hashedPassword, $accType, $userID, $firstName, $surname, $contactNumber)
     {
         $sqlUserInsert = "insert into users (username, password,accountType) values ('$emailAddress','$hashedPassword','$accType')";
-        if(mysqli_query($conn,$sqlUserInsert))
-        {
+        if (mysqli_query($conn, $sqlUserInsert)) {
             $sqlUserSelect = "select userID from users where username = '$emailAddress'";
-            $userIDResult = mysqli_query($conn,$sqlUserSelect);
-            if (mysqli_num_rows($userIDResult) > 0)
-            {
+            $userIDResult = mysqli_query($conn, $sqlUserSelect);
+            if (mysqli_num_rows($userIDResult) > 0) {
                 $row = mysqli_fetch_assoc($userIDResult);
                 $userID = $row['userID'];
-            }
-            else{
-                echo "SQL error ".mysqli_error($conn);
+            } else {
+                echo "SQL error " . mysqli_error($conn);
             }
             $sqlCustomer = "insert into customers (userID, customerName,customerSurname,customerTelephone) values ($userID,'$firstName','$surname','$contactNumber')";
-            if(mysqli_query($conn,$sqlCustomer))
-            {
-                @mail($emailAddress,"Registration on AXI's Sneakers","Hi $firstName $surname\nWelcome to AXI's sneakers you have successfully registered on our service\nRegards AXI team","From: noreply@axi.co.za");
+            if (mysqli_query($conn, $sqlCustomer)) {
+                @mail($emailAddress, "Registration on AXI's Sneakers", "Hi $firstName $surname\nWelcome to AXI's sneakers you have successfully registered on our service\nRegards AXI team", "From: noreply@axi.co.za");
                 header("location: ../index.php");
-            }
-            else{
-                echo "SQL error ".mysqli_error($conn);
+            } else {
+                echo "SQL error " . mysqli_error($conn);
             }
         }
     }
@@ -54,31 +51,12 @@ class SqlFunctions
      * This function is used to reset a users password
      */
 
-    public function resetPassword($conn,$newPassword, $email)
+    public function resetPassword($conn, $newPassword, $email)
     {
         $sqlQueryUpdate = "UPDATE USERS set Password = '$newPassword' WHERE UserName = '$email'";
-        try{
-            mysqli_query($conn,$sqlQueryUpdate);
-        }catch (Exception $e)
-        {
-            $e->getMessage();
-        }
-    }
-
-    /**
-     * @param $conn
-     * @param $newPassword
-     * @param $email
-     * This function is used to update a users password
-     */
-
-    public function updatePassword($conn,$newPassword,$email)
-    {
-        $sqlQueryUpdate = "UPDATE USERS set Password = '$newPassword' WHERE UserName = '$email'";
-        try{
-            mysqli_query($conn,$sqlQueryUpdate);
-        }catch (Exception $e)
-        {
+        try {
+            mysqli_query($conn, $sqlQueryUpdate);
+        } catch (Exception $e) {
             $e->getMessage();
         }
     }
@@ -95,9 +73,8 @@ class SqlFunctions
         $validCharacters = $alphabet . $numbers . $characters;
         $charLength = strlen($validCharacters) - 1;
         $password = array();
-        for($i = 0; $i< 8; $i++)
-        {
-            $n = rand(0,$charLength);
+        for ($i = 0; $i < 8; $i++) {
+            $n = rand(0, $charLength);
             $password[] = $validCharacters[$n];
         }
         return implode($password);
@@ -108,15 +85,29 @@ class SqlFunctions
      * @param $name
      * This function is used to display user details on their profile page
      */
-    public function displayUserDetails($conn,$name)
+    public function displayUserDetails($conn, $name)
     {
-        $sqlStatementSelectCustomerDetails = mysqli_query($conn,"Select * from customers WHERE CustomerName = '$name'");
+        $sqlStatementSelectCustomerDetails = mysqli_query($conn, "Select * from customers WHERE CustomerName = '$name'");
         echo "<h2>Personal Details</h2>";
-        $row =  mysqli_fetch_array($sqlStatementSelectCustomerDetails,MYSQLI_ASSOC);
-        echo "<p>First Name:".$row["CustomerName"]."</p>";
-        echo "<p>Surname: ".$row["CustomerSurname"]."</p>";
-        echo "<p>Contact Number: ".$row["CustomerTelephone"]."</p>";
+        $row = mysqli_fetch_array($sqlStatementSelectCustomerDetails, MYSQLI_ASSOC);
+        echo "<p>First Name:" . $row["CustomerName"] . "</p>";
+        echo "<p>Surname: " . $row["CustomerSurname"] . "</p>";
+        echo "<p>Contact Number: " . $row["CustomerTelephone"] . "</p>";
     }
+
+    public function updatePassword($conn,$name,$newPassword)
+    {
+        $sqlStatementSelectCustomerDetails = mysqli_query($conn, "Select * from customers WHERE CustomerName = '$name'");
+        $row = mysqli_fetch_array($sqlStatementSelectCustomerDetails, MYSQLI_ASSOC);
+        $userID = $row["UserID"];
+        $sqlQueryUpdate = "UPDATE USERS set Password = md5($newPassword) WHERE UserID = '$userID'";
+        try {
+            mysqli_query($conn, $sqlQueryUpdate);
+        } catch (Exception $e) {
+            $e->getMessage();
+        }
+    }
+
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     /**
