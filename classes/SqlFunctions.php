@@ -38,7 +38,7 @@ class SqlFunctions
             $sqlCustomer = "insert into customers (userID, customerName,customerSurname,customerTelephone) values ($userID,'$firstName','$surname','$contactNumber')";
             if(mysqli_query($conn,$sqlCustomer))
             {
-                mail($emailAddress,"Registration on AXI's Sneakers","Hi $firstName $surname\nWelcome to AXI's sneakers you have successfully registered on our service\nRegards AXI team","From: noreply@axi.co.za");
+                @mail($emailAddress,"Registration on AXI's Sneakers","Hi $firstName $surname\nWelcome to AXI's sneakers you have successfully registered on our service\nRegards AXI team","From: noreply@axi.co.za");
                 header("location: ../index.php");
             }
             else{
@@ -110,27 +110,8 @@ class SqlFunctions
      */
     public function displayUserDetails($conn,$name)
     {
-        $sqlStatement = "Select * from customers WHERE CustomerName = '$name'";
+        $sqlStatementSelectCustomerDetails = "Select * from customers WHERE CustomerName = '$name'";
 
-    }
-
-    public function updateCustomerName($conn, $oldName,$newName)
-    {
-
-    }
-
-    public function updateCustomerSurname($conn, $oldSurname,$newSurname)
-    {
-
-    }
-
-    public function updateCustomerContactNumber($conn, $oldContact,$newContact)
-    {
-
-    }
-
-    public function updateCustomerEmail($conn, $oldEmail,$newEmail)
-    {
 
     }
 

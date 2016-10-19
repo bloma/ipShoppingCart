@@ -159,8 +159,8 @@
                         }
                         else
                         {
-                            mail($toEmail,$subject,$message,"From: ".$emailAddress);
-                            mail($emailAddress,"Follow up","Hi $firstName,\nA member of our staff will be in touch soon\n\nRegards Shoe Store Team",
+                            @mail($toEmail,$subject,$message,"From: ".$emailAddress);
+                            @mail($emailAddress,"Follow up","Hi $firstName,\nA member of our staff will be in touch soon\n\nRegards Shoe Store Team",
                                 "From: noreply@axi.co.za");
                             echo "<p>Thank you for your message click <a href='../index.php'>here</a> to return to the home page</p>";
                         }

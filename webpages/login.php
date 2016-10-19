@@ -38,7 +38,7 @@
             }
             $hashed = md5($newPassword);
             $sqlFunctions->resetPassword($conn,$hashed,$email);
-            mail($email,"Password reset","Hi\nYour password has been reset to ".$newPassword."\nWe suggest you login and change it immediately\nKind regards AXI Team","From: ".$emailFrom);
+            @mail($email,"Password reset","Hi\nYour password has been reset to ".$newPassword."\nWe suggest you login and change it immediately\nKind regards AXI Team","From: ".$emailFrom);
             $passwordReset = true;
         }
 
