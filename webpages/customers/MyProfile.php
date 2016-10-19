@@ -15,6 +15,14 @@
     {
         $sqlFunctions = new SqlFunctions();
     }
+    if(isset($_POST["submit"]))
+    {
+
+        if(!empty($customerObject->getCustomerName()) && (!empty($customerObject->getCustomerSurname())) && (!empty($customerObject->getContactNumber())) &&(!empty($userObject->getUserName())) && (!empty($userObject->getPassword())))
+        {
+                        
+        }
+    }
 ?>
 <html>
     <head>

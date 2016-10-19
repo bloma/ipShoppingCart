@@ -117,12 +117,6 @@ class SqlFunctions
         echo "<p>Surname: ".$row["CustomerSurname"]."</p>";
         echo "<p>Contact Number: ".$row["CustomerTelephone"]."</p>";
     }
-
-    public function updateUserDetails($conn,$currentName,$currentSurname, $newName,$newSurname, $newEmail,$newCellphone)
-    {
-        
-    }
-
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     /**
