@@ -110,9 +110,17 @@ class SqlFunctions
      */
     public function displayUserDetails($conn,$name)
     {
-        $sqlStatementSelectCustomerDetails = "Select * from customers WHERE CustomerName = '$name'";
+        $sqlStatementSelectCustomerDetails = mysqli_query($conn,"Select * from customers WHERE CustomerName = '$name'");
+        echo "<h2>Personal Details</h2>";
+        $row =  mysqli_fetch_array($sqlStatementSelectCustomerDetails,MYSQLI_ASSOC);
+        echo "<p>First Name:".$row["CustomerName"]."</p>";
+        echo "<p>Surname: ".$row["CustomerSurname"]."</p>";
+        echo "<p>Contact Number: ".$row["CustomerTelephone"]."</p>";
+    }
 
-
+    public function updateUserDetails($conn,$currentName,$currentSurname, $newName,$newSurname, $newEmail,$newCellphone)
+    {
+        
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////

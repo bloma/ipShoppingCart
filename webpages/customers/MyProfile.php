@@ -130,14 +130,17 @@
                     </div> <!-- END sidebar -->
                     <div id="content" class="floatRight">
                         <?php
-                            echo "<h2>Personal Details</h2>";
-                            echo "<p>First Name: ".$customerObject->getCustomerName()."</p>";
-                            echo "<p>Surname: ".$customerObject->getCustomerSurname()."</p>";
-                            echo "<p>Contact Number:".$customerObject->getContactNumber()."</p>";
-                            echo "<h2>Login Details</h2>";
-                            echo "<p>Username/Email Address: ".$userObject->getUserName()."</p>";
+                            $sqlFunctions->displayUserDetails($conn,$name);
                             echo "<h2>Update Details</h2>";
                         ?>
+                        <form name="updateDetails" action="<?php $_SERVER["PHP_SELF"] ?>" method="post">
+                            <p>Enter your Name:<input type="text" name="fName" value=""/></p>
+                            <p>Enter your Surname:<input type="text" name="lName" value=""/></p>
+                            <p>Enter your contact Number:<input type="text" name="contactNumber" value=""/></p>
+                            <p>Enter your email address: <input type="text" name="email" value=""/></p>
+                            <p>Enter your password:<input type="password" name="password" value=""/></p>
+                            <p><input type="submit" name="submit" value="Submit"/></p>
+                        </form>
                     </div> <!-- END content -->
                     <div class="cleaner"></div>
                 </div> <!-- END main -->
