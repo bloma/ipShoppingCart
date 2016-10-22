@@ -16,9 +16,8 @@ body {
 
 a, a:link, a:visited { color: #0299aa; font-weight: normal; text-decoration: none }
 a:hover { text-decoration: underline; }
-
-a.addtocart{ display: inline-block; width: 80px; height: 21px; line-height: 21px; text-align: center; font-size: 10px; font-weight: bold; color: #333; background: url(../images/addToCart.png) }
-a.detail{ display: inline-block; width: 64px; height: 20px; line-height: 20px; text-align: center; font-size: 10px; font-weight: bold; color: #333; background: url(../images/detail.png) }
+button.addtocart{ display: inline-block; width: 80px; height: 25px; text-align: center; font-size: 10px; font-weight: bold; color: #333; background: url(../images/addToCart.png) }
+a.addtocart{ display: inline-block; width: 90px; height: 21px; line-height: 21px; text-align: center; font-size: 10px; font-weight: bold; color: #333; background: url(../images/addToCart.png) }
 
 p { margin: 0 0 10px 0; padding: 0; }
 img { border: none; }
@@ -163,6 +162,8 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 
 .productBox img {
     margin-bottom: 5px;
+    width: 200px;
+    height: 150px;
 }
 .productBox h3 {
     font-size: 11px;
@@ -178,10 +179,6 @@ h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
 }
 .productBox .addtocart {
     float: left;
-    display: block;
-}
-.productBox .detail {
-    float: right;
     display: block;
 }
 

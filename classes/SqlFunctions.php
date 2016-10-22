@@ -2,9 +2,7 @@
 
 class SqlFunctions
 {
-    public function __construct()
-    {
-    }
+    public function __construct(){}
 
     /**
      * User and customer functions
@@ -339,6 +337,99 @@ class SqlFunctions
      * These functions are used to update stock and add new products,users,brands,employees and so forth
      */
 
-}
 
+ //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /**
+     * Search function
+     */
+    /**
+     * @param $conn
+     * @param $keyword
+     * This function is used to search for a specific item in products
+     */
+    public function search($conn,$keyword)
+    {
+        $sqlStatement = "SELECT ProductName,ProductDescription,Price,Image from products where ProductName = '$keyword' or Brand = '$keyword'";
+        $searchResult = mysqli_query($conn,$sqlStatement);
+        if(mysqli_num_rows($searchResult) >0)
+        {
+            echo "<h1>Search Results</h1>";
+            while ($row = mysqli_fetch_assoc($searchResult))
+            {
+                echo "<div class='productBox noMarginRight'>";
+                echo "<h3>".$row["ProductName"]."</h3>";
+                echo '<img src="data:image/jpeg;base64,'.base64_encode($row["Image"]).'" />';
+                echo "<p>".$row["ProductDescription"]."</p>";
+                echo "<p class='productPrice'>R".$row["Price"]."</p>";
+                echo "</div>";
+            }
+        }
+        else{
+            echo "<p id ='errors'>Sorry, we could not find what you were looking for</p>";
+        }
+    }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /**
+     * Display Products
+     */
+    /**
+     * @param $conn
+     * This function displays all the products on the product page
+     */
+    public function displayProducts($conn)
+    {
+        $sqlStatement = "SELECT ProductID,ProductName,ProductDescription,Price,Image from products";
+        @$searchResult = mysqli_query($conn,$sqlStatement);
+        if(mysqli_num_rows($searchResult) >0)
+        {
+            while ($row = mysqli_fetch_assoc($searchResult))
+            {
+                echo "<div class='productBox noMarginRight'>";
+                    echo "<h3>".$row["ProductName"]."</h3>";
+                    echo '<img src="data:image/jpeg;base64,'.base64_encode($row["Image"]).'" />';
+                    echo "<p>".$row["ProductDescription"]."</p>";
+                    echo "<p class='productPrice'>R".$row["Price"]."</p>";
+                    echo "<form name='cart' action='' method='get'>";
+                        echo "<button name='add' value='' type='submit' class='addtocart' />";
+                    echo "</form>";
+                echo "</div>";
+            }
+        }
+        else{
+            echo "<p id ='errors'>Sorry, no products to display</p>";
+        }
+    }
+
+    /**
+     * @param $conn
+     * This function is used to display new Products on the home page
+     */
+    public function displayNewProducts($conn)
+    {
+        @$sqlStatement = "SELECT NewProductD,ProductName,ProductDescription,ProductPrice,Image from newproducts";
+        @$searchResult = mysqli_query($conn,$sqlStatement);
+        if(mysqli_num_rows($searchResult) >0)
+        {
+            echo "<h1>New Arrivals</h1>";
+            while ($row = mysqli_fetch_assoc($searchResult))
+            {
+                echo "<div class='productBox noMarginRight'>";
+                    echo "<h3>".$row["ProductName"]."</h3>";
+                    echo '<img src="data:image/jpeg;base64,'.base64_encode($row["Image"]).'" />';
+                    echo "<p>".$row["ProductDescription"]."</p>";
+                    echo "<p class='productPrice'>R".$row["Price"]."</p>";
+                    echo "<form name='cart' action='' method='get'>";
+                    echo "<button name='add' value='' type='submit' class='addtocart' />";
+                    echo "</form>";
+                echo "</div>";
+            }
+        }
+        else{
+            echo "<p id ='errors'>Sorry, no products to display</p>";
+        }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+}
 ?>

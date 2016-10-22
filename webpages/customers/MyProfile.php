@@ -136,10 +136,6 @@
                             $sqlFunctions->displayUserDetails($conn,$name);
                             echo "<h2>Update Details</h2>";
                         ?>
-                        <form name="updateDetails" action="<?php $_SERVER["PHP_SELF"] ?>" method="post">
-                            <p>Enter new password:<input type="password" name="password" value=""/></p>
-                            <p><input type="submit" name="submit" value="Submit"/></p>
-                        </form>
                     </div> <!-- END content -->
                     <div class="cleaner"></div>
                 </div> <!-- END main -->

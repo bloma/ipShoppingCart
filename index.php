@@ -1,5 +1,10 @@
 <?php
     @include "configuration/session.php";
+    include "classes/SqlFunctions.php";
+    if(class_exists("SqlFunctions"))
+    {
+        $sqlObject = new SqlFunctions();
+    }
 ?>
 <html>
     <head>
@@ -62,9 +67,9 @@
                     </div> <!-- end of topNav-->
                     <!-- We could use this to search for products -->
                     <div id="search">
-                        <form action="webpages/searchresults.php" method="post">
-                            <input type="text" value="" name="keyword" id="keyword" title="keyword"  class="txtSearch" />
-                            <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="subBtn"  />
+                        <form action="webpages/searchresults.php" method="get">
+                            <input type="text" value="" name="keyword" class="txtSearch" />
+                            <input type="submit" name="Search" value=" " alt="Search" class="subBtn"  />
                         </form>
                     </div> <!-- END Search -->
                 </div><!-- END menuBar -->
@@ -72,12 +77,13 @@
                 <div id="main">
                     <div id="sidebar" class="floatLeft">
                         <div class="sidebarBox"><span class="bottom"></span>
-                            <h3>Categories</h3>
+
                             <div class="content">
                                 <ul class="sidebarList">
                                     <?php
                                         if(isset($_SESSION["loggedIn"]) & $accType == "Customer")
                                         {
+                                            echo "<h3>Categories</h3>";
                                             echo "<li class='first'><a href='webpages/customers/MyProfile.php'>My Profile</a></li>";
                                             echo "<li><a href='webpages/about.php'>About us</a></li>";
                                             echo "<li><a href='webpages/faqs.php'>FAQs</a></li>";
@@ -88,6 +94,8 @@
                                         }
                                         else if(isset($_SESSION["loggedIn"]) && $accType == "Admin")
                                         {
+                                            echo "<h3>CRUD options</h3>";
+                                            echo "<h5>Reports</h5>";
                                             echo "<li class='first'><a href='webpages/admin/reports/brandreport.php'>View Brands</a></li>";
                                             echo "<li><a href='webpages/admin/reports/customerreport.php'>View Customers</a></li>";
                                             echo "<li><a href='webpages/admin/reports/deliveriesreport.php'>View Deliveries</a></li>";
@@ -98,9 +106,25 @@
                                             echo "<li><a href='webpages/admin/reports/stockreport.php'>View Stock</a></li>";
                                             echo "<li><a href='webpages/admin/reports/suppliersreport.php'>View Suppliers</a></li>";
                                             echo "<li class='last'><a href='webpages/admin/reports/usersreport.php'>view Users</a></li>";
+                                            echo "<h5>Insert options</h5>";
+                                            echo "<li class='first'><a href='webpages/admin/databasecontrol/insert/insertnewbrands.php'>Add Brand</a></li>";
+                                            echo "<li><a href='webpages/admin/databasecontrol/insert/insertnewdistributors.php'>Add Distributor</a></li>";
+                                            echo "<li><a href='webpages/admin/databasecontrol/insert/insertnewproduct.php'>Add Product</a></li>";
+                                            echo "<li><a class='last' href='webpages/admin/databasecontrol/insert/insertnewsupplier.php'>Add Supplier</a></li>";
+                                            echo "<h5>Update options</h5>";
+                                            echo "<li class='first'><a href='webpages/admin/databasecontrol/update/updatebrands.php'>Update Brand</a></li>";
+                                            echo "<li><a href='webpages/admin/databasecontrol/update/updatedistributors.php'>Update Distributor</a></li>";
+                                            echo "<li><a href='webpages/admin/databasecontrol/update/updatestock.php'>Update Stock</a></li>";
+                                            echo "<li><a class='last' href='webpages/admin/databasecontrol/update/updatesuppliers.php'>Update Supplier</a></li>";
+                                            echo "<h5>Delete Options</h5>";
+                                            echo "<li class='first'><a href='webpages/admin/databasecontrol/delete/removebrand.php'>Delete Brand</a></li>";
+                                            echo "<li><a href='webpages/admin/databasecontrol/delete/removedistributor.php'>Delete Distributor</a></li>";
+                                            echo "<li><a href='webpages/admin/databasecontrol/delete/removeproduct.php'>Delete Product</a></li>";
+                                            echo "<li><a class='last' href='webpages/admin/databasecontrol/delete/removesupplier.php'>Delete Supplier</a></li>";
                                         }
                                         else if(!isset($_SESSION["loggedIn"]))
                                         {
+                                            echo "<h3>Categories</h3>";
                                             echo "<li class='first'><a href='webpages/about.php'>About us</a></li>";
                                             echo "<li><a href='webpages/faqs.php'>FAQs</a></li>";
                                             echo "<li><a href='webpages/contact.php'>Contact US</a></li>";
@@ -134,16 +158,7 @@
                             });
                         </script>
                         <?php
-                            echo "<h1>New Arrivals</h1>";
-                            for($i = 1; $i <= 12; ++$i)
-                            {
-                                echo "<div class='productBox noMarginRight'>";
-                                echo "<h3>Ut eu feugiat</h3>";
-                                echo "<img src='images/product/01.jpg' alt='Shoes 1' />";
-                                echo "<p>Nulla rutrum neque vitae erat condimentum eget malesuada.</p>";
-                                echo "<p class='productPrice'>R150</p>";
-                                echo "</div>";
-                            }
+                            $sqlObject->displayNewProducts($conn);
                         ?>
                     </div> <!-- END content -->
                     <div class="cleaner"></div>

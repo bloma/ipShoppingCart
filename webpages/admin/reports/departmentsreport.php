@@ -68,9 +68,9 @@
                     </div> <!-- end of topNav-->
                     <!-- We could use this to search for products -->
                     <div id="search">
-                        <form action="../../searchresults.php" method="post">
-                            <input type="text" value=" " name="keyword" id="keyword" title="keyword"  class="txtSearch" />
-                            <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="subBtn"  />
+                        <form action="../../searchresults.php" method="get">
+                            <input type="text" value="" name="keyword" class="txtSearch" />
+                            <input type="submit" name="Search" value=" " alt="Search" class="subBtn"  />
                         </form>
                     </div> <!-- END Search -->
                 </div><!-- END menuBar -->
@@ -82,8 +82,9 @@
                             <div class="content">
                                 <ul class="sidebarList">
                                     <?php
-                                        if(isset($_SESSION["loggedIn"]) & $accType == "Customer")
+                                       if(isset($_SESSION["loggedIn"]) & $accType == "Customer")
                                         {
+                                            echo "<h3>Categories</h3>";
                                             echo "<li class='first'><a href='../../customers/MyProfile.php'>My Profile</a></li>";
                                             echo "<li><a href='../../about.php'>About us</a></li>";
                                             echo "<li><a href='../../faqs.php'>FAQs</a></li>";
@@ -94,6 +95,8 @@
                                         }
                                         else if(isset($_SESSION["loggedIn"]) && $accType == "Admin")
                                         {
+                                            echo "<h3>CRUD options</h3>";
+                                            echo "<h5>Reports</h5>";
                                             echo "<li class='first'><a href='brandreport.php'>View Brands</a></li>";
                                             echo "<li><a href='customerreport.php'>View Customers</a></li>";
                                             echo "<li><a href='deliveriesreport.php'>View Deliveries</a></li>";
@@ -104,9 +107,25 @@
                                             echo "<li><a href='stockreport.php'>View Stock</a></li>";
                                             echo "<li><a href='suppliersreport.php'>View Suppliers</a></li>";
                                             echo "<li class='last'><a href='usersreport.php'>view Users</a></li>";
+                                            echo "<h5>Insert options</h5>";
+                                            echo "<li class='first'><a href='../databasecontrol/insert/insertnewbrands.php'>Add Brand</a></li>";
+                                            echo "<li><a href='../databasecontrol/insert/insertnewdistributors.php'>Add Distributor</a></li>";
+                                            echo "<li><a href='../databasecontrol/insert/insertnewproduct.php'>Add Product</a></li>";
+                                            echo "<li><a class='last' href='../databasecontrol/insert/insertnewsupplier.php'>Add Supplier</a></li>";
+                                            echo "<h5>Update options</h5>";
+                                            echo "<li class='first'><a href='../databasecontrol/update/updatebrands.php'>Update Brand</a></li>";
+                                            echo "<li><a href='../databasecontrol/update/updatedistributors.php'>Update Distributor</a></li>";
+                                            echo "<li><a href='../databasecontrol/update/updatestock.php'>Update Stock</a></li>";
+                                            echo "<li><a class='last' href='../databasecontrol/update/updatesuppliers.php'>Update Supplier</a></li>";
+                                            echo "<h5>Delete Options</h5>";
+                                            echo "<li class='first'><a href='../databasecontrol/delete/removebrand.php'>Delete Brand</a></li>";
+                                            echo "<li><a href='../databasecontrol/delete/removedistributor.php'>Delete Distributor</a></li>";
+                                            echo "<li><a href='../databasecontrol/delete/removeproduct.php'>Delete Product</a></li>";
+                                            echo "<li><a class='last' href='../databasecontrol/delete/removesupplier.php'>Delete Supplier</a></li>";
                                         }
                                         else if(!isset($_SESSION["loggedIn"]))
                                         {
+                                            echo "<h3>Categories</h3>";
                                             echo "<li class='first'><a href='../../about.php'>About us</a></li>";
                                             echo "<li><a href='../../faqs.php'>FAQs</a></li>";
                                             echo "<li><a href='../../contact.php'>Contact US</a></li>";
