@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="860cb467-7e49-4aae-83a0-caf861d63aa7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/delete/removebrand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/delete/removedistributor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/delete/removeproduct.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/delete/removesupplier.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewbrands.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewdistributors.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewsupplier.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatebrands.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatedistributors.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatestock.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatesuppliers.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/insertnewProduct.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewproduct.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/SqlFunctions.php" afterPath="$PROJECT_DIR$/classes/SqlFunctions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration/config.php" afterPath="$PROJECT_DIR$/configuration/config.php" />
     </list>
     <ignored path="ShoeStore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -342,7 +326,7 @@
       <workItem from="1476708901906" duration="2433000" />
       <workItem from="1476721887977" duration="10331000" />
       <workItem from="1476858249087" duration="4450000" />
-      <workItem from="1477129402279" duration="692000" />
+      <workItem from="1477129402279" duration="783000" />
     </task>
     <task id="LOCAL-00001" summary="Updated some more stuff">
       <created>1476190662608</created>
@@ -603,11 +587,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476881641104</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Added database control pages for admin,updated SqlFunctions class, dataSource and workspace">
+      <created>1477130186281</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1477130186281</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95170000" />
+    <option name="totallyTimeSpent" value="95261000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -646,7 +637,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated table scripts (AGAIN) - happy with results" />
     <MESSAGE value="updated table scripts (AGAIN) - happy with results&#10;Finished classes for prods and cart" />
     <MESSAGE value="Finished customer registration, need to finish login and setting up sessions" />
     <MESSAGE value="some UI tweaks, need to finish Login and adjust top nav based on session" />
@@ -671,7 +661,8 @@
     <MESSAGE value="added warning suppression to mail functions" />
     <MESSAGE value="Fixed login bug" />
     <MESSAGE value="must finish edit user details" />
-    <option name="LAST_COMMIT_MESSAGE" value="must finish edit user details" />
+    <MESSAGE value="Added database control pages for admin,updated SqlFunctions class, dataSource and workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added database control pages for admin,updated SqlFunctions class, dataSource and workspace" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
