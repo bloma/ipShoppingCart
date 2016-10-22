@@ -17,11 +17,6 @@
     }
     if(isset($_POST["submit"]))
     {
-        $userObject->setPassword($_POST["password"]);
-        if(!empty($userObject->getPassword()))
-        {
-            $sqlFunctions->updatePassword($conn,$name,$userObject->getPassword());
-        }
     }
 ?>
 <html>
@@ -49,17 +44,17 @@
                     <div id="siteTitle"><h1><a href="../../index.php">AXI's sneakers</a></h1></div>
                     <div id="headerRight">
                         <?php
-                            if(isset($_SESSION["loggedIn"]) && ($accType == "Customer"))
+                            if(isset($_SESSION["loggedIn"]) && $accType == "Customer")
                             {
-                                echo "<p>Hi, $name . ' '.$surname | <a href='../../webpages/shoppingcart.php'>My Cart</a> | <a href='../../webpages/checkout.php'>Checkout</a> | <a href='../../webpages/logout.php'>Logout</a></p>";
+                                echo "<p>Hi, $name $surname | <a href='../shoppingcart.php'>My Cart</a> | <a href='../checkout.php'>Checkout</a> | <a href='../logout.php'>Logout</a></p>";
                             }
-                            else if(isset($_SESSION["loggedIn"]) && ($accType == "Admin"))
+                            else if(isset($_SESSION["loggedIn"]) && $accType == "Admin")
                             {
-                                echo "<p>Hi, $name| <a href='../../webpages/logout.php'>Logout</a></p>";
+                                echo "<p>Hi, $name| <a href='../logout.php'>Logout</a></p>";
                             }
                             else
                             {
-                                echo "<p><a href='../../webpages/login.php'>Log in</a> | <a href='../../webpages/register.php'>Register</a></p>";
+                                echo "<p><a href='../login.php'>Log in</a> | <a href='../register.php'>Register</a></p>";
                             }
                         ?>
                     </div>
@@ -75,7 +70,7 @@
                             <?php
                                 if(isset($_SESSION["loggedIn"]) && $accType == "Customer")
                                 {
-                                    echo "<li><a href='MyProfile.php'>My profile</a></li>";
+                                    echo "<li><a href='MyProfile.php' class='selected'>My profile</a></li>";
                                 }
                             ?>
                             <li><a href="../about.php">About</a></li>

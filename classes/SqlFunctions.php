@@ -159,10 +159,10 @@ class SqlFunctions
         $result = mysqli_query($conn,$sqlStatement);
         if(mysqli_num_rows($result) > 0)
         {
-            echo "<table border='1'><tr><th>Delivery ID</th><th>Distributor ID</th><th>Customer ID</th><th>Courier</th><th>Recipient</th><th>Delivery Address</th><th>Date Dispatched</th><th>Date Delivered</th><th>Total Items</th></tr>";
+            echo "<table border='1'><tr><th>Delivery ID</th><th>Distributor ID</th><th>Customer ID</th><th>Courier</th><th>Delivery Address</th><th>Date Dispatched</th><th>Date Delivered</th><th>Total Items</th></tr>";
             while($row = mysqli_fetch_assoc($result))
             {
-                echo "<tr><td>".$row["DeliveryID"]."</td><td>".$row["DistributorID"]."</td><td>".$row["CustomerID"]."</td><td>".$row["CourierName"]."</td><td>".$row["RecipientName"]."</td><td>".$row["DeliveryAddress"]."</td><td>".$row["DateDespatched"]."</td><td>".$row["DateDelivered"]."</td><td>".$row["totalItems"]."</td></tr>";
+                echo "<tr><td>".$row["DeliveryID"]."</td><td>".$row["DistributorID"]."</td><td>".$row["CustomerID"]."</td><td>".$row["CourierName"]."</td><td>".$row["DeliveryAddress"]."</td><td>".$row["DateDespatched"]."</td><td>".$row["DateDelivered"]."</td><td>".$row["TotalItems"]."</td></tr>";
             }
             echo "</table>";
         }
@@ -323,7 +323,7 @@ class SqlFunctions
             echo "<table border='1'><tr><td>Product ID</td><td>Brand ID</td><td>Supplier ID</td><td>Name</td><td>Description</td><td>Price</td><td>In Stock</td><td>Quantity</td></tr>";
             while ($rowProducts = mysqli_fetch_assoc($productsResult))
             {
-                echo "<tr><td>".$rowProducts["ProductID"]."</td><td>".$rowProducts["BrandID"]."</td><td>".$rowProducts["SupplierID"]."</td><td>".$rowProducts["ProductName"]."</td><td>".$rowProducts["ProductDescription"]."</td><td>".$rowProducts["Price"]."</td><td>".$rowProducts["InStock"]."</td><td>".$rowProducts["Quantity"]."</td></tr>";
+                echo "<tr><td>".$rowProducts["ProductID"]."</td><td>".$rowProducts["BrandID"]."</td><td>".$rowProducts["SuplierID"]."</td><td>".$rowProducts["ProductName"]."</td><td>".$rowProducts["ProductDescription"]."</td><td>".$rowProducts["Price"]."</td><td>".$rowProducts["InStock"]."</td><td>".$rowProducts["Quantity"]."</td></tr>";
             }
             echo "</table>";
         }
