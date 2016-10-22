@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source name="MySQL - test@localhost" uuid="578a61a8-61bd-4d17-be6e-86d87ba99f6a">
+  <data-source name="MySQL - test@localhost" uuid="7e837cb7-953c-4db8-b857-78803c3ac040">
     <database-info product="MySQL" version="5.7.9" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
       <extra-name-characters>#@</extra-name-characters>
       <identifier-quote-string>`</identifier-quote-string>
@@ -285,7 +285,7 @@
       </column>
       <column id="80" parent="14" name="ProductName">
         <mandatory>1</mandatory>
-        <data-type>int(11)|0</data-type>
+        <data-type>varchar(25)|0</data-type>
       </column>
       <column id="81" parent="14" name="ProductDescription">
         <mandatory>1</mandatory>

@@ -95,19 +95,6 @@ class SqlFunctions
         echo "<p>Contact Number: " . $row["CustomerTelephone"] . "</p>";
     }
 
-    public function updatePassword($conn,$name,$newPassword)
-    {
-        $sqlStatementSelectCustomerDetails = mysqli_query($conn, "Select * from customers WHERE CustomerName = '$name'");
-        $row = mysqli_fetch_array($sqlStatementSelectCustomerDetails, MYSQLI_ASSOC);
-        $userID = $row["UserID"];
-        $sqlQueryUpdate = "UPDATE USERS set Password = md5($newPassword) WHERE UserID = '$userID'";
-        try {
-            mysqli_query($conn, $sqlQueryUpdate);
-        } catch (Exception $e) {
-            $e->getMessage();
-        }
-    }
-
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     /**
