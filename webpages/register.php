@@ -12,6 +12,7 @@
     $passwordError = false;
     $emptyFieldsError = false;
     $invalidEmailFormat = false;
+    $invalidEmail = false;
     if(isset($_POST["submit"]))
     {
         $firstName = $_POST["fName"];
@@ -48,11 +49,17 @@
             $userObject->setAccountType("Customer");
             $accType = $userObject->getAccountType();
             $userID = 0;
-           try{
-                $sqlFunctions->registerUser($conn,$emailAddress,$hashedPassword,$accType,$userID,$firstName,$surname,$contactNumber);
-            }catch (Exception $e)
+            if($sqlFunctions->validateEmail($conn,$userObject->getUserName()))
             {
-                $e->getMessage();
+                try{
+                    $sqlFunctions->registerUser($conn,$userObject->getUserName(),$userObject->getPassword(),$userObject->getAccountType(),$userID,$customerObject->getCustomerName(),$customerObject->getCustomerSurname(),$customerObject->getContactNumber());
+                }catch (Exception $e)
+                {
+                    $e->getMessage();
+                }
+            }
+            else{
+                $invalidEmail = true;
             }
         }
     }
@@ -199,7 +206,7 @@
                         <?php
                             if($invalidEmailFormat)
                             {
-                                echo "<p id='errors'>Email Address is not valid</p>";
+                                echo "<p id='errors'>The entered email Address is invalid</p>";
                             }
                             else if($emptyFieldsError)
                             {
@@ -208,6 +215,10 @@
                             else if($passwordError)
                             {
                                 echo "<p id='errors'>Password must be at least 8 characters, contain one number and one special character</p>";
+                            }
+                            else if($invalidEmail)
+                            {
+                                echo "<p id='errors'>The entered email address is taken</p>";
                             }
                         ?>
                     </div> <!-- END content -->

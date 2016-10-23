@@ -143,10 +143,10 @@
                             <div id="slider" class="shoeSlider">
                                 <?php
                                     echo "<img src='images/slider/af1.jpg' alt='' />";
-                                    echo "<img src='images/slider/stan.jpg' alt='' />";
+                                    echo "<img src='images/slider/adidas.jpg' alt='' />";
                                     echo "<img src='images/slider/stanSmith.jpg' alt='' />";
                                     echo "<img src='images/slider/yeezy.jpg' alt='' />";
-                                    echo "<img src='images/slider/superstar.jpg' alt='' />";
+                                    echo "<img src='images/slider/jordan1.jpg' alt='' />";
                                 ?>
                             </div>
                         </div>

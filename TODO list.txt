@@ -1,0 +1,19 @@
+**add all SQL related code to SqlFunctions class
+1. Finish checkout page
+	-UI - See orders and deliveries class for an idea of what details to prompt
+	-Checkout process (insert data into orderhistory, deliveries,clear cart)
+2. Add validation
+	2.1 Checkout text boxes may not be empty
+		2.1.1 CVV number must only be three numbers, may not contain letters or special characters
+		2.1.2 Card number must be 16 numbers, may not contain letter or special characters
+3. Finish cart
+	-adding to cart(use a session)
+	-UI
+4. Add the logo and favicon
+
+2. Finish db control
+	2.1 Allow admin to add stock to products
+	2.2 Allow admin to insert new stock
+	2.3 Allow admin to insert new distributors
+	2.4 Allow admin to insert new brands
+	2.5 Allow admin to insert new suppliers

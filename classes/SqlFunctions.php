@@ -78,6 +78,24 @@ class SqlFunctions
         return implode($password);
     }
 
+    public function validateEmail($conn,$emailToValidate)
+    {
+        $sqlSelectEmail = "Select UserName from users";
+        $userEmailResult = mysqli_query($conn,$sqlSelectEmail);
+        $emailMatches = false;
+        while($row = mysqli_fetch_assoc($userEmailResult)) {
+            $email = $row["UserName"];
+            if ($email == $emailToValidate)
+            {
+                $emailMatches = true;
+            }
+            else{
+                $emailMatches = false;
+            }
+        }
+        return $emailMatches;
+    }
+
     /**
      * @param $conn
      * @param $name
@@ -93,11 +111,141 @@ class SqlFunctions
         echo "<p>Contact Number: " . $row["CustomerTelephone"] . "</p>";
     }
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /**
+     * @param $conn
+     * @param $oldName
+     * @param $newName
+     * This function updates a customers name
+     */
+    public function updateCustomerName($conn,$oldName, $newName)
+    {
+        $sqlStatementSelectID = "Select CustomerID,UserID from customers WHERE CustomerName = '$oldName'";
+        $customerIDResult = mysqli_query($conn,$sqlStatementSelectID);
+        $row = mysqli_fetch_array($customerIDResult,MYSQLI_ASSOC);
+        $CustomerID = $row["CustomerID"];
+        $userID = $row["UserID"];
+        $sqlSelectEmail = "Select UserName from users WHERE UserID = '$userID'";
+        $emailResult = mysqli_query($conn,$sqlSelectEmail);
+        $userRow = mysqli_fetch_array($emailResult);
+        $email = $userRow["UserName"];
+        $sqlStatementUpdateCustomerName = "Update Customers set CustomerName = '$newName' WHERE CustomerID = '$CustomerID'";
+        if(mysqli_query($conn,$sqlStatementUpdateCustomerName))
+        {
+            @mail($email,"Personal Details Updated","Hi, $newName\nYou have successfully updated your first name","From: noreply@axi.co.za");
+        }
+        else{
+            echo mysqli_error($conn);
+        }
+    }
+
+    /**
+     * @param $conn
+     * @param $name
+     * @param $surname
+     * This function updates a customers surname
+     */
+    public function updateCustomerSurname($conn,$name,$surname)
+    {
+        $sqlStatementSelectID = "Select UserID from customers WHERE CustomerName = '$name'";
+        $customerIDResult = mysqli_query($conn,$sqlStatementSelectID);
+        $row = mysqli_fetch_array($customerIDResult,MYSQLI_ASSOC);
+        $userID = $row["UserID"];
+        $sqlSelectEmail = "Select UserName from users WHERE UserID = '$userID'";
+        $emailResult = mysqli_query($conn,$sqlSelectEmail);
+        $userRow = mysqli_fetch_array($emailResult);
+        $email = $userRow["UserName"];
+        $sqlUpdateSurname = "Update customers set CustomerSurname = '$surname' WHERE CustomerName = '$name'";
+        if(mysqli_query($conn,$sqlUpdateSurname))
+        {
+            @mail($email,"Personal Details Updated","Hi, $name\nYou have successfully updated your surname","From: noreply@axi.co.za");
+        }
+        else{
+            echo mysqli_error($conn);
+        }
+
+    }
+
+    /**
+     * @param $conn
+     * @param $name
+     * @param $newContactNumber
+     * This function updates a customers telephone number
+     */
+    public function updateCustomerContactNumber($conn,$name,$newContactNumber)
+    {
+        $sqlSelectCustomerDetails = "Select UserID from customers WHERE CustomerName = '$name'" ;
+        $customerIDResult = mysqli_query($conn,$sqlSelectCustomerDetails);
+        $rowCustomer = mysqli_fetch_array($customerIDResult,MYSQLI_ASSOC);
+        $userID = $rowCustomer["UserID"];
+        $sqlUserSelectEmail = "Select UserName from users WHERE UserID = '$userID'";
+        $userResult = mysqli_query($conn,$sqlUserSelectEmail);
+        $userRow = mysqli_fetch_array($userResult);
+        $email = $userRow["UserName"];
+        $sqlUpdateCustomerContact = "Update customers set CustomerTelephone = '$newContactNumber' WHERE CustomerName = '$name'";
+        if(mysqli_query($conn,$sqlUpdateCustomerContact))
+        {
+            @mail($email,"Personal Details Updated","Hi, $name\nYou have successfully updated your contact number","From: noreply@axi.co.za");
+        }
+        else{
+            echo mysqli_error($conn);
+        }
+    }
+
+    /**
+     * @param $conn
+     * @param $name
+     * @param $newEmail
+     * This function updates a users email/Username
+     */
+    public function updateUserEmail($conn,$name,$newEmail)
+    {
+        $sqlSelectUserID = "Select UserID from customers WHERE CustomerName = '$name'";
+        $iDResult = mysqli_query($conn,$sqlSelectUserID);
+        $rowCustomer = mysqli_fetch_array($iDResult,MYSQLI_ASSOC);
+        $userID = $rowCustomer["UserID"];
+        $sqlUpdateUserName = "Update users set UserName = '$newEmail' WHERE UserID = '$userID'";
+        if(mysqli_query($conn,$sqlUpdateUserName))
+        {
+            $sqlSelectEmail = "select UserName from users WHERE UserID = '$userID'";
+            $userEmailResult = mysqli_query($conn,$sqlSelectEmail);
+            $rowUser = mysqli_fetch_array($userEmailResult,MYSQLI_ASSOC);
+            $email = $rowUser["UserName"];
+            @mail($email,"Personal Details Updated","Hi, $name\nYou have successfully updated your email address","From: noreply@axi.co.za");
+        }
+        else{
+            echo mysqli_error($conn);
+        }
+    }
+
+    /**
+     * @param $conn
+     * @param $name
+     * @param $newPassword
+     * This function updates a users password
+     */
+    public function updateUserPassword($conn,$name,$newPassword)
+    {
+        $sqlSelectUserID = "Select UserID from customers WHERE CustomerName = '$name'";
+        $userIDResult = mysqli_query($conn,$sqlSelectUserID);
+        $rowCustomer = mysqli_fetch_array($userIDResult,MYSQLI_ASSOC);
+        $userID = $rowCustomer["UserID"];
+        $sqlSelectEmail = "select UserName from users WHERE UserID = '$userID'";
+        $userEmailResult = mysqli_query($conn,$sqlSelectEmail);
+        $rowUser = mysqli_fetch_array($userEmailResult,MYSQLI_ASSOC);
+        $email = $rowUser["UserName"];
+        $sqlUpdatePassword = "Update users set Password = '$newPassword' WHERE UserID = '$userID'";
+        if(mysqli_query($conn,$sqlUpdatePassword))
+        {
+            @mail($email,"Personal Details Updated","Hi, $name\nYou have successfully updated your password","From: noreply@axi.co.za");
+        }
+        else{
+            echo mysqli_error($conn);
+        }
+    }
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     /**
      * Reports functions
-     * These functions are used to generate reports
      */
 
     /**
@@ -330,7 +478,7 @@ class SqlFunctions
             echo "<p id='errors'>No results</p>";
         }
     }
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     /**
      * Database control functions
@@ -368,8 +516,7 @@ class SqlFunctions
             echo "<p id ='errors'>Sorry, we could not find what you were looking for</p>";
         }
     }
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     /**
      * Display Products
      */
@@ -429,7 +576,10 @@ class SqlFunctions
             echo "<p id ='errors'>Sorry, no products to display</p>";
         }
     }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /**
+     * Checkout SQL functions
+     */
 }
 ?>

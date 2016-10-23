@@ -15,8 +15,58 @@
     {
         $sqlFunctions = new SqlFunctions();
     }
-    if(isset($_POST["submit"]))
+    if(isset($_POST["btnSubmit"]))
     {
+        if(!empty($_POST["custName"]))
+        {
+            $custName = $_POST["custName"];
+            $customerObject->setCustomerName($custName);
+        }
+        if(!empty($_POST["custSurname"]))
+        {
+            $custSurname = $_POST["custSurname"];
+            $customerObject->setCustomerSurname($custSurname);
+        }
+        if(!empty($_POST["custTelephone"]))
+        {
+            $custContactNumber = $_POST["custTelephone"];
+            $customerObject->setContactNumber($custContactNumber);
+        }
+        if(!empty($_POST["custPassword"]))
+        {
+            $custPassword = $_POST["custPassword"];
+            $hashedPassword = md5($custPassword);
+            $userObject->setPassword($hashedPassword);
+        }
+        if(!empty($_POST["custEmail"]))
+        {
+            $custEmail = $_POST["custEmail"];
+            $userObject->setUserName($custEmail);
+        }
+        if(!empty($customerObject->getCustomerName()))
+        {
+            $sqlFunctions->updateCustomerName($conn,$name,$customerObject->getCustomerName());
+        }
+        if(!empty($customerObject->getCustomerSurname()))
+        {
+            $sqlFunctions->updateCustomerSurname($conn,$name,$customerObject->getCustomerSurname());
+        }
+        if(!empty($customerObject->getContactNumber()))
+        {
+            $sqlFunctions->updateCustomerContactNumber($conn,$name,$customerObject->getContactNumber());
+        }
+        if(!empty($userObject->getUserName()))
+        {
+            $sqlFunctions->updateUserEmail($conn,$name,$userObject->getUserName());
+        }
+        if(!empty($userObject->getPassword()))
+        {
+            $sqlFunctions->updateUserPassword($conn,$name,$userObject->getPassword());
+        }
+    }
+    if(isset($_POST["btnCancel"]))
+    {
+       header("Location: ../../index.php");
     }
 ?>
 <html>
@@ -90,7 +140,6 @@
                 <div id="main">
                     <div id="sidebar" class="floatLeft">
                         <div class="sidebarBox"><span class="bottom"></span>
-                            <h3>Categories</h3>
                             <div class="content">
                                 <ul class="sidebarList">
                                  <?php
@@ -125,7 +174,7 @@
                                             echo "<li><a href='../admin/databasecontrol/insert/insertnewproduct.php'>Add Product</a></li>";
                                             echo "<li><a class='last' href='../admin/databasecontrol/insert/insertnewsupplier.php'>Add Supplier</a></li>";
                                             echo "<h5>Update options</h5>";
-                                            echo "<li class='first'><a href='../databasecontrol/update/updatebrands.php'>Update Brand</a></li>";
+                                            echo "<li class='first'><a href='../admin/databasecontrol/update/updatebrands.php'>Update Brand</a></li>";
                                             echo "<li><a href='../admin/databasecontrol/update/updatedistributors.php'>Update Distributor</a></li>";
                                             echo "<li><a href='../admin/databasecontrol/update/updatestock.php'>Update Stock</a></li>";
                                             echo "<li><a class='last' href='../admin/databasecontrol/update/updatesuppliers.php'>Update Supplier</a></li>";
@@ -138,7 +187,7 @@
                                         else if(!isset($_SESSION["loggedIn"]))
                                         {
                                             echo "<h3>Categories</h3>";
-                                            echo "<li class='first'><a href='../../about.php'>About us</a></li>";
+                                            echo "<li class='first'><a href='../about.php'>About us</a></li>";
                                             echo "<li><a href='../faqs.php'>FAQs</a></li>";
                                             echo "<li><a href='../contact.php'>Contact US</a></li>";
                                             echo "<li><a href='../exchangepolicy.php'>Exchange Policy</a></li>";
@@ -155,6 +204,14 @@
                             $sqlFunctions->displayUserDetails($conn,$name);
                             echo "<h2>Update Details</h2>";
                         ?>
+                        <form name="updateDetails" action="<?php $_SERVER['PHP_SELF']?>" method="post">
+                            <p>Please enter your new name: <input name="custName" type="text"/></p>
+                            <p>Please enter your new surname: <input name="custSurname" type="text"/></p>
+                            <p>Please enter your new contact number: <input name="custTelephone" type="text"/></p>
+                            <p>Please enter your new email address: <input name="custEmail" type="email"/></p>
+                            <p>Please enter your new password: <input name="custPassword" type="password"/></p>
+                            <input name="btnSubmit" value="Submit" type="submit"/> <input name="btnCancel" value="Cancel" type="submit"/>
+                        </form>
                     </div> <!-- END content -->
                     <div class="cleaner"></div>
                 </div> <!-- END main -->
