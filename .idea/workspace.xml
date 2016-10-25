@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="860cb467-7e49-4aae-83a0-caf861d63aa7" name="Default" comment="Updated the SQL script,">
+    <list default="true" id="860cb467-7e49-4aae-83a0-caf861d63aa7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.txt" afterPath="$PROJECT_DIR$/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TODO list.txt" afterPath="$PROJECT_DIR$/TODO list.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sqlScripts/createTables.sql" afterPath="$PROJECT_DIR$/sqlScripts/createTables.sql" />
     </list>
     <ignored path="ShoeStore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -302,7 +299,7 @@
       <workItem from="1477129402279" duration="783000" />
       <workItem from="1477153536035" duration="13529000" />
       <workItem from="1477204041915" duration="13730000" />
-      <workItem from="1477418322133" duration="609000" />
+      <workItem from="1477418322133" duration="642000" />
     </task>
     <task id="LOCAL-00001" summary="Updated some more stuff">
       <created>1476190662608</created>
@@ -598,11 +595,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477219067850</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Updated the SQL script, README.txt and the TODO list">
+      <created>1477418962420</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1477418962420</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123129000" />
+    <option name="totallyTimeSpent" value="123162000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -641,7 +645,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="minor changes to layout added store name need a new logo" />
     <MESSAGE value="added new table to database, edited contactUs txt file" />
     <MESSAGE value="updated contact page, displaying products with PHP, Hard coded,fixed register bug" />
     <MESSAGE value="Added folder for CSV files and added brands CSV" />
@@ -666,7 +669,8 @@
     <MESSAGE value="Fixed report bug, fixed a slight UI error" />
     <MESSAGE value="updated CSS, displaying products from the database added csv content for deliveries and orederhistory UI tweaks to include more crud functionality for admin user fixed the search bar" />
     <MESSAGE value="Finished my profile page for customers, they can change their details, changed some slider pics added a TODO list txt file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished my profile page for customers, they can change their details, changed some slider pics added a TODO list txt file" />
+    <MESSAGE value="Updated the SQL script, README.txt and the TODO list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the SQL script, README.txt and the TODO list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
