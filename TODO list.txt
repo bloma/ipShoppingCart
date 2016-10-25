@@ -10,6 +10,7 @@
 	-adding to cart(use a session)
 	-UI
 4. Add the logo and favicon
+5. Documentation - proper documentation explaining how to use the site including how to import the database
 
 2. Finish db control
 	2.1 Allow admin to add stock to products
