@@ -3,15 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="860cb467-7e49-4aae-83a0-caf861d63aa7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/SqlFunctions.php" afterPath="$PROJECT_DIR$/classes/SqlFunctions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewbrands.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewbrands.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewdistributors.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewdistributors.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewproduct.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewproduct.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewsupplier.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewsupplier.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatebrands.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatebrands.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatedistributors.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatedistributors.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatestock.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatestock.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatesuppliers.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatesuppliers.php" />
     </list>
     <ignored path="ShoeStore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -404,7 +395,7 @@
       <workItem from="1477204041915" duration="13730000" />
       <workItem from="1477418322133" duration="642000" />
       <workItem from="1477464482277" duration="439000" />
-      <workItem from="1477475744399" duration="5684000" />
+      <workItem from="1477475744399" duration="5706000" />
     </task>
     <task id="LOCAL-00001" summary="Updated some more stuff">
       <created>1476190662608</created>
@@ -714,11 +705,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477479677321</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Added base code for UI">
+      <created>1477490162893</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1477490162893</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129285000" />
+    <option name="totallyTimeSpent" value="129307000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -757,7 +755,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated contact page, displaying products with PHP, Hard coded,fixed register bug" />
     <MESSAGE value="Added folder for CSV files and added brands CSV" />
     <MESSAGE value="Added folder for CSV files and added brands CSV structure, and updated sql table(again)" />
     <MESSAGE value="Updated UI, added data source made a few code tweaks and added comments to template CSS and JScript files" />
@@ -782,7 +779,8 @@
     <MESSAGE value="Finished my profile page for customers, they can change their details, changed some slider pics added a TODO list txt file" />
     <MESSAGE value="Updated the SQL script, README.txt and the TODO list" />
     <MESSAGE value="Finished delete functions and pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished delete functions and pages" />
+    <MESSAGE value="Added base code for UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added base code for UI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
