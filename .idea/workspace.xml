@@ -2,27 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="860cb467-7e49-4aae-83a0-caf861d63aa7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/578a61a8-61bd-4d17-be6e-86d87ba99f6a.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/Distributor.php" afterPath="$PROJECT_DIR$/classes/Distributor.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/SqlFunctions.php" afterPath="$PROJECT_DIR$/classes/SqlFunctions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration/config.php" afterPath="$PROJECT_DIR$/configuration/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/delete/removebrand.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/delete/removebrand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/delete/removedistributor.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/delete/removedistributor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/delete/removeproduct.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/delete/removeproduct.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/delete/removesupplier.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/delete/removesupplier.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/brandreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/brandreport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/customerreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/customerreport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/deliveriesreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/deliveriesreport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/departmentsreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/departmentsreport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/distriburtorreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/distriburtorreport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/orderhistory.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/orderhistory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/staffreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/staffreport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/stockreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/stockreport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/suppliersreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/suppliersreport.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/reports/usersreport.php" afterPath="$PROJECT_DIR$/webpages/admin/reports/usersreport.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewbrands.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewbrands.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewdistributors.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewdistributors.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewproduct.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewproduct.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewsupplier.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewsupplier.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatebrands.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatebrands.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatedistributors.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatedistributors.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatestock.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatestock.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatesuppliers.php" afterPath="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatesuppliers.php" />
     </list>
     <ignored path="ShoeStore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,96 +39,7 @@
     <favorites_list name="ShoeStore" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SqlFunctions.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/classes/SqlFunctions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="561" column="7" selection-start-line="561" selection-start-column="7" selection-end-line="561" selection-end-column="7" />
-              <folding>
-                <marker date="1477479637177" expanded="true" signature="560:664" ph="insert into users... " />
-                <marker date="1477479637177" expanded="true" signature="748:805" ph="select userI... users" />
-                <marker date="1477479637177" expanded="true" signature="1147:1283" ph="insert into customers... " />
-                <marker date="1477479637177" expanded="true" signature="1952:2020" ph="UPDATE USERS... " />
-                <marker date="1477479637177" expanded="true" signature="2903:2929" ph="Select UserN... users" />
-                <marker date="1477479637177" expanded="true" signature="3611:3663" ph="Select * fro... customers" />
-                <marker date="1477479637177" expanded="true" signature="4233:4304" ph="Select Custo... customers" />
-                <marker date="1477479637177" expanded="true" signature="4548:4599" ph="Select UserN... users" />
-                <marker date="1477479637177" expanded="true" signature="4797:4876" ph="Update Custo... " />
-                <marker date="1477479637177" expanded="true" signature="5405:5462" ph="Select UserI... customers" />
-                <marker date="1477479637177" expanded="true" signature="5664:5715" ph="Select UserN... users" />
-                <marker date="1477479637177" expanded="true" signature="5899:5977" ph="Update custo... " />
-                <marker date="1477479637177" expanded="true" signature="6524:6581" ph="Select UserI... customers" />
-                <marker date="1477479637177" expanded="true" signature="6808:6859" ph="Select UserN... users" />
-                <marker date="1477479637177" expanded="true" signature="7053:7142" ph="Update custo... " />
-                <marker date="1477479637177" expanded="true" signature="7660:7717" ph="Select UserI... customers" />
-                <marker date="1477479637177" expanded="true" signature="7917:7981" ph="Update users... " />
-                <marker date="1477479637177" expanded="true" signature="8076:8127" ph="select UserN... users" />
-                <marker date="1477479637177" expanded="true" signature="8764:8821" ph="Select UserI... customers" />
-                <marker date="1477479637177" expanded="true" signature="9026:9077" ph="select UserN... users" />
-                <marker date="1477479637177" expanded="true" signature="9283:9350" ph="Update users... " />
-                <marker date="1477479637177" expanded="true" signature="9958:9978" ph="Select * fro... Brands" />
-                <marker date="1477479637177" expanded="true" signature="10742:10765" ph="Select * fro... customers" />
-                <marker date="1477479637177" expanded="true" signature="11588:11613" ph="Select * fro... delieveries" />
-                <marker date="1477479637177" expanded="true" signature="12616:12641" ph="Select * fro... departments" />
-                <marker date="1477479637177" expanded="true" signature="13373:13399" ph="Select * fro... distributors" />
-                <marker date="1477479637177" expanded="true" signature="14234:14257" ph="Select * fro... employees" />
-                <marker date="1477479637177" expanded="true" signature="15122:15148" ph="Select * fro... orderhistory" />
-                <marker date="1477479637177" expanded="true" signature="16120:16139" ph="Select * fro... users" />
-                <marker date="1477479637177" expanded="true" signature="16845:16868" ph="Select * fro... suppliers" />
-                <marker date="1477479637177" expanded="true" signature="17696:17718" ph="Select * fro... products" />
-                <marker date="1477479637177" expanded="true" signature="19118:19130" ph="DELETE FROM " />
-                <marker date="1477479637177" expanded="true" signature="19118:19158" ph="DELETE FROM " />
-                <marker date="1477479637177" expanded="true" signature="19118:21351" ph="DELETE FROM " />
-                <marker date="1477479637177" expanded="true" signature="19628:19680" ph="DELETE FROM " />
-                <marker date="1477479637177" expanded="true" signature="20145:20189" ph="DELETE FROM " />
-                <marker date="1477479637177" expanded="true" signature="20649:20695" ph="DELETE FROM " />
-                <marker date="1477479637177" expanded="true" signature="21114:21148" ph="/** * Search... " />
-                <marker date="1477479637177" expanded="true" signature="21153:21278" ph="/** * @param... " />
-                <marker date="1477479637177" expanded="true" signature="21353:21469" ph="SELECT Produ... products" />
-                <marker date="1477479637177" expanded="true" signature="22567:22640" ph="SELECT Produ... products" />
-                <marker date="1477479637177" expanded="true" signature="23738:23823" ph="SELECT NewPr... newproducts" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="removesupplier.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpages/admin/databasecontrol/delete/removesupplier.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="157" column="104" selection-start-line="157" selection-start-column="104" selection-end-line="157" selection-end-column="104" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.suppliers" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/52f1e6d2/7e837cb7-953c-4db8-b857-78803c3ac040/test.suppliers">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Supplier.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/Supplier.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -154,20 +54,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/classes/Supplier.php" />
         <option value="$PROJECT_DIR$/configuration/customerSession.php" />
         <option value="$PROJECT_DIR$/configuration/adminSession.php" />
         <option value="$PROJECT_DIR$/webpages/logout.php" />
         <option value="$PROJECT_DIR$/webpages/admin/databasecontrol/insertnewProduct.php" />
         <option value="$PROJECT_DIR$/textDocs/about.txt" />
         <option value="$PROJECT_DIR$/configuration/session.php" />
-        <option value="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatedistributors.php" />
-        <option value="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatesuppliers.php" />
-        <option value="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatebrands.php" />
-        <option value="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewsupplier.php" />
-        <option value="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewbrands.php" />
-        <option value="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewdistributors.php" />
-        <option value="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatestock.php" />
         <option value="$PROJECT_DIR$/sqlScripts/csv files/deliveries.csv" />
         <option value="$PROJECT_DIR$/sqlScripts/csv files/orderhistory.csv" />
         <option value="$PROJECT_DIR$/css/style.css" />
@@ -205,6 +97,14 @@
         <option value="$PROJECT_DIR$/webpages/admin/databasecontrol/delete/removeproduct.php" />
         <option value="$PROJECT_DIR$/webpages/admin/databasecontrol/delete/removesupplier.php" />
         <option value="$PROJECT_DIR$/classes/SqlFunctions.php" />
+        <option value="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewbrands.php" />
+        <option value="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatebrands.php" />
+        <option value="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewdistributors.php" />
+        <option value="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewproduct.php" />
+        <option value="$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewsupplier.php" />
+        <option value="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatesuppliers.php" />
+        <option value="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatestock.php" />
+        <option value="$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatedistributors.php" />
       </list>
     </option>
   </component>
@@ -323,6 +223,10 @@
               <option name="myItemId" value="databasecontrol" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="update" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -360,21 +264,19 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sqlScripts" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ShoeStore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ShoeStore" />
+              <option name="myItemId" value="webpages" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="databasecontrol" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delete" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -502,7 +404,7 @@
       <workItem from="1477204041915" duration="13730000" />
       <workItem from="1477418322133" duration="642000" />
       <workItem from="1477464482277" duration="439000" />
-      <workItem from="1477475744399" duration="3856000" />
+      <workItem from="1477475744399" duration="5684000" />
     </task>
     <task id="LOCAL-00001" summary="Updated some more stuff">
       <created>1476190662608</created>
@@ -805,17 +707,24 @@
       <option name="project" value="LOCAL" />
       <updated>1477418962420</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Finished delete functions and pages">
+      <created>1477479677321</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1477479677321</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127457000" />
+    <option name="totallyTimeSpent" value="129285000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23720682" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23720682" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39774558" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -848,7 +757,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added new table to database, edited contactUs txt file" />
     <MESSAGE value="updated contact page, displaying products with PHP, Hard coded,fixed register bug" />
     <MESSAGE value="Added folder for CSV files and added brands CSV" />
     <MESSAGE value="Added folder for CSV files and added brands CSV structure, and updated sql table(again)" />
@@ -873,7 +781,8 @@
     <MESSAGE value="updated CSS, displaying products from the database added csv content for deliveries and orederhistory UI tweaks to include more crud functionality for admin user fixed the search bar" />
     <MESSAGE value="Finished my profile page for customers, they can change their details, changed some slider pics added a TODO list txt file" />
     <MESSAGE value="Updated the SQL script, README.txt and the TODO list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the SQL script, README.txt and the TODO list" />
+    <MESSAGE value="Finished delete functions and pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished delete functions and pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -882,49 +791,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webpages/searchresults.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="133" column="41" selection-start-line="133" selection-start-column="41" selection-end-line="133" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/shippingpolicy.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="128" column="41" selection-start-line="128" selection-start-column="41" selection-end-line="128" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/shoppingcart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="941">
-          <caret line="128" column="41" selection-start-line="128" selection-start-column="41" selection-end-line="128" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1207">
-          <caret line="78" column="40" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configuration/session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/5d519a45/7e837cb7-953c-4db8-b857-78803c3ac040/test.delieveries" />
-    <entry file="file://$PROJECT_DIR$/classes/Delivery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/slider/af1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1164,14 +1030,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/admin/databasecontrol/delete/removebrand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="155" column="33" selection-start-line="155" selection-start-column="33" selection-end-line="155" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webpages/admin/databasecontrol/delete/removedistributor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="557">
@@ -1214,14 +1072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Supplier.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/52f1e6d2/7e837cb7-953c-4db8-b857-78803c3ac040/test.suppliers">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1237,67 +1087,147 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webpages/admin/databasecontrol/delete/removesupplier.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
+        <state relative-caret-position="676">
           <caret line="157" column="104" selection-start-line="157" selection-start-column="104" selection-end-line="157" selection-end-column="104" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewbrands.php">
+    <entry file="file://$PROJECT_DIR$/classes/Supplier.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="34">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/admin/databasecontrol/delete/removebrand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="155" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="178" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/SqlFunctions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="561" column="7" selection-start-line="561" selection-start-column="7" selection-end-line="561" selection-end-column="7" />
+        <state relative-caret-position="-868">
+          <caret line="488" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="662" selection-end-column="2" />
           <folding>
-            <marker date="1477479637177" expanded="true" signature="560:664" ph="insert into users... " />
-            <marker date="1477479637177" expanded="true" signature="748:805" ph="select userI... users" />
-            <marker date="1477479637177" expanded="true" signature="1147:1283" ph="insert into customers... " />
-            <marker date="1477479637177" expanded="true" signature="1952:2020" ph="UPDATE USERS... " />
-            <marker date="1477479637177" expanded="true" signature="2903:2929" ph="Select UserN... users" />
-            <marker date="1477479637177" expanded="true" signature="3611:3663" ph="Select * fro... customers" />
-            <marker date="1477479637177" expanded="true" signature="4233:4304" ph="Select Custo... customers" />
-            <marker date="1477479637177" expanded="true" signature="4548:4599" ph="Select UserN... users" />
-            <marker date="1477479637177" expanded="true" signature="4797:4876" ph="Update Custo... " />
-            <marker date="1477479637177" expanded="true" signature="5405:5462" ph="Select UserI... customers" />
-            <marker date="1477479637177" expanded="true" signature="5664:5715" ph="Select UserN... users" />
-            <marker date="1477479637177" expanded="true" signature="5899:5977" ph="Update custo... " />
-            <marker date="1477479637177" expanded="true" signature="6524:6581" ph="Select UserI... customers" />
-            <marker date="1477479637177" expanded="true" signature="6808:6859" ph="Select UserN... users" />
-            <marker date="1477479637177" expanded="true" signature="7053:7142" ph="Update custo... " />
-            <marker date="1477479637177" expanded="true" signature="7660:7717" ph="Select UserI... customers" />
-            <marker date="1477479637177" expanded="true" signature="7917:7981" ph="Update users... " />
-            <marker date="1477479637177" expanded="true" signature="8076:8127" ph="select UserN... users" />
-            <marker date="1477479637177" expanded="true" signature="8764:8821" ph="Select UserI... customers" />
-            <marker date="1477479637177" expanded="true" signature="9026:9077" ph="select UserN... users" />
-            <marker date="1477479637177" expanded="true" signature="9283:9350" ph="Update users... " />
-            <marker date="1477479637177" expanded="true" signature="9958:9978" ph="Select * fro... Brands" />
-            <marker date="1477479637177" expanded="true" signature="10742:10765" ph="Select * fro... customers" />
-            <marker date="1477479637177" expanded="true" signature="11588:11613" ph="Select * fro... delieveries" />
-            <marker date="1477479637177" expanded="true" signature="12616:12641" ph="Select * fro... departments" />
-            <marker date="1477479637177" expanded="true" signature="13373:13399" ph="Select * fro... distributors" />
-            <marker date="1477479637177" expanded="true" signature="14234:14257" ph="Select * fro... employees" />
-            <marker date="1477479637177" expanded="true" signature="15122:15148" ph="Select * fro... orderhistory" />
-            <marker date="1477479637177" expanded="true" signature="16120:16139" ph="Select * fro... users" />
-            <marker date="1477479637177" expanded="true" signature="16845:16868" ph="Select * fro... suppliers" />
-            <marker date="1477479637177" expanded="true" signature="17696:17718" ph="Select * fro... products" />
-            <marker date="1477479637177" expanded="true" signature="19118:19130" ph="DELETE FROM " />
-            <marker date="1477479637177" expanded="true" signature="19118:19158" ph="DELETE FROM " />
-            <marker date="1477479637177" expanded="true" signature="19118:21351" ph="DELETE FROM " />
-            <marker date="1477479637177" expanded="true" signature="19628:19680" ph="DELETE FROM " />
-            <marker date="1477479637177" expanded="true" signature="20145:20189" ph="DELETE FROM " />
-            <marker date="1477479637177" expanded="true" signature="20649:20695" ph="DELETE FROM " />
-            <marker date="1477479637177" expanded="true" signature="21114:21148" ph="/** * Search... " />
-            <marker date="1477479637177" expanded="true" signature="21153:21278" ph="/** * @param... " />
-            <marker date="1477479637177" expanded="true" signature="21353:21469" ph="SELECT Produ... products" />
-            <marker date="1477479637177" expanded="true" signature="22567:22640" ph="SELECT Produ... products" />
-            <marker date="1477479637177" expanded="true" signature="23738:23823" ph="SELECT NewPr... newproducts" />
+            <marker date="1477479802035" expanded="true" signature="560:664" ph="insert into users... " />
+            <marker date="1477479802035" expanded="true" signature="748:805" ph="select userI... users" />
+            <marker date="1477479802035" expanded="true" signature="1147:1283" ph="insert into customers... " />
+            <marker date="1477479802035" expanded="true" signature="1952:2020" ph="UPDATE USERS... " />
+            <marker date="1477479802035" expanded="true" signature="2903:2929" ph="Select UserN... users" />
+            <marker date="1477479802035" expanded="true" signature="3611:3663" ph="Select * fro... customers" />
+            <marker date="1477479802035" expanded="true" signature="4233:4304" ph="Select Custo... customers" />
+            <marker date="1477479802035" expanded="true" signature="4548:4599" ph="Select UserN... users" />
+            <marker date="1477479802035" expanded="true" signature="4797:4876" ph="Update Custo... " />
+            <marker date="1477479802035" expanded="true" signature="5405:5462" ph="Select UserI... customers" />
+            <marker date="1477479802035" expanded="true" signature="5664:5715" ph="Select UserN... users" />
+            <marker date="1477479802035" expanded="true" signature="5899:5977" ph="Update custo... " />
+            <marker date="1477479802035" expanded="true" signature="6524:6581" ph="Select UserI... customers" />
+            <marker date="1477479802035" expanded="true" signature="6808:6859" ph="Select UserN... users" />
+            <marker date="1477479802035" expanded="true" signature="7053:7142" ph="Update custo... " />
+            <marker date="1477479802035" expanded="true" signature="7660:7717" ph="Select UserI... customers" />
+            <marker date="1477479802035" expanded="true" signature="7917:7981" ph="Update users... " />
+            <marker date="1477479802035" expanded="true" signature="8076:8127" ph="select UserN... users" />
+            <marker date="1477479802035" expanded="true" signature="8764:8821" ph="Select UserI... customers" />
+            <marker date="1477479802035" expanded="true" signature="9026:9077" ph="select UserN... users" />
+            <marker date="1477479802035" expanded="true" signature="9283:9350" ph="Update users... " />
+            <marker date="1477479802035" expanded="true" signature="9958:9978" ph="Select * fro... Brands" />
+            <marker date="1477479802035" expanded="true" signature="10742:10765" ph="Select * fro... customers" />
+            <marker date="1477479802035" expanded="true" signature="11588:11613" ph="Select * fro... delieveries" />
+            <marker date="1477479802035" expanded="true" signature="12616:12641" ph="Select * fro... departments" />
+            <marker date="1477479802035" expanded="true" signature="13373:13399" ph="Select * fro... distributors" />
+            <marker date="1477479802035" expanded="true" signature="14234:14257" ph="Select * fro... employees" />
+            <marker date="1477479802035" expanded="true" signature="15122:15148" ph="Select * fro... orderhistory" />
+            <marker date="1477479802035" expanded="true" signature="16120:16139" ph="Select * fro... users" />
+            <marker date="1477479802035" expanded="true" signature="16845:16868" ph="Select * fro... suppliers" />
+            <marker date="1477479802035" expanded="true" signature="17696:17718" ph="Select * fro... products" />
+            <marker date="1477479802035" expanded="true" signature="19200:19212" ph="DELETE FROM " />
+            <marker date="1477479802035" expanded="true" signature="19200:19240" ph="DELETE FROM " />
+            <marker date="1477479802035" expanded="true" signature="19200:21390" ph="DELETE FROM " />
+            <marker date="1477479802035" expanded="true" signature="19710:19762" ph="DELETE FROM " />
+            <marker date="1477479802035" expanded="true" signature="20227:20271" ph="DELETE FROM " />
+            <marker date="1477479802035" expanded="true" signature="20731:20777" ph="DELETE FROM " />
+            <marker date="1477479802035" expanded="true" signature="21153:21187" ph="/** * Search... " />
+            <marker date="1477479802035" expanded="true" signature="21192:21317" ph="/** * @param... " />
+            <marker date="1477479802035" expanded="true" signature="21392:21508" ph="SELECT Produ... products" />
+            <marker date="1477479802035" expanded="true" signature="22606:22679" ph="SELECT Produ... products" />
+            <marker date="1477479802035" expanded="true" signature="23777:23862" ph="SELECT NewPr... newproducts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewsupplier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewproduct.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewdistributors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/admin/databasecontrol/insert/insertnewbrands.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1989">
+          <caret line="117" column="64" selection-start-line="117" selection-start-column="64" selection-end-line="117" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatebrands.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#br#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatedistributors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#br#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatestock.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#br#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpages/admin/databasecontrol/update/updatesuppliers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#br#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

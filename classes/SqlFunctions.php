@@ -486,6 +486,14 @@ class SqlFunctions
      */
 
     /**
+     * INSERT Functions
+     */
+
+    /**
+     * UPDATE Functions
+     */
+
+    /**
      * DELETE Functions
      */
     /**
@@ -556,12 +564,6 @@ class SqlFunctions
             echo "<p id='errors'>The ID entered is invalid</p>";
         }
     }
-
-    /**
-     * UPDATE Functions
-     */
-
-
  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     /**
      * Search function
