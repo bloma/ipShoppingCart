@@ -1,6 +1,6 @@
 <?php
 
-class Distributors
+class Distributor
 {
     private $distributorID = 0;
     private $companyName = "";

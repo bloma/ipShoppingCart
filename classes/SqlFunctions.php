@@ -485,6 +485,82 @@ class SqlFunctions
      * These functions are used to update stock and add new products,users,brands,employees and so forth
      */
 
+    /**
+     * DELETE Functions
+     */
+    /**
+     * @param $conn
+     * @param $id
+     * This function is used to remove a desired brand from the database
+     */
+    public function removeBrand($conn,$id)
+    {
+        $sqlDeleteFromBrand = "DELETE FROM brands WHERE BrandID = '$id' ";
+        if(mysqli_query($conn,$sqlDeleteFromBrand))
+        {
+            echo "<p>You have successfully removed the desired brand</p>";
+        }
+        else{
+            echo "<p id='errors'>The ID entered is invalid</p>";
+        }
+    }
+
+    /**
+     * @param $conn
+     * @param $id
+     * This function is used to remove a distributor brand from the database
+     */
+    public function removeDistributor($conn,$id)
+    {
+        $sqlDeleteFromDistributor = "DELETE FROM distributors WHERE DistributorID = '$id' ";
+        if(mysqli_query($conn,$sqlDeleteFromDistributor))
+        {
+            echo "<p>You have successfully removed the desired distributor</p>";
+        }
+        else{
+            echo "<p id='errors'>The ID entered is invalid</p>";
+        }
+    }
+
+    /**
+     * @param $conn
+     * @param $id
+     * This function is used  to remove a product from the database
+     */
+    public function removeProduct($conn,$id)
+    {
+        $sqlDeleteFromProduct = "DELETE FROM products WHERE ProductID = '$id' ";
+        if(mysqli_query($conn,$sqlDeleteFromProduct))
+        {
+            echo "<p>You have successfully removed the desired product</p>";
+        }
+        else{
+            echo "<p id='errors'>The ID entered is invalid</p>";
+        }
+
+    }
+
+    /**
+     * @param $conn
+     * @param $id
+     * This function is used to remove a supplier from the database
+     */
+    public function removeSupplier($conn,$id)
+    {
+        $sqlDeleteFromSupplier = "DELETE FROM suppliers WHERE SupplierID = '$id' ";
+        if(mysqli_query($conn,$sqlDeleteFromSupplier))
+        {
+            echo "<p>You have successfully removed the desired supplier</p>";
+        }
+        else{
+            echo "<p id='errors'>The ID entered is invalid</p>";
+        }
+    }
+
+    /**
+     * UPDATE Functions
+     */
+
 
  //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     /**
