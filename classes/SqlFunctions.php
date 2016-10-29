@@ -137,7 +137,7 @@ class SqlFunctions
             echo mysqli_error($conn);
         }
     }
-
+	
     /**
      * @param $conn
      * @param $name
@@ -657,7 +657,77 @@ class SqlFunctions
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     /**
-     * Checkout SQL functions
-     */
+	 *@Param conn
+	 * this function will select customer name
+	**/
+	 
+	 public function selectCustomerName($conn,$UserID){
+		$sqlCustomer = "select CustomerID,UserID,CustomerName,CustomerSurname from customers WHERE =$UserID";
+		$CustomerResults = mysqli_query($conn,$sqlCustomer);
+		$Row = mysqli_fetch_array($CustomerResults);
+		$CustomerID = $Row["UserID"];
+		$CustomerName = $Row["CustomerName"];
+		$CustomerSurname = $Row["CustomerSurname"];
+		
+		$sqlInsertOderHistory = "Insert into orderhistory values($CustomerName)";
+		 $Result = mysqli_query($conn,$sqlInsertOrderHistory);
+	}
+	/**
+	 *@Param conn
+	 * this function will select customer surname
+	**/
+	
+	public function selectCustomerSurname($conn,$UserID){
+		
+		$sqlCustomer = "select CustomerID,UserID,CustomerName,CustomerSurname from customers WHERE =$UserID";
+		$CustomerResults = mysqli_query($conn,$sqlCustomer);
+		$Row = mysqli_fetch_array($CustomerResults);
+		$CustomerID = $Row["UserID"];
+		$CustomerName = $Row["CustomerName"];
+		$CustomerSurname = $Row["CustomerSurname"];
+		
+		$sqlInsertOderHistory = "Insert into orderhistory values($CustomerSurname)";
+		 $Result = mysqli_query($conn,$sqlInsertOrderHistory);
+	}
+	
+	/**
+	 *@Param conn
+	 * this function will select customer ID
+	**/
+	public function selectCustomerID($conn,$name){
+		$sqlCustomer = "select CustomerID,UserID,CustomerName,CustomerSurname from customers WHERE CustomerName = $name";
+		$CustomerResults = mysqli_query($conn,$sqlCustomer);
+		$Row = mysqli_fetch_array($CustomerResults);
+		$CustomerID = $Row["UserID"];
+		$CustomerName = $Row["CustomerName"];
+		$CustomerSurname = $Row["CustomerSurname"];
+		
+		$sqlInsertOderHistory = "Insert into orderhistory values($CustomerID)";
+		 $Result = mysqli_query($conn,$sqlInsertOrderHistory);
+	}
+	
+	/**
+	 *@Param conn
+	 * this function will add customer address into delivery table
+	**/
+	public function insertAddress($conn,$Address,$OrderDate){
+		 
+		 $sqlInsertDelivery = "Insert into Delivery values($customerId,$Address,$OrderDate)";
+		 $DeliveryResults = mysqli_query($conn,$sqlInsertDelivery);
+		  
+	 }
+	 
+	 /**
+	 *@Param conn
+	 * this function will add order date into delivery table
+	**/
+	 public function insertOrderDate($conn,$Address,$OrderDate){
+		 
+		 $sqlInsertDelivery = "Insert into Delivery values($OrderDate)";
+		 $DeliveryResults = mysqli_query($conn,$sqlInsertDelivery);
+		  
+	 }
+
+	 
 }
 ?>

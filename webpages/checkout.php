@@ -1,5 +1,61 @@
 <?php
     @include "../configuration/session.php";
+	 include_once "../../classes/Customer.php";
+	 include_once "../../classes/Delivery.php";
+	 include_once "../../classes/Order.php";
+	 
+	 include_once "../../classes/SqlFunctions.php";
+	 
+	 if(class_exists("Customer")){
+		 $CustomerObject = new Customer();
+	 }
+	 if(class_exists("Delivery")){
+		 $deliveryObject = new Delivery();
+	 }
+	 if(class_exists("Order")){
+		 $OrderObject =new Order();
+	 }
+	 if(class_exists("SqlFunctions")){
+		 $SqlFunctionsObject = new SqlFunctions();
+	 }
+	 if(isset($_POST['checkout'])){
+		 
+		 if(!empty($_POST["UserID"])){
+			 //
+		 }
+		 if(!empty($_POST["customerName"])){
+			 $name = $_POST["customerName"];
+			 $CustomerObject =setCustomerName($name);
+		 }
+		 if(!empty($_POST["customerSurname"])){
+			 $surname = $_POST["customerSurname"];
+			 $CustomerObject = setCustomerSurname($surname);
+		 }
+		 if(!empty($_POST[""])){
+			 //
+		 }
+		 if(!empty($_POST[""])){
+			 //
+		 }
+		 if(!empty($deliveryObject->getDeliveryAddress())){
+			 $SqlFunctionsObject->insertAddress($conn,$deliveryObject->getDeliveryAddress(),$OrderDate);
+		 }
+
+		 if(!empty($CustomerObject->getCustomerName())){
+			 $SqlFunctionsObject->selectCustomerName($conn,$CustomerObject->getCustomerName());
+		 }
+		 if(!empty($CustomerObject->getCustomerSurname())){
+			 $SqlFunctionsObject->selectCustomerSurname($conn,$CustomerObject->getCustomerSurname());
+		 }
+		 /*if(isset($_SESSION['loggedIn'])){
+		 $UserId = $_SESSION[$_GET['UserId']];
+		 //comeback here
+		 $orderDate = $_POST["2011-01-13"];
+		 $address = $_POST["Address"];
+		 $SqlFunctionsObject->populateOderHistory($conn,$OrderDate,$Address,$UserID);
+		}*/
+	 }
+	 
 ?>
 <html>
     <head>
@@ -72,7 +128,7 @@
                 <div id="main">
                     <div id="sidebar" class="floatLeft">
                         <div class="sidebarBox"><span class="bottom"></span>
-                            <h3>Categories</h3>
+                            <!--<h3>Categories</h3>-->
                             <div class="content">
                                 <ul class="sidebarList">
                                      <?php
@@ -135,6 +191,15 @@
 
                     <div id="content" class="floatRight">
                         <h1>Checkout</h1>
+						<form name="checkout" action="<?php $_SEVER['PHP_SELF']?>" method="post">
+						<p>Customer ID :<input type = "text" name ="customerID"/></p>
+						<p>Customer Name:<input type ="text" name ="customerName" /></p>
+						<p>Customer Surname:<input type ="text" name ="customerSurname" /></p>
+						<p>Enter Delivery Address :<input type = "text" name ="Address"/></p>
+						<p>Enter Delivery Date :<input id = "meeting" type="date" name ="2011-01-13"/></p>
+						<p><input type="submit" value="Checkout" name="checkout"/></p>
+						</form>
+						
                     </div> <!-- END content -->
                     <div class="cleaner"></div>
                 </div> <!-- END main -->

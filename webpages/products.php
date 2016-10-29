@@ -77,7 +77,7 @@
                 <div id="main">
                     <div id="sidebar" class="floatLeft">
                         <div class="sidebarBox"><span class="bottom"></span>
-                            <h3>Categories</h3>
+                            <!--<h3>Categories</h3>-->
                             <div class="content">
                                 <ul class="sidebarList">
                                     <?php
